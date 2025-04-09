@@ -1,4 +1,4 @@
-# Integrate Generative AI into Azure Database for PostgreSQL - Flexible Server
+# Customize Solution
 
 ??? question "Using your own data?"
 

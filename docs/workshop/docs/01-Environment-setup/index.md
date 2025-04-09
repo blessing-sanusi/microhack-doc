@@ -1,10 +1,10 @@
-# Introduction
+# Enviroment Setup
 
-This solution accelerator is designed as an end-to-end example of a Financial Services Industry AI-enabled application. It demonstrates the implementation of generative AI capabilities to enhance an existing application with AI-driven data validation, vector search, semantic ranking, and GraphRAG on Azure Database for PostgreSQL, and illustrates how they can be combined to deliver high quality responses to financial questions via an intelligent copilot. The app uses a small sample dataset made up of statements of work (SOWs) and invoices. The source code for the accelerator is provided in the following repo: <http://aka.ms/pg-byoac-repo/>.
+The Build your own copilot Solution Accelerator allows users to use their own unstructured data to create draft documents by combining Azure AI Search and Large Language Models (LLMs). Many different documents can be made and the main restriction is the data source that can be provided. There is a web app that users can create in their own subscription with security and authentication.​
 
 The application has the following architecture:
 
-![High-level architecture diagram for the solution](../img/solution-architecture-diagram.png)
+![High-level architecture diagram for the solution](../images/ckm-sol-arch.png)
 
 ## Bringing your own data to the solution
 

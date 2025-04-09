@@ -1,4 +1,4 @@
-# AI-driven Data Validation
+# Explore Application 
 
 ## Building an AI-Enhanced Data Ingestion and Processing Pipeline
 

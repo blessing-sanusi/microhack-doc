@@ -1,4 +1,4 @@
-# Improve RAG Accuracy
+# Application Evaluation
 
 ??? question "Using your own data?"
 
