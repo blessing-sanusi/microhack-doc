@@ -21,7 +21,7 @@ site_name: "Knowledge Mining Microhack: Workshop Guide"
 site_url: https://blessing-sanusi.github.io/microhack-doc/
 site_author: bsanusi
 site_description: >-
-  Knowlege mining AI solution .
+  Knowlege mining AI solution accelerator for Azure OpenAI Service and Azure Cognitive Search.
 
 # Repository ..................................................
 repo_name: microsoft/Conversation-Knowledge-Mining-Solution-Accelerator
