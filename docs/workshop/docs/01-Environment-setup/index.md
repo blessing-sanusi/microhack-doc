@@ -1,32 +1,70 @@
 # Enviroment Setup
 
-The Build your own copilot Solution Accelerator allows users to use their own unstructured data to create draft documents by combining Azure AI Search and Large Language Models (LLMs). Many different documents can be made and the main restriction is the data source that can be provided. There is a web app that users can create in their own subscription with security and authentication.​
+### **Prerequisites**
 
-The application has the following architecture:
+To deploy this solution accelerator, ensure you have access to an [Azure subscription](https://azure.microsoft.com/free/) with the necessary permissions to create **resource groups and resources**. Follow the steps in  [Azure Account Set Up](./docs/AzureAccountSetUp.md) 
 
-![High-level architecture diagram for the solution](../images/ckm-sol-arch.png)
+Check the [Azure Products by Region](https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/?products=all&regions=all) page and select a **region** where the following services are available:  
 
-## Bringing your own data to the solution
+- Azure AI Foundry 
+- Azure OpenAI Service 
+- Azure AI Search
+- Azure AI Content Understanding
+- Embedding Deployment Capacity  
+- GPT Model Capacity
+- [Azure Semantic Search](./docs/AzureSemanticSearchRegion.md)  
 
-This solution accelerator is structured to use sample vendor, SOW, and invoice data, which has been provided for demonstration purposes. However, if you want to use it with your own data or augment an existing solution, you will need to modify certain steps. Where applicable, notes are provided to indicate key areas where adjustments may be necessary to integrate custom datasets.
+Here are some example regions where the services are available: East US, East US2, Australia East, UK South, France Central.
 
-## Learning Objectives
+### ⚠️ Important: Check Azure OpenAI Quota Availability  
 
-The goal of the solution accelerator is to teach you to how to **add rich AI capabilities** using Azure Database for PostgreSQL and Azure AI Services to your existing applications. You will gain hands-on experience integrating advanced AI validation during data ingestion to ensure financial documents, like invoices, align with their associated statement of work. By leveraging Azure OpenAI for robust data validation and Azure Document Intelligence for comprehensive extraction and analysis, you will improve data quality. By adding a copilot chat feature, you will provide the ability for users to gain deep insights into vendors' invoicing accuracy, timeliness, and quality. This comprehensive approach equips you with the skills to seamlessly enrich your existing applications with AI-enhanced features, boosting their performance and reliability in the financial services industry.
+➡️ To ensure sufficient quota is available in your subscription, please follow **[Quota check instructions guide](./docs/quota_check.md)** before you deploy the solution.
 
-By completing the solution accelerator, you will learn to:
+| [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator) | [![Open in Dev Containers](https://img.shields.io/static/v1?style=for-the-badge&label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator) |
+|---|---|
 
-- Use Azure AI Services to automate data validation tasks during ingestion to streamline workflows.
-- Integrate Generative AI capabilities into your Azure Database for PostgreSQL-based applications using the [Azure AI extension](https://learn.microsoft.com/azure/postgresql/flexible-server/how-to-integrate-azure-ai).
-- Use the [Retrieval Augmented Generation (RAG) pattern](https://learn.microsoft.com/azure/ai-studio/concepts/retrieval-augmented-generation) in a copilot <br/> (to ground responses in your own data).
-- Use [Azure Container Apps](https://aka.ms/azcontainerapps) for deployment <br/> (to get hosted UI and API apps for real-world use).
-- Use [Azure Developer CLI](https://aka.ms/azd) with AI Application Templates <br/> (to provision & deploy apps consistently across teams)
 
-## Learning Resources
+### Deploying
 
-1. **Azure Database for PostgreSQL - Flexible Server** | [Overview](https://learn.microsoft.com/azure/postgresql/flexible-server/service-overview)
-2. **Generative AI with Azure Database for PostgreSQL - Flexible Server** | [Overview](https://learn.microsoft.com/azure/postgresql/flexible-server/generative-ai-overview)
-3. **Azure AI extension for PostreSQL** | [How to integrate Azure AI](https://learn.microsoft.com/azure/postgresql/flexible-server/generative-ai-azure-overview)
-4. **Azure AI Foundry**  | [Documentation](https://learn.microsoft.com/azure/ai-studio/) · [Architecture](https://learn.microsoft.com/azure/ai-studio/concepts/architecture) · [SDKs](https://learn.microsoft.com/azure/ai-studio/how-to/develop/sdk-overview) ·  [Evaluation](https://learn.microsoft.com/azure/ai-studio/how-to/evaluate-generative-ai-app)
-5. **Azure Container Apps**  | [Azure Container Apps](https://learn.microsoft.com/azure/container-apps/) · [Deploy from code](https://learn.microsoft.com/azure/container-apps/quickstart-repo-to-cloud?tabs=bash%2Ccsharp&pivots=with-dockerfile)
-6. **Responsible AI**  | [Overview](https://www.microsoft.com/ai/responsible-ai) · [With AI Services](https://learn.microsoft.com/azure/ai-services/responsible-use-of-ai-overview?context=%2Fazure%2Fai-studio%2Fcontext%2Fcontext) · [Azure AI Content Safety](https://learn.microsoft.com/azure/ai-services/content-safety/)
+Once you've opened the project in [Codespaces](#github-codespaces) or in [Dev Containers](#vs-code-dev-containers) or [locally](#local-environment), you can deploy it to Azure following the following steps. 
+
+To change the azd parameters from the default values, follow the steps [here](./docs/CustomizingAzdParameters.md). 
+
+
+1. Login to Azure:
+
+    ```shell
+    azd auth login
+    ```
+
+    #### To authenticate with Azure Developer CLI (`azd`), use the following command with your **Tenant ID**:
+
+    ```sh
+    azd auth login --tenant-id <tenant-id>
+   ```
+
+2. Provision and deploy all the resources:
+
+    ```shell
+    azd up
+    ```
+
+3. Provide an `azd` environment name (like "ckmapp")
+4. Select a subscription from your Azure account, and select a location which has quota for all the resources. 
+    * This deployment will take *7-10 minutes* to provision the resources in your account and set up the solution with sample data. 
+    * If you get an error or timeout with deployment, changing the location can help, as there may be availability constraints for the resources.
+
+5. Once the deployment has completed successfully, open the [Azure Portal](https://portal.azure.com/), go to the deployed resource group, find the App Service and get the app URL from `Default domain`.
+
+6. You can now delete the resources by running `azd down`, if you are done trying out the application. 
+<!-- 6. You can now proceed to run the [development server](#development-server) to test the app locally, or if you are done trying out the app, you can delete the resources by running `azd down`. -->
+
+<h2>
+Additional Steps
+</h2>
+
+1. **Add App Authentication**
+   
+    Follow steps in [App Authentication](./docs/AppAuthentication.md) to configure authenitcation in app service.
+
+    Note: Authentication changes can take up to 10 minutes 
