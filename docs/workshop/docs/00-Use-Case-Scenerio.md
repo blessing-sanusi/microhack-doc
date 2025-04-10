@@ -14,6 +14,6 @@ This template leverages Azure AI Foundry, Azure AI Content Understanding, Azure 
 
 ## Technical key features
 
-![image](./docs/Images/ReadMe/techkeyfeatures.png)
+![image](./support-docs/Images/ReadMe/techkeyfeatures.png)
 
 
