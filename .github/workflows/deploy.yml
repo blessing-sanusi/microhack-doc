@@ -10,21 +10,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout the repo
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      # Set up Python environment
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
+      # Install MkDocs and Material theme
       - name: Install MkDocs & Material theme
         run: |
           pip install mkdocs-material
 
+      # Build the MkDocs site
       - name: Build the site
-        run: mkdocs build
+        run: |
+          mkdocs build
+          touch site/.nojekyll  # Disable Jekyll
 
+      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
