@@ -12,22 +12,26 @@
         <meta name="author" content="bsanusi">
       
       
+        <link rel="canonical" href="https://blessing-sanusi.github.io/microhack-doc/workshop/docs/support-docs/quota_check/">
+      
+      
+        <link rel="prev" href="../Fabric_deployment/">
       
       
       
-      <link rel="icon" href="/microhack-doc/assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>Knowledge Mining Microhack: Workshop Guide</title>
+        <title>Quota check - Knowledge Mining Microhack: Workshop Guide</title>
       
     
     
-      <link rel="stylesheet" href="/microhack-doc/assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="/microhack-doc/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +50,7 @@
       
     
     
-    <script>__md_scope=new URL("/microhack-doc/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#check-quota-availability-before-deployment" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,9 +92,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/microhack-doc/." title="Knowledge Mining Microhack: Workshop Guide" class="md-header__button md-logo" aria-label="Knowledge Mining Microhack: Workshop Guide" data-md-component="logo">
+    <a href="../../../.." title="Knowledge Mining Microhack: Workshop Guide" class="md-header__button md-logo" aria-label="Knowledge Mining Microhack: Workshop Guide" data-md-component="logo">
       
-  <img src="/microhack-doc/img/postgresql.svg" alt="logo">
+  <img src="../../../../img/postgresql.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -102,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Quota check
             
           </span>
         </div>
@@ -215,11 +224,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/microhack-doc/workshop/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -261,9 +272,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/microhack-doc/." title="Knowledge Mining Microhack: Workshop Guide" class="md-nav__button md-logo" aria-label="Knowledge Mining Microhack: Workshop Guide" data-md-component="logo">
+    <a href="../../../.." title="Knowledge Mining Microhack: Workshop Guide" class="md-nav__button md-logo" aria-label="Knowledge Mining Microhack: Workshop Guide" data-md-component="logo">
       
-  <img src="/microhack-doc/img/postgresql.svg" alt="logo">
+  <img src="../../../../img/postgresql.svg" alt="logo">
 
     </a>
     Knowledge Mining Microhack: Workshop Guide
@@ -287,6 +298,8 @@
       
   
   
+    
+  
   
   
     
@@ -302,20 +315,21 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   
@@ -328,13 +342,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Workshop
@@ -347,6 +361,8 @@
                 
   
   
+    
+  
   
   
     
@@ -383,17 +399,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -412,7 +426,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_2">
             <span class="md-nav__icon md-icon"></span>
             Docs
@@ -428,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/00-Use-Case-Scenerio/" class="md-nav__link">
+      <a href="../../00-Use-Case-Scenerio/" class="md-nav__link">
         
   
   
@@ -476,7 +490,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/01-Environment-setup/" class="md-nav__link ">
+            <a href="../../01-Environment-setup/" class="md-nav__link ">
               
   
   
@@ -511,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/01-Environment-setup/AppAuthentication/" class="md-nav__link">
+      <a href="../../01-Environment-setup/AppAuthentication/" class="md-nav__link">
         
   
   
@@ -565,7 +579,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/02-%20Explore-Data/" class="md-nav__link ">
+            <a href="../../02-%20Explore-Data/" class="md-nav__link ">
               
   
   
@@ -630,7 +644,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/03-Explore-the-code/" class="md-nav__link ">
+            <a href="../../03-Explore-the-code/" class="md-nav__link ">
               
   
   
@@ -665,7 +679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/03-Explore-the-code/00-Chart-Component/" class="md-nav__link">
+      <a href="../../03-Explore-the-code/00-Chart-Component/" class="md-nav__link">
         
   
   
@@ -688,7 +702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/03-Explore-the-code/01-Chat-Component/" class="md-nav__link">
+      <a href="../../03-Explore-the-code/01-Chat-Component/" class="md-nav__link">
         
   
   
@@ -742,7 +756,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/04-Explore-Application/" class="md-nav__link ">
+            <a href="../../04-Explore-Application/" class="md-nav__link ">
               
   
   
@@ -819,7 +833,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/05-Customize-Solution/" class="md-nav__link ">
+            <a href="../../05-Customize-Solution/" class="md-nav__link ">
               
   
   
@@ -854,7 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/01/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/01/" class="md-nav__link">
         
   
   
@@ -877,7 +891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/02/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/02/" class="md-nav__link">
         
   
   
@@ -900,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/03/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/03/" class="md-nav__link">
         
   
   
@@ -923,7 +937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/04/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/04/" class="md-nav__link">
         
   
   
@@ -946,7 +960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/05/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/05/" class="md-nav__link">
         
   
   
@@ -969,7 +983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/06/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/06/" class="md-nav__link">
         
   
   
@@ -992,7 +1006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/07/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/07/" class="md-nav__link">
         
   
   
@@ -1015,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/08/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/08/" class="md-nav__link">
         
   
   
@@ -1085,7 +1099,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/06-Video-Processing/" class="md-nav__link ">
+            <a href="../../06-Video-Processing/" class="md-nav__link ">
               
   
   
@@ -1120,7 +1134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/01/" class="md-nav__link">
+      <a href="../../06-Video-Processing/01/" class="md-nav__link">
         
   
   
@@ -1143,7 +1157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/02/" class="md-nav__link">
+      <a href="../../06-Video-Processing/02/" class="md-nav__link">
         
   
   
@@ -1166,7 +1180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/03/" class="md-nav__link">
+      <a href="../../06-Video-Processing/03/" class="md-nav__link">
         
   
   
@@ -1189,7 +1203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/04/" class="md-nav__link">
+      <a href="../../06-Video-Processing/04/" class="md-nav__link">
         
   
   
@@ -1212,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/05/" class="md-nav__link">
+      <a href="../../06-Video-Processing/05/" class="md-nav__link">
         
   
   
@@ -1235,7 +1249,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/06/" class="md-nav__link">
+      <a href="../../06-Video-Processing/06/" class="md-nav__link">
         
   
   
@@ -1258,7 +1272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/07/" class="md-nav__link">
+      <a href="../../06-Video-Processing/07/" class="md-nav__link">
         
   
   
@@ -1281,7 +1295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/08/" class="md-nav__link">
+      <a href="../../06-Video-Processing/08/" class="md-nav__link">
         
   
   
@@ -1351,7 +1365,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/07-Evaluation/" class="md-nav__link ">
+            <a href="../../07-Evaluation/" class="md-nav__link ">
               
   
   
@@ -1386,7 +1400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/01/" class="md-nav__link">
+      <a href="../../07-Evaluation/01/" class="md-nav__link">
         
   
   
@@ -1409,7 +1423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/02/" class="md-nav__link">
+      <a href="../../07-Evaluation/02/" class="md-nav__link">
         
   
   
@@ -1432,7 +1446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/03/" class="md-nav__link">
+      <a href="../../07-Evaluation/03/" class="md-nav__link">
         
   
   
@@ -1455,7 +1469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/04/" class="md-nav__link">
+      <a href="../../07-Evaluation/04/" class="md-nav__link">
         
   
   
@@ -1478,7 +1492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/05/" class="md-nav__link">
+      <a href="../../07-Evaluation/05/" class="md-nav__link">
         
   
   
@@ -1501,7 +1515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/06/" class="md-nav__link">
+      <a href="../../07-Evaluation/06/" class="md-nav__link">
         
   
   
@@ -1524,7 +1538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/07/" class="md-nav__link">
+      <a href="../../07-Evaluation/07/" class="md-nav__link">
         
   
   
@@ -1547,7 +1561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/08/" class="md-nav__link">
+      <a href="../../07-Evaluation/08/" class="md-nav__link">
         
   
   
@@ -1601,7 +1615,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/Tear-Down/" class="md-nav__link ">
+            <a href="../../Tear-Down/" class="md-nav__link ">
               
   
   
@@ -1636,8 +1650,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1666,13 +1682,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_11" checked>
         
           
           <label class="md-nav__link" for="__nav_1_2_11" id="__nav_1_2_11_label" tabindex="0">
@@ -1688,7 +1702,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_11_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_11_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_2_11">
             <span class="md-nav__icon md-icon"></span>
             Support docs
@@ -1702,7 +1716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/AppAuthentication/" class="md-nav__link">
+      <a href="../AppAuthentication/" class="md-nav__link">
         
   
   
@@ -1725,7 +1739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/AzureAccountSetUp/" class="md-nav__link">
+      <a href="../AzureAccountSetUp/" class="md-nav__link">
         
   
   
@@ -1748,7 +1762,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/AzureGPTQuotaSettings/" class="md-nav__link">
+      <a href="../AzureGPTQuotaSettings/" class="md-nav__link">
         
   
   
@@ -1771,7 +1785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/AzureSemanticSearchRegion/" class="md-nav__link">
+      <a href="../AzureSemanticSearchRegion/" class="md-nav__link">
         
   
   
@@ -1794,7 +1808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/ConversationalDataFormat/" class="md-nav__link">
+      <a href="../ConversationalDataFormat/" class="md-nav__link">
         
   
   
@@ -1817,7 +1831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/CustomizingAzdParameters/" class="md-nav__link">
+      <a href="../CustomizingAzdParameters/" class="md-nav__link">
         
   
   
@@ -1840,7 +1854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/DeleteResourceGroup/" class="md-nav__link">
+      <a href="../DeleteResourceGroup/" class="md-nav__link">
         
   
   
@@ -1863,7 +1877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/Fabric_deployment/" class="md-nav__link">
+      <a href="../Fabric_deployment/" class="md-nav__link">
         
   
   
@@ -1883,10 +1897,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/quota_check/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Quota check
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1897,6 +1931,51 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#check-quota-availability-before-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Check Quota Availability Before Deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-using-azure-portal-and-cloud-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      If using Azure Portal and Cloud Shell
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-using-vs-code-or-codespaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      If using VS Code or Codespaces
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1943,6 +2022,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#check-quota-availability-before-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Check Quota Availability Before Deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-using-azure-portal-and-cloud-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      If using Azure Portal and Cloud Shell
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-using-vs-code-or-codespaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      If using VS Code or Codespaces
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1953,8 +2067,95 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+  <h1>Quota check</h1>
+
+<h2 id="check-quota-availability-before-deployment">Check Quota Availability Before Deployment<a class="headerlink" href="#check-quota-availability-before-deployment" title="Permanent link">&para;</a></h2>
+<p>Before deploying the accelerator, <strong>ensure sufficient quota availability</strong> for the required model.<br />
+Use one of the following scripts based on your needs:  </p>
+<ul>
+<li><strong><code>quota_check_params.sh</code></strong> → If you <strong>know the model and capacity</strong> required.  </li>
+<li><strong><code>quota_check_all_regions.sh</code></strong> → If you <strong>want to check available capacity across all regions</strong> for supported models.  </li>
+</ul>
+<hr />
+<h2 id="if-using-azure-portal-and-cloud-shell"><strong>If using Azure Portal and Cloud Shell</strong><a class="headerlink" href="#if-using-azure-portal-and-cloud-shell" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Navigate to the <a href="https://portal.azure.com">Azure Portal</a>.</li>
+<li>Click on <strong>Azure Cloud Shell</strong> in the top right navigation menu.</li>
+<li>Run the appropriate command based on your requirement:  </li>
+</ol>
+<p><strong>To check quota for a specific model and capacity:</strong>  </p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>```sh
+curl -L -o quota_check_params.sh &quot;https://raw.githubusercontent.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/main/infra/scripts/quota_check_params.sh&quot;
+chmod +x quota_check_params.sh
+./quota_check_params.sh &lt;model_name:capacity&gt; [&lt;model_region&gt;] (e.g., gpt-4o-mini:30,text-embedding-ada-002:20 eastus)
+```
+</code></pre></div></td></tr></table></div>
+<p><strong>To check available quota across all regions for supported models:</strong>  </p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>```sh
+curl -L -o quota_check_all_regions.sh &quot;https://raw.githubusercontent.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/main/infra/scripts/quota_check_all_regions.sh&quot;
+chmod +x quota_check_all_regions.sh
+./quota_check_all_regions.sh
+```
+</code></pre></div></td></tr></table></div>
+<h2 id="if-using-vs-code-or-codespaces"><strong>If using VS Code or Codespaces</strong><a class="headerlink" href="#if-using-vs-code-or-codespaces" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Run the appropriate script based on your requirement:  </li>
+</ol>
+<p><strong>To check quota for a specific model and capacity:</strong>  </p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>```sh
+./quota_check_params.sh &lt;model_name:capacity&gt; [&lt;model_region&gt;] (e.g., gpt-4o-mini:30,text-embedding-ada-002:20 eastus)
+```
+</code></pre></div></td></tr></table></div>
+<p><strong>To check available quota across all regions for supported models:</strong>  </p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>```sh
+./quota_check_all_regions.sh
+```
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>
+<p>If you see the error <code>_bash: az: command not found_</code>, install Azure CLI:  </p>
+<p><div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>curl<span class="w"> </span>-sL<span class="w"> </span>https://aka.ms/InstallAzureCLIDeb<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>bash
+az<span class="w"> </span>login
+</code></pre></div></td></tr></table></div>
+3. Rerun the script after installing Azure CLI.</p>
+<p><strong>Parameters</strong>
+- <code>&lt;model_name:capacity&gt;</code>: The name and required capacity for each model, in the format model_name:capacity (<strong>e.g., gpt-4o-mini:30,text-embedding-ada-002:20</strong>).
+- <code>[&lt;model_region&gt;] (optional)</code>: The Azure region to check first. If not provided, all supported regions will be checked (<strong>e.g., eastus</strong>).</p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1974,6 +2175,28 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Fabric_deployment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fabric deployment">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Fabric deployment
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -2002,12 +2225,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/microhack-doc/", "features": ["navigation.instant", "navigation.expand", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.indexes", "navigation.top", "toc.follow", "navigation.footer", "content.code.copy", "content.tabs.link"], "search": "/microhack-doc/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.expand", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.indexes", "navigation.top", "toc.follow", "navigation.footer", "content.code.copy", "content.tabs.link"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
   <!-- Add scripts that need to run before here -->
   
-      <script src="/microhack-doc/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <!-- Add scripts that need to run afterwards here -->

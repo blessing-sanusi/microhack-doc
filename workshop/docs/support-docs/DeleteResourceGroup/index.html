@@ -12,22 +12,28 @@
         <meta name="author" content="bsanusi">
       
       
+        <link rel="canonical" href="https://blessing-sanusi.github.io/microhack-doc/workshop/docs/support-docs/DeleteResourceGroup/">
       
       
+        <link rel="prev" href="../CustomizingAzdParameters/">
       
-      <link rel="icon" href="/microhack-doc/assets/images/favicon.png">
+      
+        <link rel="next" href="../Fabric_deployment/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>Knowledge Mining Microhack: Workshop Guide</title>
+        <title>Deleting Resources After a Failed Deployment in Azure Portal - Knowledge Mining Microhack: Workshop Guide</title>
       
     
     
-      <link rel="stylesheet" href="/microhack-doc/assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="/microhack-doc/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("/microhack-doc/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#deleting-resources-after-a-failed-deployment-in-azure-portal" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,9 +94,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/microhack-doc/." title="Knowledge Mining Microhack: Workshop Guide" class="md-header__button md-logo" aria-label="Knowledge Mining Microhack: Workshop Guide" data-md-component="logo">
+    <a href="../../../.." title="Knowledge Mining Microhack: Workshop Guide" class="md-header__button md-logo" aria-label="Knowledge Mining Microhack: Workshop Guide" data-md-component="logo">
       
-  <img src="/microhack-doc/img/postgresql.svg" alt="logo">
+  <img src="../../../../img/postgresql.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -102,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Deleting Resources After a Failed Deployment in Azure Portal
             
           </span>
         </div>
@@ -215,11 +226,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/microhack-doc/workshop/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -261,9 +274,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/microhack-doc/." title="Knowledge Mining Microhack: Workshop Guide" class="md-nav__button md-logo" aria-label="Knowledge Mining Microhack: Workshop Guide" data-md-component="logo">
+    <a href="../../../.." title="Knowledge Mining Microhack: Workshop Guide" class="md-nav__button md-logo" aria-label="Knowledge Mining Microhack: Workshop Guide" data-md-component="logo">
       
-  <img src="/microhack-doc/img/postgresql.svg" alt="logo">
+  <img src="../../../../img/postgresql.svg" alt="logo">
 
     </a>
     Knowledge Mining Microhack: Workshop Guide
@@ -287,6 +300,8 @@
       
   
   
+    
+  
   
   
     
@@ -302,20 +317,21 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   
@@ -328,13 +344,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Workshop
@@ -347,6 +363,8 @@
                 
   
   
+    
+  
   
   
     
@@ -383,17 +401,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -412,7 +428,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_2">
             <span class="md-nav__icon md-icon"></span>
             Docs
@@ -428,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/00-Use-Case-Scenerio/" class="md-nav__link">
+      <a href="../../00-Use-Case-Scenerio/" class="md-nav__link">
         
   
   
@@ -476,7 +492,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/01-Environment-setup/" class="md-nav__link ">
+            <a href="../../01-Environment-setup/" class="md-nav__link ">
               
   
   
@@ -511,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/01-Environment-setup/AppAuthentication/" class="md-nav__link">
+      <a href="../../01-Environment-setup/AppAuthentication/" class="md-nav__link">
         
   
   
@@ -565,7 +581,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/02-%20Explore-Data/" class="md-nav__link ">
+            <a href="../../02-%20Explore-Data/" class="md-nav__link ">
               
   
   
@@ -630,7 +646,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/03-Explore-the-code/" class="md-nav__link ">
+            <a href="../../03-Explore-the-code/" class="md-nav__link ">
               
   
   
@@ -665,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/03-Explore-the-code/00-Chart-Component/" class="md-nav__link">
+      <a href="../../03-Explore-the-code/00-Chart-Component/" class="md-nav__link">
         
   
   
@@ -688,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/03-Explore-the-code/01-Chat-Component/" class="md-nav__link">
+      <a href="../../03-Explore-the-code/01-Chat-Component/" class="md-nav__link">
         
   
   
@@ -742,7 +758,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/04-Explore-Application/" class="md-nav__link ">
+            <a href="../../04-Explore-Application/" class="md-nav__link ">
               
   
   
@@ -819,7 +835,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/05-Customize-Solution/" class="md-nav__link ">
+            <a href="../../05-Customize-Solution/" class="md-nav__link ">
               
   
   
@@ -854,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/01/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/01/" class="md-nav__link">
         
   
   
@@ -877,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/02/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/02/" class="md-nav__link">
         
   
   
@@ -900,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/03/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/03/" class="md-nav__link">
         
   
   
@@ -923,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/04/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/04/" class="md-nav__link">
         
   
   
@@ -946,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/05/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/05/" class="md-nav__link">
         
   
   
@@ -969,7 +985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/06/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/06/" class="md-nav__link">
         
   
   
@@ -992,7 +1008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/07/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/07/" class="md-nav__link">
         
   
   
@@ -1015,7 +1031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/08/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/08/" class="md-nav__link">
         
   
   
@@ -1085,7 +1101,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/06-Video-Processing/" class="md-nav__link ">
+            <a href="../../06-Video-Processing/" class="md-nav__link ">
               
   
   
@@ -1120,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/01/" class="md-nav__link">
+      <a href="../../06-Video-Processing/01/" class="md-nav__link">
         
   
   
@@ -1143,7 +1159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/02/" class="md-nav__link">
+      <a href="../../06-Video-Processing/02/" class="md-nav__link">
         
   
   
@@ -1166,7 +1182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/03/" class="md-nav__link">
+      <a href="../../06-Video-Processing/03/" class="md-nav__link">
         
   
   
@@ -1189,7 +1205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/04/" class="md-nav__link">
+      <a href="../../06-Video-Processing/04/" class="md-nav__link">
         
   
   
@@ -1212,7 +1228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/05/" class="md-nav__link">
+      <a href="../../06-Video-Processing/05/" class="md-nav__link">
         
   
   
@@ -1235,7 +1251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/06/" class="md-nav__link">
+      <a href="../../06-Video-Processing/06/" class="md-nav__link">
         
   
   
@@ -1258,7 +1274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/07/" class="md-nav__link">
+      <a href="../../06-Video-Processing/07/" class="md-nav__link">
         
   
   
@@ -1281,7 +1297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/08/" class="md-nav__link">
+      <a href="../../06-Video-Processing/08/" class="md-nav__link">
         
   
   
@@ -1351,7 +1367,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/07-Evaluation/" class="md-nav__link ">
+            <a href="../../07-Evaluation/" class="md-nav__link ">
               
   
   
@@ -1386,7 +1402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/01/" class="md-nav__link">
+      <a href="../../07-Evaluation/01/" class="md-nav__link">
         
   
   
@@ -1409,7 +1425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/02/" class="md-nav__link">
+      <a href="../../07-Evaluation/02/" class="md-nav__link">
         
   
   
@@ -1432,7 +1448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/03/" class="md-nav__link">
+      <a href="../../07-Evaluation/03/" class="md-nav__link">
         
   
   
@@ -1455,7 +1471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/04/" class="md-nav__link">
+      <a href="../../07-Evaluation/04/" class="md-nav__link">
         
   
   
@@ -1478,7 +1494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/05/" class="md-nav__link">
+      <a href="../../07-Evaluation/05/" class="md-nav__link">
         
   
   
@@ -1501,7 +1517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/06/" class="md-nav__link">
+      <a href="../../07-Evaluation/06/" class="md-nav__link">
         
   
   
@@ -1524,7 +1540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/07/" class="md-nav__link">
+      <a href="../../07-Evaluation/07/" class="md-nav__link">
         
   
   
@@ -1547,7 +1563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/08/" class="md-nav__link">
+      <a href="../../07-Evaluation/08/" class="md-nav__link">
         
   
   
@@ -1601,7 +1617,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/Tear-Down/" class="md-nav__link ">
+            <a href="../../Tear-Down/" class="md-nav__link ">
               
   
   
@@ -1636,8 +1652,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1666,13 +1684,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_11" checked>
         
           
           <label class="md-nav__link" for="__nav_1_2_11" id="__nav_1_2_11_label" tabindex="0">
@@ -1688,7 +1704,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_11_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_11_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_2_11">
             <span class="md-nav__icon md-icon"></span>
             Support docs
@@ -1702,7 +1718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/AppAuthentication/" class="md-nav__link">
+      <a href="../AppAuthentication/" class="md-nav__link">
         
   
   
@@ -1725,7 +1741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/AzureAccountSetUp/" class="md-nav__link">
+      <a href="../AzureAccountSetUp/" class="md-nav__link">
         
   
   
@@ -1748,7 +1764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/AzureGPTQuotaSettings/" class="md-nav__link">
+      <a href="../AzureGPTQuotaSettings/" class="md-nav__link">
         
   
   
@@ -1771,7 +1787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/AzureSemanticSearchRegion/" class="md-nav__link">
+      <a href="../AzureSemanticSearchRegion/" class="md-nav__link">
         
   
   
@@ -1794,7 +1810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/ConversationalDataFormat/" class="md-nav__link">
+      <a href="../ConversationalDataFormat/" class="md-nav__link">
         
   
   
@@ -1817,7 +1833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/CustomizingAzdParameters/" class="md-nav__link">
+      <a href="../CustomizingAzdParameters/" class="md-nav__link">
         
   
   
@@ -1837,10 +1853,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/DeleteResourceGroup/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Deleting Resources After a Failed Deployment in Azure Portal
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1851,6 +1889,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-navigate-to-the-azure-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Navigate to the Azure Portal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-find-the-resource-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Find the Resource Group
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-delete-the-resource-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Delete the Resource Group
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-delete-individual-resources-if-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Delete Individual Resources (If Needed)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-verify-deletion" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Verify Deletion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1863,7 +1966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/Fabric_deployment/" class="md-nav__link">
+      <a href="../Fabric_deployment/" class="md-nav__link">
         
   
   
@@ -1886,7 +1989,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/quota_check/" class="md-nav__link">
+      <a href="../quota_check/" class="md-nav__link">
         
   
   
@@ -1942,6 +2045,61 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-navigate-to-the-azure-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Navigate to the Azure Portal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-find-the-resource-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Find the Resource Group
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-delete-the-resource-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Delete the Resource Group
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-delete-individual-resources-if-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Delete Individual Resources (If Needed)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-verify-deletion" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Verify Deletion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1953,8 +2111,70 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="deleting-resources-after-a-failed-deployment-in-azure-portal">Deleting Resources After a Failed Deployment in Azure Portal<a class="headerlink" href="#deleting-resources-after-a-failed-deployment-in-azure-portal" title="Permanent link">&para;</a></h1>
+<p>If your deployment fails and you need to clean up the resources manually, follow these steps in the Azure Portal.</p>
+<hr />
+<h2 id="1-navigate-to-the-azure-portal"><strong>1. Navigate to the Azure Portal</strong><a class="headerlink" href="#1-navigate-to-the-azure-portal" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Open <a href="https://portal.azure.com/">Azure Portal</a>.</li>
+<li>Sign in with your Azure account.</li>
+</ol>
+<hr />
+<h2 id="2-find-the-resource-group"><strong>2. Find the Resource Group</strong><a class="headerlink" href="#2-find-the-resource-group" title="Permanent link">&para;</a></h2>
+<ol>
+<li>In the search bar at the top, type <strong>"Resource groups"</strong> and select it.</li>
+<li>Locate the <strong>resource group</strong> associated with the failed deployment.</li>
+</ol>
+<p><img alt="Resource Groups" src="../Images/resourcegroup.png" /></p>
+<p><img alt="Resource Groups" src="../Images/resource-groups.png" /></p>
+<hr />
+<h2 id="3-delete-the-resource-group"><strong>3. Delete the Resource Group</strong><a class="headerlink" href="#3-delete-the-resource-group" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Click on the <strong>resource group name</strong> to open it.</li>
+<li>Click the <strong>Delete resource group</strong> button at the top.</li>
+</ol>
+<p><img alt="Delete Resource Group" src="../Images/DeleteRG.png" /></p>
+<ol>
+<li>Type the resource group name in the confirmation box and click <strong>Delete</strong>.</li>
+</ol>
+<p>📌 <strong>Note:</strong> Deleting a resource group will remove all resources inside it.</p>
+<hr />
+<h2 id="4-delete-individual-resources-if-needed"><strong>4. Delete Individual Resources (If Needed)</strong><a class="headerlink" href="#4-delete-individual-resources-if-needed" title="Permanent link">&para;</a></h2>
+<p>If you don’t want to delete the entire resource group, follow these steps:</p>
+<ol>
+<li>Open <strong>Azure Portal</strong> and go to the <strong>Resource groups</strong> section.</li>
+<li>Click on the specific <strong>resource group</strong>.</li>
+<li>Select the <strong>resource</strong> you want to delete (e.g., App Service, Storage Account).</li>
+<li>Click <strong>Delete</strong> at the top.</li>
+</ol>
+<p><img alt="Delete Individual Resource" src="../Images/deleteservices.png" /></p>
+<hr />
+<h2 id="5-verify-deletion"><strong>5. Verify Deletion</strong><a class="headerlink" href="#5-verify-deletion" title="Permanent link">&para;</a></h2>
+<ul>
+<li>After a few minutes, refresh the <strong>Resource groups</strong> page.</li>
+<li>Ensure the deleted resource or group no longer appears.</li>
+</ul>
+<p>📌 <strong>Tip:</strong> If a resource fails to delete, check if it's <strong>locked</strong> under the <strong>Locks</strong> section and remove the lock.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1974,6 +2194,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../CustomizingAzdParameters/" class="md-footer__link md-footer__link--prev" aria-label="Previous: CustomizingAzdParameters">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                CustomizingAzdParameters
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Fabric_deployment/" class="md-footer__link md-footer__link--next" aria-label="Next: Fabric deployment">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Fabric deployment
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -2002,12 +2260,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/microhack-doc/", "features": ["navigation.instant", "navigation.expand", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.indexes", "navigation.top", "toc.follow", "navigation.footer", "content.code.copy", "content.tabs.link"], "search": "/microhack-doc/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.expand", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.indexes", "navigation.top", "toc.follow", "navigation.footer", "content.code.copy", "content.tabs.link"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
   <!-- Add scripts that need to run before here -->
   
-      <script src="/microhack-doc/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <!-- Add scripts that need to run afterwards here -->

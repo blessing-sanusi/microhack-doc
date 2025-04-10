@@ -12,22 +12,28 @@
         <meta name="author" content="bsanusi">
       
       
+        <link rel="canonical" href="https://blessing-sanusi.github.io/microhack-doc/workshop/docs/05-Customize-Solution/02/">
       
       
+        <link rel="prev" href="../01/">
       
-      <link rel="icon" href="/microhack-doc/assets/images/favicon.png">
+      
+        <link rel="next" href="../03/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>Knowledge Mining Microhack: Workshop Guide</title>
+        <title>5.2 Review RAG Design - Knowledge Mining Microhack: Workshop Guide</title>
       
     
     
-      <link rel="stylesheet" href="/microhack-doc/assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="/microhack-doc/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("/microhack-doc/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#52-review-rag-design" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,9 +94,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/microhack-doc/." title="Knowledge Mining Microhack: Workshop Guide" class="md-header__button md-logo" aria-label="Knowledge Mining Microhack: Workshop Guide" data-md-component="logo">
+    <a href="../../../.." title="Knowledge Mining Microhack: Workshop Guide" class="md-header__button md-logo" aria-label="Knowledge Mining Microhack: Workshop Guide" data-md-component="logo">
       
-  <img src="/microhack-doc/img/postgresql.svg" alt="logo">
+  <img src="../../../../img/postgresql.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -102,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              5.2 Review RAG Design
             
           </span>
         </div>
@@ -215,11 +226,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/microhack-doc/workshop/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -261,9 +274,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/microhack-doc/." title="Knowledge Mining Microhack: Workshop Guide" class="md-nav__button md-logo" aria-label="Knowledge Mining Microhack: Workshop Guide" data-md-component="logo">
+    <a href="../../../.." title="Knowledge Mining Microhack: Workshop Guide" class="md-nav__button md-logo" aria-label="Knowledge Mining Microhack: Workshop Guide" data-md-component="logo">
       
-  <img src="/microhack-doc/img/postgresql.svg" alt="logo">
+  <img src="../../../../img/postgresql.svg" alt="logo">
 
     </a>
     Knowledge Mining Microhack: Workshop Guide
@@ -287,6 +300,8 @@
       
   
   
+    
+  
   
   
     
@@ -302,20 +317,21 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   
@@ -328,13 +344,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Workshop
@@ -347,6 +363,8 @@
                 
   
   
+    
+  
   
   
     
@@ -383,17 +401,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -412,7 +428,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_2">
             <span class="md-nav__icon md-icon"></span>
             Docs
@@ -428,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/00-Use-Case-Scenerio/" class="md-nav__link">
+      <a href="../../00-Use-Case-Scenerio/" class="md-nav__link">
         
   
   
@@ -476,7 +492,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/01-Environment-setup/" class="md-nav__link ">
+            <a href="../../01-Environment-setup/" class="md-nav__link ">
               
   
   
@@ -511,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/01-Environment-setup/AppAuthentication/" class="md-nav__link">
+      <a href="../../01-Environment-setup/AppAuthentication/" class="md-nav__link">
         
   
   
@@ -565,7 +581,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/02-%20Explore-Data/" class="md-nav__link ">
+            <a href="../../02-%20Explore-Data/" class="md-nav__link ">
               
   
   
@@ -630,7 +646,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/03-Explore-the-code/" class="md-nav__link ">
+            <a href="../../03-Explore-the-code/" class="md-nav__link ">
               
   
   
@@ -665,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/03-Explore-the-code/00-Chart-Component/" class="md-nav__link">
+      <a href="../../03-Explore-the-code/00-Chart-Component/" class="md-nav__link">
         
   
   
@@ -688,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/03-Explore-the-code/01-Chat-Component/" class="md-nav__link">
+      <a href="../../03-Explore-the-code/01-Chat-Component/" class="md-nav__link">
         
   
   
@@ -742,7 +758,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/04-Explore-Application/" class="md-nav__link ">
+            <a href="../../04-Explore-Application/" class="md-nav__link ">
               
   
   
@@ -777,6 +793,8 @@
                 
   
   
+    
+  
   
   
     
@@ -809,17 +827,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_7" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/05-Customize-Solution/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -838,7 +854,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_2_7">
             <span class="md-nav__icon md-icon"></span>
             05 Customize Solution
@@ -854,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/01/" class="md-nav__link">
+      <a href="../01/" class="md-nav__link">
         
   
   
@@ -874,10 +890,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/02/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -888,6 +913,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -900,7 +926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/03/" class="md-nav__link">
+      <a href="../03/" class="md-nav__link">
         
   
   
@@ -923,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/04/" class="md-nav__link">
+      <a href="../04/" class="md-nav__link">
         
   
   
@@ -946,7 +972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/05/" class="md-nav__link">
+      <a href="../05/" class="md-nav__link">
         
   
   
@@ -969,7 +995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/06/" class="md-nav__link">
+      <a href="../06/" class="md-nav__link">
         
   
   
@@ -992,7 +1018,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/07/" class="md-nav__link">
+      <a href="../07/" class="md-nav__link">
         
   
   
@@ -1015,7 +1041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/08/" class="md-nav__link">
+      <a href="../08/" class="md-nav__link">
         
   
   
@@ -1085,7 +1111,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/06-Video-Processing/" class="md-nav__link ">
+            <a href="../../06-Video-Processing/" class="md-nav__link ">
               
   
   
@@ -1120,7 +1146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/01/" class="md-nav__link">
+      <a href="../../06-Video-Processing/01/" class="md-nav__link">
         
   
   
@@ -1143,7 +1169,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/02/" class="md-nav__link">
+      <a href="../../06-Video-Processing/02/" class="md-nav__link">
         
   
   
@@ -1166,7 +1192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/03/" class="md-nav__link">
+      <a href="../../06-Video-Processing/03/" class="md-nav__link">
         
   
   
@@ -1189,7 +1215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/04/" class="md-nav__link">
+      <a href="../../06-Video-Processing/04/" class="md-nav__link">
         
   
   
@@ -1212,7 +1238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/05/" class="md-nav__link">
+      <a href="../../06-Video-Processing/05/" class="md-nav__link">
         
   
   
@@ -1235,7 +1261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/06/" class="md-nav__link">
+      <a href="../../06-Video-Processing/06/" class="md-nav__link">
         
   
   
@@ -1258,7 +1284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/07/" class="md-nav__link">
+      <a href="../../06-Video-Processing/07/" class="md-nav__link">
         
   
   
@@ -1281,7 +1307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/08/" class="md-nav__link">
+      <a href="../../06-Video-Processing/08/" class="md-nav__link">
         
   
   
@@ -1351,7 +1377,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/07-Evaluation/" class="md-nav__link ">
+            <a href="../../07-Evaluation/" class="md-nav__link ">
               
   
   
@@ -1386,7 +1412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/01/" class="md-nav__link">
+      <a href="../../07-Evaluation/01/" class="md-nav__link">
         
   
   
@@ -1409,7 +1435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/02/" class="md-nav__link">
+      <a href="../../07-Evaluation/02/" class="md-nav__link">
         
   
   
@@ -1432,7 +1458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/03/" class="md-nav__link">
+      <a href="../../07-Evaluation/03/" class="md-nav__link">
         
   
   
@@ -1455,7 +1481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/04/" class="md-nav__link">
+      <a href="../../07-Evaluation/04/" class="md-nav__link">
         
   
   
@@ -1478,7 +1504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/05/" class="md-nav__link">
+      <a href="../../07-Evaluation/05/" class="md-nav__link">
         
   
   
@@ -1501,7 +1527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/06/" class="md-nav__link">
+      <a href="../../07-Evaluation/06/" class="md-nav__link">
         
   
   
@@ -1524,7 +1550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/07/" class="md-nav__link">
+      <a href="../../07-Evaluation/07/" class="md-nav__link">
         
   
   
@@ -1547,7 +1573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/08/" class="md-nav__link">
+      <a href="../../07-Evaluation/08/" class="md-nav__link">
         
   
   
@@ -1601,7 +1627,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/Tear-Down/" class="md-nav__link ">
+            <a href="../../Tear-Down/" class="md-nav__link ">
               
   
   
@@ -1702,7 +1728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/AppAuthentication/" class="md-nav__link">
+      <a href="../../support-docs/AppAuthentication/" class="md-nav__link">
         
   
   
@@ -1725,7 +1751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/AzureAccountSetUp/" class="md-nav__link">
+      <a href="../../support-docs/AzureAccountSetUp/" class="md-nav__link">
         
   
   
@@ -1748,7 +1774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/AzureGPTQuotaSettings/" class="md-nav__link">
+      <a href="../../support-docs/AzureGPTQuotaSettings/" class="md-nav__link">
         
   
   
@@ -1771,7 +1797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/AzureSemanticSearchRegion/" class="md-nav__link">
+      <a href="../../support-docs/AzureSemanticSearchRegion/" class="md-nav__link">
         
   
   
@@ -1794,7 +1820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/ConversationalDataFormat/" class="md-nav__link">
+      <a href="../../support-docs/ConversationalDataFormat/" class="md-nav__link">
         
   
   
@@ -1817,7 +1843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/CustomizingAzdParameters/" class="md-nav__link">
+      <a href="../../support-docs/CustomizingAzdParameters/" class="md-nav__link">
         
   
   
@@ -1840,7 +1866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/DeleteResourceGroup/" class="md-nav__link">
+      <a href="../../support-docs/DeleteResourceGroup/" class="md-nav__link">
         
   
   
@@ -1863,7 +1889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/Fabric_deployment/" class="md-nav__link">
+      <a href="../../support-docs/Fabric_deployment/" class="md-nav__link">
         
   
   
@@ -1886,7 +1912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/quota_check/" class="md-nav__link">
+      <a href="../../support-docs/quota_check/" class="md-nav__link">
         
   
   
@@ -1942,6 +1968,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1953,8 +1981,215 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="52-review-rag-design">5.2 Review RAG Design<a class="headerlink" href="#52-review-rag-design" title="Permanent link">&para;</a></h1>
+<p>The solution leverages the <a href="https://learn.microsoft.com/azure/ai-studio/concepts/retrieval-augmented-generation#how-does-rag-work">Retrieval Augmented Generation</a> (RAG) design pattern to ensure the copilot's responses are grounded in the (private) data maintained by Woodgrove Bank. RAG works by <em>retrieving</em> relevant information from your data stores and <em>augmenting</em> the model prompt to create a composite prompt. This enhanced prompt is used by the LLM to <em>generate</em> the final response or completion.</p>
+<p><img alt="RAG design pattern" src="../../img/rag-design-pattern.png" /></p>
+<p>To understand how the RAG design pattern works in the context of the <em>Woodgrove Bank Contract Management</em> application, select each tab in order and review the sequence of events shown in the figure above.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="1-user-query" name="__tabbed_1" type="radio" /><input id="2-vectorize-query" name="__tabbed_1" type="radio" /><input id="3-retrieve-data" name="__tabbed_1" type="radio" /><input id="4-augment-query" name="__tabbed_1" type="radio" /><input id="5-generate-response" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="1-user-query">1. User Query</label><label for="2-vectorize-query">2. Vectorize Query</label><label for="3-retrieve-data">3. <strong>Retrieve</strong> Data</label><label for="4-augment-query">4. <strong>Augment</strong> Query</label><label for="5-generate-response">5. <strong>Generate</strong> Response</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition info">
+<p class="admonition-title">The user query arrives at our copilot implementation via the chat API endpoint.</p>
+</div>
+<p>User queries are submitted via the copilot interface of the <em>Woodgrove Bank Contract Management</em> portal. These queries are sent to the backend API's <code>/chat</code> endpoint. The incoming user query has three components:</p>
+<ol>
+<li>The user's <em>question</em> (text input)</li>
+<li>An optional <em>chat history</em> (object array)</li>
+<li>And, a <em>max history</em> setting, which indicates the number of <em>chat history</em> messages to use in the prompt</li>
+</ol>
+<p>The API extracts these parameters from the incoming request and invokes the <code>/chat</code> endpoint, starting the workflow that reflects this RAG design pattern.</p>
+</div>
+<div class="tabbed-block">
+<div class="admonition info">
+<p class="admonition-title">Embeddings representing the user query are generated.</p>
+</div>
+<p>When performing similarity searches to find data, the <code>/chat</code> endpoint sends the text of the user's request to Azure OpenAI, where it is vectorized using a large language "Embedding" model (e.g., Azure Open AI <code>text-embedding-ada-002</code>). This vector is then used in the query to retrieve similar records in the next step.</p>
+<details class="info" open="open">
+<summary>Generate Embeddings</summary>
+<p>The below <code>__create_query_embeddings</code> function in the <em>Woodgrove Bank API</em> uses the LangChain <a href="https://python.langchain.com/docs/integrations/text_embedding/azureopenai/">AzureOpenAIEmbeddings</a> class to generate embeddings for the provided <em>user query</em>.</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">src/api/app/functions/chat_functions.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">__create_query_embeddings</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user_query</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Generates vector embeddings for the user query.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Create embeddings using the LangChain Azure OpenAI Embeddings client</span>
+    <span class="c1"># This makes an API call to the Azure OpenAI service to generate embeddings,</span>
+    <span class="c1"># which can be used to compare the user query with vectorized data in the database.</span>
+    <span class="n">query_embeddings</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">embedding_client</span><span class="o">.</span><span class="n">aembed_query</span><span class="p">(</span><span class="n">user_query</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">query_embeddings</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<p>This step may be skipped in cases where raw data is requested, such as a list of vendors.</p>
+</div>
+<div class="tabbed-block">
+<div class="admonition info">
+<p class="admonition-title">Queries are executed against the database to retrieve (private) data.</p>
+</div>
+<p>This step retrieves data from the PostgreSQL database to "augment" the prompt. Depending on the <em>user query</em>, hybrid search and direct data retrieval techniques may be used to obtain relevant records.</p>
+<details class="tip" open="open">
+<summary>Improve RAG accuracy</summary>
+<p>The accuracy of the RAG pattern can be improved by using techniques like <em>semantic ranking</em> to order the returned results and <em>GraphRAG</em> to identify relationships between data. You will learn about these techniques in the next task.</p>
+</details>
+<hr />
+<p><em>Select each tab below to learn more about the implementation of <strong>Hybrid Search</strong> and <strong>Direct Data Retrieval</strong> in the context of the Woodgrove Bank Contract Management application!</em></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="hybrid-search" name="__tabbed_2" type="radio" /><input id="direct-data-retrieval" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="hybrid-search">Hybrid Search</label><label for="direct-data-retrieval">Direct Data Retrieval</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Hybrid search in Azure Database for PostgreSQL combines traditional full-text search functionality with the vector similarity search capabilities enabled by the <code>azure_ai</code> and <code>vector</code> extensions to deliver highly relevant results. This dual approach leverages the precision of keyword matching with full-text search and the contextual understanding of vector search, ensuring that users obtain exact matches and semantically related content. This synergy enhances search efficiency, provides a richer user experience, and supports diverse use cases—from technical document retrieval to broad content discovery—making it an invaluable tool for modern copilots</p>
+<details class="info" open="open">
+<summary>Hybrid Search Example Code</summary>
+<p>The <code>find_invoice_validation_results</code> function below provides an example of the hybrid search technique used in the <em>Woodgrove Bank API</em>.</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">src/api/app/functions/chat_functions.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">find_invoice_validation_results</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user_query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">invoice_id</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">vendor_id</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sow_id</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retrieves invoice accuracy and performance validation results similar to the user query for specified invoice, vendor, or SOW.</span>
+<span class="sd">    If no invoice_id, vendor_id, or sow_id is provided, return all similar validation results.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Define the columns to retrieve from the table</span>
+    <span class="c1"># Exclude the embedding column in results</span>
+    <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;invoice_id&quot;</span><span class="p">,</span> <span class="s2">&quot;datestamp&quot;</span><span class="p">,</span> <span class="s2">&quot;result&quot;</span><span class="p">,</span> <span class="s2">&quot;validation_passed&quot;</span><span class="p">]</span>
+
+    <span class="c1"># Get the embeddings for the user query</span>
+    <span class="n">query_embeddings</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">__create_query_embeddings</span><span class="p">(</span><span class="n">user_query</span><span class="p">)</span>
+
+    <span class="c1"># Use hybrid search to rank records, with exact matches ranked highest</span>
+    <span class="n">columns</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&quot;&quot;CASE</span>
+<span class="s2">                        WHEN result ILIKE &#39;%</span><span class="si">{</span><span class="n">user_query</span><span class="si">}</span><span class="s2">%&#39; THEN 0</span>
+<span class="s2">                        ELSE (embedding &lt;=&gt; &#39;</span><span class="si">{</span><span class="n">query_embeddings</span><span class="si">}</span><span class="s2">&#39;)::real</span>
+<span class="s2">                    END as rank&quot;&quot;&quot;</span><span class="p">)</span>
+
+    <span class="n">query</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;SELECT </span><span class="si">{</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">columns</span><span class="p">)</span><span class="si">}</span><span class="s1"> FROM invoice_validation_results&#39;</span>
+
+    <span class="c1"># Filter the validation results by invoice_id, vendor_id, or sow_id, if provided</span>
+    <span class="k">if</span> <span class="n">invoice_id</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">query</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39; WHERE invoice_id = </span><span class="si">{</span><span class="n">invoice_id</span><span class="si">}</span><span class="s1">&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">vendor_id</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">query</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39; WHERE vendor_id = </span><span class="si">{</span><span class="n">vendor_id</span><span class="si">}</span><span class="s1">&#39;</span>
+            <span class="k">if</span> <span class="n">sow_id</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">query</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39; AND sow_id = </span><span class="si">{</span><span class="n">sow_id</span><span class="si">}</span><span class="s1">&#39;</span>
+        <span class="k">elif</span> <span class="n">sow_id</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">query</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39; WHERE sow_id = </span><span class="si">{</span><span class="n">sow_id</span><span class="si">}</span><span class="s1">&#39;</span>
+
+    <span class="n">query</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39; ORDER BY rank ASC&#39;</span>
+
+    <span class="n">rows</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">__execute_query</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="s1">;&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+<p>In the code above: </p>
+<ol>
+<li>
+<p>The <code>CASE</code> statement on lines 14-17 handles the <em>Hybrid Search</em>.</p>
+<ol>
+<li>
+<p><code>WHEN result ILIKE '%{user_query}%'</code> performs a case-insensitive search for the exact text of the <em>user query</em>. If found, a <code>rank</code> of <code>0</code> is assigned to the record, which <em>ranks</em> these records as the highest or most similar matches.</p>
+</li>
+<li>
+<p>When an exact match is not found, the <code>ELSE</code> statement executes a vector similarity search using the <a href="https://learn.microsoft.com/azure/postgresql/flexible-server/how-to-use-pgvector#cosine_distance">cosine distance function</a>, as indicated by the <code>&lt;=&gt;</code> vector operator, to compare the embedding representation of the <em>user query</em> (<code>query_embeddings</code>) from the previous step to values in the <code>embedding</code> column of the <code>invoice_validation_results</code> table. The <em>similarity score</em> of these matches is assigned as the <code>rank</code>. Scores closer to zero indicate a more semantically similar result.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>If values are provided, the query is further refined to filter on a specific <code>invoice_id</code> or <code>vendor_id</code> and <code>sow_id</code>, as shown in lines 73-81.</p>
+</li>
+<li>
+<p>Finally, the results are ordered by <code>rank</code> to ensure the most relevant search results appear first in the rows returned.</p>
+</li>
+</ol>
+</details>
+</div>
+<div class="tabbed-block">
+<p>In other cases, such as getting a list of all vendors, query vectorization is unnecessary. Direct data retrieval is handled via simple <code>SELECT</code> queries against the database to avoid the overhead of generating embeddings and querying vector fields.</p>
+<details class="info" open="open">
+<summary>Direct Data Retrieval Example Code</summary>
+<p>The <code>get_vendors</code> function below provides an example of a direct data retrieval technique used in the <em>Woodgrove Bank API</em>.</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">src/api/app/functions/chat_functions.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get_vendors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Retrieves a list of vendors from the database.&quot;&quot;&quot;</span>
+    <span class="n">rows</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">__execute_query</span><span class="p">(</span><span class="s1">&#39;SELECT * FROM vendors;&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+</details>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition info">
+<p class="admonition-title">The copilot creates a composite prompt with the retrieved data.</p>
+</div>
+<p>The <code>/chat</code> API combines the user's original <em>question</em> with results returned from the database to create an enhanced or composite <em>model prompt</em>, augmenting the model with additional data to use when generating a response.</p>
+</div>
+<div class="tabbed-block">
+<div class="admonition info">
+<p class="admonition-title">The chat model uses the prompt to generate a grounded response.</p>
+</div>
+<p>The composite prompt, grounded with ("private") data, is sent to a Large Language "chat" completion model, such as Azure OpenAI's <code>gpt-4o</code>. The completion model sees the enhanced prompt (hybrid search results and chat history) as the <em>grounding</em> context for generating the completion, improving the quality (e.g., relevance, groundedness) of the response returned from the Woodgrove Bank copilot.</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1974,6 +2209,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../01/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 01">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                01
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../03/" class="md-footer__link md-footer__link--next" aria-label="Next: 5.3 Leverage LangChain Orchestration">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                5.3 Leverage LangChain Orchestration
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -2002,12 +2275,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/microhack-doc/", "features": ["navigation.instant", "navigation.expand", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.indexes", "navigation.top", "toc.follow", "navigation.footer", "content.code.copy", "content.tabs.link"], "search": "/microhack-doc/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.expand", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.indexes", "navigation.top", "toc.follow", "navigation.footer", "content.code.copy", "content.tabs.link"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
   <!-- Add scripts that need to run before here -->
   
-      <script src="/microhack-doc/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <!-- Add scripts that need to run afterwards here -->

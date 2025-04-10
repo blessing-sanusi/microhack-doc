@@ -12,22 +12,28 @@
         <meta name="author" content="bsanusi">
       
       
+        <link rel="canonical" href="https://blessing-sanusi.github.io/microhack-doc/workshop/docs/06-Video-Processing/04/">
       
       
+        <link rel="prev" href="../03/">
       
-      <link rel="icon" href="/microhack-doc/assets/images/favicon.png">
+      
+        <link rel="next" href="../05/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>Knowledge Mining Microhack: Workshop Guide</title>
+        <title>6.4 Review GraphRAG - Knowledge Mining Microhack: Workshop Guide</title>
       
     
     
-      <link rel="stylesheet" href="/microhack-doc/assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="/microhack-doc/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("/microhack-doc/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#64-review-graphrag" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,9 +94,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/microhack-doc/." title="Knowledge Mining Microhack: Workshop Guide" class="md-header__button md-logo" aria-label="Knowledge Mining Microhack: Workshop Guide" data-md-component="logo">
+    <a href="../../../.." title="Knowledge Mining Microhack: Workshop Guide" class="md-header__button md-logo" aria-label="Knowledge Mining Microhack: Workshop Guide" data-md-component="logo">
       
-  <img src="/microhack-doc/img/postgresql.svg" alt="logo">
+  <img src="../../../../img/postgresql.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -102,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              6.4 Review GraphRAG
             
           </span>
         </div>
@@ -215,11 +226,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/microhack-doc/workshop/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -261,9 +274,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/microhack-doc/." title="Knowledge Mining Microhack: Workshop Guide" class="md-nav__button md-logo" aria-label="Knowledge Mining Microhack: Workshop Guide" data-md-component="logo">
+    <a href="../../../.." title="Knowledge Mining Microhack: Workshop Guide" class="md-nav__button md-logo" aria-label="Knowledge Mining Microhack: Workshop Guide" data-md-component="logo">
       
-  <img src="/microhack-doc/img/postgresql.svg" alt="logo">
+  <img src="../../../../img/postgresql.svg" alt="logo">
 
     </a>
     Knowledge Mining Microhack: Workshop Guide
@@ -287,6 +300,8 @@
       
   
   
+    
+  
   
   
     
@@ -302,20 +317,21 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   
@@ -328,13 +344,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Workshop
@@ -347,6 +363,8 @@
                 
   
   
+    
+  
   
   
     
@@ -383,17 +401,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -412,7 +428,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_2">
             <span class="md-nav__icon md-icon"></span>
             Docs
@@ -428,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/00-Use-Case-Scenerio/" class="md-nav__link">
+      <a href="../../00-Use-Case-Scenerio/" class="md-nav__link">
         
   
   
@@ -476,7 +492,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/01-Environment-setup/" class="md-nav__link ">
+            <a href="../../01-Environment-setup/" class="md-nav__link ">
               
   
   
@@ -511,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/01-Environment-setup/AppAuthentication/" class="md-nav__link">
+      <a href="../../01-Environment-setup/AppAuthentication/" class="md-nav__link">
         
   
   
@@ -565,7 +581,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/02-%20Explore-Data/" class="md-nav__link ">
+            <a href="../../02-%20Explore-Data/" class="md-nav__link ">
               
   
   
@@ -630,7 +646,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/03-Explore-the-code/" class="md-nav__link ">
+            <a href="../../03-Explore-the-code/" class="md-nav__link ">
               
   
   
@@ -665,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/03-Explore-the-code/00-Chart-Component/" class="md-nav__link">
+      <a href="../../03-Explore-the-code/00-Chart-Component/" class="md-nav__link">
         
   
   
@@ -688,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/03-Explore-the-code/01-Chat-Component/" class="md-nav__link">
+      <a href="../../03-Explore-the-code/01-Chat-Component/" class="md-nav__link">
         
   
   
@@ -742,7 +758,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/04-Explore-Application/" class="md-nav__link ">
+            <a href="../../04-Explore-Application/" class="md-nav__link ">
               
   
   
@@ -819,7 +835,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/05-Customize-Solution/" class="md-nav__link ">
+            <a href="../../05-Customize-Solution/" class="md-nav__link ">
               
   
   
@@ -854,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/01/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/01/" class="md-nav__link">
         
   
   
@@ -877,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/02/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/02/" class="md-nav__link">
         
   
   
@@ -900,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/03/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/03/" class="md-nav__link">
         
   
   
@@ -923,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/04/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/04/" class="md-nav__link">
         
   
   
@@ -946,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/05/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/05/" class="md-nav__link">
         
   
   
@@ -969,7 +985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/06/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/06/" class="md-nav__link">
         
   
   
@@ -992,7 +1008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/07/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/07/" class="md-nav__link">
         
   
   
@@ -1015,7 +1031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/05-Customize-Solution/08/" class="md-nav__link">
+      <a href="../../05-Customize-Solution/08/" class="md-nav__link">
         
   
   
@@ -1043,6 +1059,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1075,17 +1093,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_8" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/06-Video-Processing/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -1104,7 +1120,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_2_8">
             <span class="md-nav__icon md-icon"></span>
             06 Video Processing
@@ -1120,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/01/" class="md-nav__link">
+      <a href="../01/" class="md-nav__link">
         
   
   
@@ -1143,7 +1159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/02/" class="md-nav__link">
+      <a href="../02/" class="md-nav__link">
         
   
   
@@ -1166,7 +1182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/03/" class="md-nav__link">
+      <a href="../03/" class="md-nav__link">
         
   
   
@@ -1186,10 +1202,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/04/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    6.4 Review GraphRAG
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1200,6 +1238,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#graphrag-with-age" class="md-nav__link">
+    <span class="md-ellipsis">
+      GraphRAG with AGE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GraphRAG with AGE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1212,7 +1303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/05/" class="md-nav__link">
+      <a href="../05/" class="md-nav__link">
         
   
   
@@ -1235,7 +1326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/06/" class="md-nav__link">
+      <a href="../06/" class="md-nav__link">
         
   
   
@@ -1258,7 +1349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/07/" class="md-nav__link">
+      <a href="../07/" class="md-nav__link">
         
   
   
@@ -1281,7 +1372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/06-Video-Processing/08/" class="md-nav__link">
+      <a href="../08/" class="md-nav__link">
         
   
   
@@ -1351,7 +1442,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/07-Evaluation/" class="md-nav__link ">
+            <a href="../../07-Evaluation/" class="md-nav__link ">
               
   
   
@@ -1386,7 +1477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/01/" class="md-nav__link">
+      <a href="../../07-Evaluation/01/" class="md-nav__link">
         
   
   
@@ -1409,7 +1500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/02/" class="md-nav__link">
+      <a href="../../07-Evaluation/02/" class="md-nav__link">
         
   
   
@@ -1432,7 +1523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/03/" class="md-nav__link">
+      <a href="../../07-Evaluation/03/" class="md-nav__link">
         
   
   
@@ -1455,7 +1546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/04/" class="md-nav__link">
+      <a href="../../07-Evaluation/04/" class="md-nav__link">
         
   
   
@@ -1478,7 +1569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/05/" class="md-nav__link">
+      <a href="../../07-Evaluation/05/" class="md-nav__link">
         
   
   
@@ -1501,7 +1592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/06/" class="md-nav__link">
+      <a href="../../07-Evaluation/06/" class="md-nav__link">
         
   
   
@@ -1524,7 +1615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/07/" class="md-nav__link">
+      <a href="../../07-Evaluation/07/" class="md-nav__link">
         
   
   
@@ -1547,7 +1638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/07-Evaluation/08/" class="md-nav__link">
+      <a href="../../07-Evaluation/08/" class="md-nav__link">
         
   
   
@@ -1601,7 +1692,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/microhack-doc/workshop/docs/Tear-Down/" class="md-nav__link ">
+            <a href="../../Tear-Down/" class="md-nav__link ">
               
   
   
@@ -1702,7 +1793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/AppAuthentication/" class="md-nav__link">
+      <a href="../../support-docs/AppAuthentication/" class="md-nav__link">
         
   
   
@@ -1725,7 +1816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/AzureAccountSetUp/" class="md-nav__link">
+      <a href="../../support-docs/AzureAccountSetUp/" class="md-nav__link">
         
   
   
@@ -1748,7 +1839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/AzureGPTQuotaSettings/" class="md-nav__link">
+      <a href="../../support-docs/AzureGPTQuotaSettings/" class="md-nav__link">
         
   
   
@@ -1771,7 +1862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/AzureSemanticSearchRegion/" class="md-nav__link">
+      <a href="../../support-docs/AzureSemanticSearchRegion/" class="md-nav__link">
         
   
   
@@ -1794,7 +1885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/ConversationalDataFormat/" class="md-nav__link">
+      <a href="../../support-docs/ConversationalDataFormat/" class="md-nav__link">
         
   
   
@@ -1817,7 +1908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/CustomizingAzdParameters/" class="md-nav__link">
+      <a href="../../support-docs/CustomizingAzdParameters/" class="md-nav__link">
         
   
   
@@ -1840,7 +1931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/DeleteResourceGroup/" class="md-nav__link">
+      <a href="../../support-docs/DeleteResourceGroup/" class="md-nav__link">
         
   
   
@@ -1863,7 +1954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/Fabric_deployment/" class="md-nav__link">
+      <a href="../../support-docs/Fabric_deployment/" class="md-nav__link">
         
   
   
@@ -1886,7 +1977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/microhack-doc/workshop/docs/support-docs/quota_check/" class="md-nav__link">
+      <a href="../../support-docs/quota_check/" class="md-nav__link">
         
   
   
@@ -1942,6 +2033,49 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#graphrag-with-age" class="md-nav__link">
+    <span class="md-ellipsis">
+      GraphRAG with AGE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GraphRAG with AGE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1953,8 +2087,52 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="64-review-graphrag">6.4 Review GraphRAG<a class="headerlink" href="#64-review-graphrag" title="Permanent link">&para;</a></h1>
+<p><strong>GraphRAG</strong> (Graph Retrieval-Augmented Generation) is an innovative technique developed by Microsoft Research. It significantly enhances the accuracy and relevance of responses generated by Retrieval-Augmented Generation (RAG) systems. <em>Graph</em> refers to a data structure representing entities and their relationships. This structure is often visualized as nodes (vertices) and edges, where nodes represent entities and edges represent the relationships or connections between these entities.</p>
+<p>In the context of Azure Database for PostgreSQL, GraphRAG leverages the structure of knowledge graphs extracted from source data to provide better context and improve the quality of responses from language models. By integrating GraphRAG with PostgreSQL, you can enhance the information retrieval pipeline, making it more accurate and context-aware. This is particularly useful for applications where the accuracy and relevance of information are critical.</p>
+<details class="question" open="open">
+<summary>Want a more extensive example of GraphRAG with Azure Database for PostgreSQL?</summary>
+<p>This solution accelerator presents a simplified GraphRAG implementation to show you how you can improve the accuracy of RAG by leveraging a graph database. For a more comprehensive example that combines the results of semantic ranking and GraphRAG, please refer to the <a href="https://techcommunity.microsoft.com/blog/adforpostgresql/introducing-the-graphrag-solution-for-azure-database-for-postgresql/4299871">Introducting the GraphRAG Solution for Azure Database for PostgreSQL</a> blob post and associated <a href="https://github.com/Azure-Samples/graphrag-legalcases-postgres">GraphRAG Solution Accelerator for Azure Database for PostgreSQL</a>.</p>
+</details>
+<h2 id="graphrag-with-age">GraphRAG with AGE<a class="headerlink" href="#graphrag-with-age" title="Permanent link">&para;</a></h2>
+<p><a href="https://age.apache.org/age-manual/master/index.html">Apache Graph Extension</a> (AGE) is a PostgreSQL extension developed under the Apache Incubator project. It offers a significant advancement that provides graph processing capabilities within the PostgreSQL ecosystem, enabling users to store efficiently and query graph data. This new extension brings a powerful toolset for developers looking to leverage a graph database with the robust enterprise features of Azure Database for PostgreSQL.</p>
+<p><img alt="Architecture diagram for GraphRAG using the Apache AGE extension and Azure Database for PostgreSQL." src="../../img/graphrag-solution-architecture.png" /></p>
+<p>With AGE, you can manage and analyze complex relationships within your data, uncovering insights that traditional relational databases and even semantic search might miss.</p>
+<h3 id="key-features">Key Features<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Graph and relational data integration</strong>: AGE allows seamless integration of graph data with existing relational data in PostgreSQL. This hybrid approach lets you benefit from both graph and relational models simultaneously.</li>
+<li><strong>openCypher query language</strong>: AGE incorporates openCypher, a powerful and user-friendly query language designed explicitly for graph databases. This feature simplifies the process of writing and executing graph queries.</li>
+<li><strong>High performance</strong>: AGE is optimized for performance, ensuring efficient storage and retrieval of graph data thanks to support for indexing graph properties using GIN indices.</li>
+<li><strong>Scalability</strong>: Built on PostgreSQL's proven architecture, AGE inherits its scalability and reliability, allowing it to handle growing datasets and increasing workloads.</li>
+</ul>
+<h3 id="benefits">Benefits<a class="headerlink" href="#benefits" title="Permanent link">&para;</a></h3>
+<p>The integration of AGE in Azure Database for PostgreSQL brings numerous practical benefits to developers and businesses looking to leverage graph processing capabilities:</p>
+<ul>
+<li><strong>Simplified data management</strong>: AGE's ability to integrate graph and relational data simplifies data management tasks, reducing the need for separate graph database solutions.</li>
+<li><strong>Enhanced data analysis</strong>: With AGE, you can perform complex graph analyses directly within your PostgreSQL database, gaining deeper insights into relationships and patterns in your data.</li>
+<li><strong>Cost efficiency</strong>: By utilizing AGE within Azure Database for PostgreSQL, you can consolidate your database infrastructure, lowering overall costs and reducing the complexity of your data architecture.</li>
+<li><strong>Security and compliance</strong>: AGE leverages Azure's industry-leading security and compliance features to ensure your graph data is protected and meets regulatory requirements, providing peace of mind.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1974,6 +2152,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../03/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 6.3 Update Copilot With Semantic Ranking">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                6.3 Update Copilot With Semantic Ranking
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../05/" class="md-footer__link md-footer__link--next" aria-label="Next: 6.5 Enable AGE">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                6.5 Enable AGE
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -2002,12 +2218,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/microhack-doc/", "features": ["navigation.instant", "navigation.expand", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.indexes", "navigation.top", "toc.follow", "navigation.footer", "content.code.copy", "content.tabs.link"], "search": "/microhack-doc/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.expand", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.indexes", "navigation.top", "toc.follow", "navigation.footer", "content.code.copy", "content.tabs.link"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
   <!-- Add scripts that need to run before here -->
   
-      <script src="/microhack-doc/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <!-- Add scripts that need to run afterwards here -->
