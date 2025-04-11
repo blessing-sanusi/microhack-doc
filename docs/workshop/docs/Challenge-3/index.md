@@ -1,4 +1,4 @@
-## Sample Questions
+## Explore Dashboard using Natural Language queries
 
 To help you get started, here are some **Sample Questions** you can ask in the app:
 
