@@ -1,4 +1,4 @@
-# Introduction
+# Microhack Challenges Hands-On Lab : Knowledge Mining
 
 The Micohack event is designed to engage technical roles through a condensed, half-day hands-on hack experience. Leveraging the latest Microsoft technologies, this event provides participants with the opportunity to work on real-world problems, collaborate with peers, and explore innovative solutions. 
 

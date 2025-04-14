@@ -21,6 +21,7 @@ This document provides a summary of the `ckm-analyzer_config_text.json` and `ckm
 
 ### **Field Schema**
 The text analyzer processes the following fields:
+
 1. **`content`**: Full text of the conversation.
 2. **`Duration`**: Duration of the conversation in seconds.
 3. **`summary`**: Summarized version of the conversation.
@@ -49,6 +50,7 @@ The text analyzer processes the following fields:
 
 ### **Field Schema**
 The audio analyzer processes the same fields as the text analyzer:
+
 1. **`content`**: Full text of the conversation.
 2. **`Duration`**: Duration of the conversation in seconds.
 3. **`summary`**: Summarized version of the conversation.
@@ -75,14 +77,14 @@ The audio analyzer processes the same fields as the text analyzer:
 ## **How They Fit Into the Solution**
 
 1. **Data Input**:
-   - The text analyzer processes chat logs or transcribed conversations.
-   - The audio analyzer processes recorded calls and converts them into text.
+    - The text analyzer processes chat logs or transcribed conversations.
+    - The audio analyzer processes recorded calls and converts them into text.
 
 2. **Data Output**:
-   - Both analyzers generate structured insights (e.g., sentiment, satisfaction, topics) for visualization.
+    - Both analyzers generate structured insights (e.g., sentiment, satisfaction, topics) for visualization.
 
 3. **Integration**:
-   - Outputs are consumed by the backend (`function_app.py`) to populate charts.
-   - Insights are displayed in the frontend (`Chart.tsx`) as visualizations like Donut Charts, Word Clouds, and Tables.
+    - Outputs are consumed by the backend (`function_app.py`) to populate charts.
+    - Insights are displayed in the frontend (`Chart.tsx`) as visualizations like Donut Charts, Word Clouds, and Tables.
 
 ---

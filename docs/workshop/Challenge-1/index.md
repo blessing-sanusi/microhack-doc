@@ -1,5 +1,6 @@
-## **1. Overview of the Data**
+<!-- ## **1. Overview of the Data** -->
 The dataset contains customer interactions categorized into various topics. Each entry includes:
+
 - **ConversationId**: Unique identifier for each conversation.
 - **StartTime** and **EndTime**: Timestamps for when the conversation occurred.
 - **Content**: Full transcript of the conversation.
@@ -31,28 +32,28 @@ The dataset contains customer interactions categorized into various topics. Each
 ## **3. Key Insights**
 ### **Frequent Topics**
 1. **Account Management**:
-   - Includes account updates, voicemail setup, and call forwarding.
-   - Example: Updating address and email information.
+      - Includes account updates, voicemail setup, and call forwarding.
+      - Example: Updating address and email information.
 
 2. **Billing Issues**:
-   - Covers billing discrepancies, payment failures, and refunds.
-   - Example: Resolving double charges or unexpected fees.
+      - Covers billing discrepancies, payment failures, and refunds.
+      - Example: Resolving double charges or unexpected fees.
 
 3. **Service Activation**:
-   - Assistance with activating new services, SIM cards, or scheduling appointments.
-   - Example: Activating a new SIM card or setting up international roaming.
+      - Assistance with activating new services, SIM cards, or scheduling appointments.
+      - Example: Activating a new SIM card or setting up international roaming.
 
 4. **Device Troubleshooting**:
-   - Support for device-related issues like freezing, battery drain, or hardware malfunctions.
-   - Example: Factory reset for a tablet or troubleshooting a phone's battery.
+      - Support for device-related issues like freezing, battery drain, or hardware malfunctions.
+      - Example: Factory reset for a tablet or troubleshooting a phone's battery.
 
 5. **Internet Connectivity**:
-   - Troubleshooting slow or unreliable internet connections.
-   - Example: Diagnosing slow speeds and resetting modems.
+      - Troubleshooting slow or unreliable internet connections.
+      - Example: Diagnosing slow speeds and resetting modems.
 
 6. **Parental Controls**:
-   - Setting up and managing parental controls for children’s devices.
-   - Example: Configuring screen time limits and app restrictions.
+      - Setting up and managing parental controls for children’s devices.
+      - Example: Configuring screen time limits and app restrictions.
 
 ### **Sentiment Analysis**
 - **Positive Sentiment**: Majority of interactions indicate customer satisfaction with the support provided.

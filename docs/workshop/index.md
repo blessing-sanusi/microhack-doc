@@ -1,6 +1,4 @@
-# Knowledge Mining Microhack: Hands-on Workshop
-
-### Overview
+<!-- # Knowledge Mining Microhack: Hands-on Workshop -->
 
 This solution accelerator enables customers with large amounts of conversational data to improve decision-making by leveraging intelligence to uncover insights, relationships, and patterns from customer interactions. It empowers users to gain valuable knowledge and drive targeted business impact. 
 

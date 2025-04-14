@@ -126,19 +126,21 @@ markdown_extensions:
 nav:
   - Introduction: index.md
   - Overview: 
-      - Overview: workshop/index.md
+      - Knowledge Mining Hands-on Workshop: workshop/index.md
       - Use Case: workshop/00-Use-Case-Scenerio.md
   - Challenge 0:
-      - Overview: workshop/Challenge-0/index.md
+      - Environment Setup: workshop/Challenge-0/index.md
       - App Authentication: workshop/Challenge-0/App-Authentication.md
   - Challenge 1:
-      - Overview: workshop/Challenge-1/index.md
+      - Explore Data: workshop/Challenge-1/index.md
+      - Analyze Data Exploration: workshop/Challenge-1/Analyzer.md
   - Challenge 2:
-      - Overview: workshop/Challenge-2/index.md
-      - Chart Component: workshop/Challenge-2/Chart-Component.md
-      - Chat Component: workshop/Challenge-2/Chat-Component.md
+      - Explore Code: workshop/Challenge-2/index.md
+      - Frontend: workshop/Challenge-2/Frontend.md
+      - Backend: workshop/Challenge-2/Backend.md
+      - API: workshop/Challenge-2/Api.md
   - Challenge 3:
-      - Overview: workshop/Challenge-3/index.md
+      - Explore Dashboard using Natural Language queries: workshop/Challenge-3/index.md
       # - Step 1: workshop/challenge-3/step-1.md
       # - Step 2: workshop/challenge-3/step-2.md
   - Challenge 4 and 5:
