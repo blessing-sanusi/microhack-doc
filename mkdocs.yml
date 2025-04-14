@@ -147,6 +147,6 @@ nav:
       - Overview: workshop/Challenge-6/index.md
   - Challenge 7:
       - Overview: workshop/Challenge-7/index.md
-      - Evaluation: workshop/Challenge-7/Evaluation.ipynb
+      - Content Safety Evaluation: workshop/Challenge-7/Content_safety_evaluation.ipynb
   - Teardown:
       - Overview: workshop/Tear-Down/index.md
