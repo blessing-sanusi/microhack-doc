@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#application-evaluation" class="md-skip">
+        <a href="#evaluation" class="md-skip">
           Skip to content
         </a>
       
@@ -1223,6 +1223,38 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#content-safety-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Safety Evaluation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Safety Evaluation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1240,7 +1272,19 @@
   
 
 
-<h1 id="application-evaluation">Application Evaluation<a class="headerlink" href="#application-evaluation" title="Permanent link">&para;</a></h1>
+<h1 id="evaluation">Evaluation<a class="headerlink" href="#evaluation" title="Permanent link">&para;</a></h1>
+<h2 id="content-safety-evaluation">Content Safety Evaluation<a class="headerlink" href="#content-safety-evaluation" title="Permanent link">&para;</a></h2>
+<p>This notebook demonstrates how to evaluate content safety using Azure AI's evaluation tools. It includes steps to:
+- Simulate adversarial scenarios.
+- Evaluate content for safety metrics such as violence, sexual content, hate/unfairness, and self-harm.
+- Generate evaluation reports in JSON format.</p>
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Azure AI project credentials.</li>
+<li>Python environment with required libraries installed (<code>azure-ai-evaluation</code>, <code>pandas</code>, etc.).</li>
+<li>Access to the Azure API endpoint.</li>
+</ul>
+<p>Follow the steps in this notebook to perform content safety evaluations and generate detailed reports.</p>
 
 
 
