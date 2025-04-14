@@ -2,7 +2,7 @@
 
 ### **Prerequisites**
 
-To deploy this solution accelerator, ensure you have access to an [Azure subscription](https://azure.microsoft.com/free/) with the necessary permissions to create **resource groups and resources**. Follow the steps in  [Azure Account Set Up](../../support-docs/AzureAccountSetUp.md)
+To deploy this solution accelerator, ensure you have access to an [Azure subscription](https://azure.microsoft.com/free/) with the necessary permissions to create **resource groups and resources**. Follow the steps in  [Azure Account Set Up](../support-docs/AzureAccountSetUp.md)
 
 
 Check the [Azure Products by Region](https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/?products=all&regions=all) page and select a **region** where the following services are available:  
@@ -13,13 +13,13 @@ Check the [Azure Products by Region](https://azure.microsoft.com/en-us/explore/g
 - Azure AI Content Understanding
 - Embedding Deployment Capacity  
 - GPT Model Capacity
-- [Azure Semantic Search](../../support-docs/AzureSemanticSearchRegion.md)  
+- [Azure Semantic Search](../support-docs/AzureSemanticSearchRegion.md)  
 
 Here are some example regions where the services are available: East US, East US2, Australia East, UK South, France Central.
 
 ### ⚠️ Important: Check Azure OpenAI Quota Availability  
 
-➡️ To ensure sufficient quota is available in your subscription, please follow **[Quota check instructions guide](./support-docs/quota_check.md)** before you deploy the solution.
+➡️ To ensure sufficient quota is available in your subscription, please follow **[Quota check instructions guide](../support-docs/quota_check.md)** before you deploy the solution.
 
 | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator) | [![Open in Dev Containers](https://img.shields.io/static/v1?style=for-the-badge&label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator) |
 |---|---|
@@ -29,7 +29,7 @@ Here are some example regions where the services are available: East US, East US
 
 Once you've opened the project in [Codespaces](#github-codespaces) or in [Dev Containers](#vs-code-dev-containers) or [locally](#local-environment), you can deploy it to Azure following the following steps. 
 
-To change the azd parameters from the default values, follow the steps [here](../../support-docs/CustomizingAzdParameters.md). 
+To change the azd parameters from the default values, follow the steps [here](../support-docs/CustomizingAzdParameters.md). 
 
 
 1. Login to Azure:
@@ -66,6 +66,6 @@ Additional Steps
 
 1. **Add App Authentication**
    
-    Follow steps in [App Authentication](../../support-docs/AppAuthentication.md) to configure authenitcation in app service.
+    Follow steps in [App Authentication](../support-docs/AppAuthentication.md) to configure authenitcation in app service.
 
     Note: Authentication changes can take up to 10 minutes 

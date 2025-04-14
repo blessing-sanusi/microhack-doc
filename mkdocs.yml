@@ -125,26 +125,26 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Overview: 
-      - Overview: workshop/docs/index.md
-      - Use Case: workshop/docs/00-Use-Case-Scenerio.md
+      - Overview: workshop/index.md
+      - Use Case: workshop/00-Use-Case-Scenerio.md
   - Challenge 0:
-      - Overview: workshop/docs/Challenge-0/index.md
-      - App Authentication: workshop/docs/Challenge-0/App-Authentication.md
+      - Overview: workshop/Challenge-0/index.md
+      - App Authentication: workshop/Challenge-0/App-Authentication.md
   - Challenge 1:
-      - Overview: workshop/docs/Challenge-1/index.md
+      - Overview: workshop/Challenge-1/index.md
   - Challenge 2:
-      - Overview: workshop/docs/Challenge-2/index.md
-      - Chart Component: workshop/docs/Challenge-2/Chart-Component.md
-      - Chat Component: workshop/docs/Challenge-2/Chat-Component.md
+      - Overview: workshop/Challenge-2/index.md
+      - Chart Component: workshop/Challenge-2/Chart-Component.md
+      - Chat Component: workshop/Challenge-2/Chat-Component.md
   - Challenge 3:
-      - Overview: workshop/docs/Challenge-3/index.md
-      # - Step 1: workshop/docs/challenge-3/step-1.md
-      # - Step 2: workshop/docs/challenge-3/step-2.md
+      - Overview: workshop/Challenge-3/index.md
+      # - Step 1: workshop/challenge-3/step-1.md
+      # - Step 2: workshop/challenge-3/step-2.md
   - Challenge 4 and 5:
-      - Overview: workshop/docs/Challenge-4-and-5/index.md
+      - Overview: workshop/Challenge-4-and-5/index.md
   - Challenge 6:
-      - Overview: workshop/docs/Challenge-6/index.md
+      - Overview: workshop/Challenge-6/index.md
   - Challenge 7:
-      - Overview: workshop/docs/Challenge-7/index.md
+      - Overview: workshop/Challenge-7/index.md
   - Teardown:
-      - Overview: workshop/docs/Tear-Down/index.md
+      - Overview: workshop/Tear-Down/index.md
