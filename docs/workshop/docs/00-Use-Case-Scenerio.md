@@ -11,9 +11,3 @@ The sample data used in this repository is synthetic and generated using Azure O
 Knowledge Mining enables customers with large amounts of conversational data to improve decision-making by leveraging intelligence to uncover insights, relationships, and patterns from customer interactions. It empowers users to gain valuable knowledge and drive targeted business impact. 
 
 This template leverages Azure AI Foundry, Azure AI Content Understanding, Azure OpenAI Service, and Azure AI Search to transform large volumes of conversational data into actionable insights through topic modeling, key phrase extraction, speech-to-text transcription, and interactive chat experiences.
-
-## Technical key features
-
-![image](../support-docs/Images/ReadMe/techkeyfeatures.png)
-
-
