@@ -12,9 +12,13 @@
         <meta name="author" content="bsanusi">
       
       
-        <link rel="canonical" href="https://blessing-sanusi.github.io/microhack-doc/workshop/support-docs/AppAuthentication/">
+        <link rel="canonical" href="https://blessing-sanusi.github.io/microhack-doc/workshop/Challenge-2/Api/">
       
       
+        <link rel="prev" href="../Backend/">
+      
+      
+        <link rel="next" href="../../Challenge-3/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>AppAuthentication - Knowledge Mining Microhack: Workshop Guide</title>
+        <title>API - Knowledge Mining Microhack: Workshop Guide</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#add-authentication-in-azure-app-service-configuration" class="md-skip">
+        <a href="#api-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AppAuthentication
+              API
             
           </span>
         </div>
@@ -308,11 +312,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../Challenge-2/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -783,6 +789,8 @@
       
   
   
+    
+  
   
   
     
@@ -802,20 +810,21 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../Challenge-2/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -828,13 +837,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Challenge 2
@@ -850,7 +859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Challenge-2/Frontend/" class="md-nav__link">
+      <a href="../Frontend/" class="md-nav__link">
         
   
   
@@ -873,7 +882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Challenge-2/Backend/" class="md-nav__link">
+      <a href="../Backend/" class="md-nav__link">
         
   
   
@@ -893,10 +902,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Challenge-2/Api/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -907,6 +938,86 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Endpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chart-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chatbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chatbot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversation-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conversation History
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-and-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools and Libraries
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-fits" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Fits
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1266,6 +1377,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1274,9 +1387,60 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#add-authentication-in-azure-app-service-configuration" class="md-nav__link">
+  <a href="#key-endpoints" class="md-nav__link">
     <span class="md-ellipsis">
-      Add Authentication in Azure App Service configuration
+      Key Endpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chart-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chart Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chatbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chatbot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversation-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conversation History
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-and-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools and Libraries
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-fits" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Fits
     </span>
   </a>
   
@@ -1301,60 +1465,82 @@
   
 
 
-  <h1>AppAuthentication</h1>
-
-<h2 id="add-authentication-in-azure-app-service-configuration">Add Authentication in Azure App Service configuration<a class="headerlink" href="#add-authentication-in-azure-app-service-configuration" title="Permanent link">&para;</a></h2>
+<h1 id="api-overview">API Overview<a class="headerlink" href="#api-overview" title="Permanent link">&para;</a></h1>
+<h2 id="key-endpoints">Key Endpoints<a class="headerlink" href="#key-endpoints" title="Permanent link">&para;</a></h2>
+<h3 id="chart-data"><strong>Chart Data</strong><a class="headerlink" href="#chart-data" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Click on <code>Authentication</code> from left menu.</li>
+<li>
+<p><strong><code>GET /api/fetchChartData</code></strong>:</p>
+<ul>
+<li>Fetches default chart data.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>POST /api/fetchChartDataWithFilters</code></strong>:</p>
+<ul>
+<li>Fetches chart data based on user-selected filters.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>GET /api/fetchFilterData</code></strong>:</p>
+<ul>
+<li>Retrieves available filter options.</li>
+</ul>
+</li>
 </ol>
-<p><img alt="Authentication" src="../Images/AppAuthentication.png" /></p>
+<hr />
+<h3 id="chatbot"><strong>Chatbot</strong><a class="headerlink" href="#chatbot" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Click on <code>+ Add Provider</code> to see a list of identity providers.</li>
+<li><strong><code>POST /api/chat</code></strong>:<ul>
+<li>Processes user queries and generates responses.</li>
+<li>Supports dynamic chart generation.</li>
+</ul>
+</li>
 </ol>
-<p><img alt="Authentication Identity" src="../Images/AppAuthenticationIdentity.png" /></p>
+<hr />
+<h3 id="conversation-history"><strong>Conversation History</strong><a class="headerlink" href="#conversation-history" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Click on <code>+ Add Provider</code> to see a list of identity providers.</li>
+<li>
+<p><strong><code>POST /history/generate</code></strong>:</p>
+<ul>
+<li>Creates a new conversation or appends messages to an existing one.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>POST /history/update</code></strong>:</p>
+<ul>
+<li>Updates an existing conversation with new messages or feedback.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>GET /history/list</code></strong>:</p>
+<ul>
+<li>Lists all conversations for a user.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>POST /history/read</code></strong>:</p>
+<ul>
+<li>Retrieves a specific conversation and its messages.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>DELETE /history/delete</code></strong>:</p>
+<ul>
+<li>Deletes a specific conversation.</li>
+</ul>
+</li>
 </ol>
-<p><img alt="Add Provider" src="../Images/AppAuthIdentityProvider.png" /></p>
-<ol>
-<li>Select the first option <code>Microsoft Entra Id</code> from the drop-down list.</li>
-</ol>
-<p><img alt="Add Provider" src="../Images/AppAuthIdentityProviderAdd.png" /></p>
-<ol>
-<li>Accept the default values and click on <code>Add</code> button to go back to the previous page with the identity provider added.</li>
-</ol>
-<p><img alt="Add Provider" src="../Images/AppAuthIdentityProviderAdded.png" /></p>
-<p>### Creating a new App Registration
-1. Click on <code>Home</code> and select <code>Microsoft Entra ID</code>.</p>
-<p><img alt="Microsoft Entra ID" src="../Images/MicrosoftEntraID.png" /></p>
-<ol>
-<li>Click on <code>App registrations</code>.</li>
-</ol>
-<p><img alt="App registrations" src="../Images/Appregistrations.png" /></p>
-<ol>
-<li>Click on <code>+ New registration</code>.</li>
-</ol>
-<p><img alt="New Registrations" src="../Images/NewRegistration.png" /></p>
-<ol>
-<li>Provide the <code>Name</code>, select supported account types as <code>Accounts in this organizational directory only(Contoso only - Single tenant)</code>, select platform as <code>Web</code>, enter/select the <code>URL</code> and register.</li>
-</ol>
-<p><img alt="Add Details" src="../Images/AddDetails.png" /></p>
-<ol>
-<li>After application is created sucessfully, then click on <code>Add a Redirect URL</code>.</li>
-</ol>
-<p><img alt="Redirect URL" src="../Images/AddRedirectURL.png" /></p>
-<ol>
-<li>Click on <code>+ Add a platform</code>.</li>
-</ol>
-<p><img alt="+ Add platform" src="../Images/AddPlatform.png" /></p>
-<ol>
-<li>Click on <code>Web</code>.</li>
-</ol>
-<p><img alt="Web" src="../Images/Web.png" /></p>
-<ol>
-<li>Enter the <code>web app URL</code> (Provide the app service name in place of XXXX) and Save. Then go back to [Step 4] and follow from <em>Point 4</em> choose <code>Pick an existing app registration in this directory</code> from the Add an Identity Provider page and provide the newly registered App Name.</li>
-</ol>
-<p><img alt="Add Details" src="../Images/WebAppURL.png" /></p>
+<hr />
+<h2 id="tools-and-libraries">Tools and Libraries<a class="headerlink" href="#tools-and-libraries" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Quart</strong>: For building API endpoints.</li>
+<li><strong>Azure OpenAI</strong>: For generating insights.</li>
+<li><strong>CosmosDB</strong>: For managing conversation history.</li>
+</ul>
+<hr />
+<h2 id="how-it-fits">How It Fits<a class="headerlink" href="#how-it-fits" title="Permanent link">&para;</a></h2>
+<p>The API layer connects the frontend and backend, enabling seamless communication and data exchange.</p>
 
 
 
@@ -1387,6 +1573,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Backend/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Backend">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Backend
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../Challenge-3/" class="md-footer__link md-footer__link--next" aria-label="Next: Explore Dashboard using Natural Language queries">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Explore Dashboard using Natural Language queries
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">

@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://blessing-sanusi.github.io/microhack-doc/workshop/Challenge-1/Analyzer/">
       
       
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../Challenge-2/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>Explore Data - Knowledge Mining Microhack: Workshop Guide</title>
+        <title>Analyze Data Exploration - Knowledge Mining Microhack: Workshop Guide</title>
       
     
     
@@ -110,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Explore Data
+              Analyze Data Exploration
             
           </span>
         </div>
@@ -286,10 +290,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../" class="md-tabs__link">
           
   
@@ -693,6 +699,8 @@
       
   
   
+    
+  
   
   
     
@@ -702,20 +710,23 @@
           
         
       
+        
+      
     
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -731,15 +742,53 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Challenge 1
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analyze Data Exploration
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
               
             
           </ul>
@@ -760,6 +809,8 @@
       
         
           
+        
+      
         
       
         
@@ -818,12 +869,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Challenge-2/Chart-Component/" class="md-nav__link">
+      <a href="../../Challenge-2/Frontend/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Chart Component
+    Frontend
     
   </span>
   
@@ -841,12 +892,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Challenge-2/Chat-Component/" class="md-nav__link">
+      <a href="../../Challenge-2/Backend/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Chat Component
+    Backend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Challenge-2/Api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API
     
   </span>
   
@@ -1250,15 +1324,17 @@
   Returns detailed results for each analysis.</li>
 </ul>
 <h3 id="field-schema"><strong>Field Schema</strong><a class="headerlink" href="#field-schema" title="Permanent link">&para;</a></h3>
-<p>The text analyzer processes the following fields:
-1. <strong><code>content</code></strong>: Full text of the conversation.
-2. <strong><code>Duration</code></strong>: Duration of the conversation in seconds.
-3. <strong><code>summary</code></strong>: Summarized version of the conversation.
-4. <strong><code>satisfied</code></strong>: Whether the customer was satisfied (<code>Yes</code> or <code>No</code>).
-5. <strong><code>sentiment</code></strong>: Overall sentiment (<code>Positive</code>, <code>Neutral</code>, <code>Negative</code>).
-6. <strong><code>topic</code></strong>: Primary topic of the conversation in six words or less.
-7. <strong><code>keyPhrases</code></strong>: Top 10 key phrases as a comma-separated string.
-8. <strong><code>complaint</code></strong>: Primary complaint in three words or less.</p>
+<p>The text analyzer processes the following fields:</p>
+<ol>
+<li><strong><code>content</code></strong>: Full text of the conversation.</li>
+<li><strong><code>Duration</code></strong>: Duration of the conversation in seconds.</li>
+<li><strong><code>summary</code></strong>: Summarized version of the conversation.</li>
+<li><strong><code>satisfied</code></strong>: Whether the customer was satisfied (<code>Yes</code> or <code>No</code>).</li>
+<li><strong><code>sentiment</code></strong>: Overall sentiment (<code>Positive</code>, <code>Neutral</code>, <code>Negative</code>).</li>
+<li><strong><code>topic</code></strong>: Primary topic of the conversation in six words or less.</li>
+<li><strong><code>keyPhrases</code></strong>: Top 10 key phrases as a comma-separated string.</li>
+<li><strong><code>complaint</code></strong>: Primary complaint in three words or less.</li>
+</ol>
 <hr />
 <h2 id="audio-analyzer-ckm-analyzer_config_audiojson"><strong>Audio Analyzer: <code>ckm-analyzer_config_audio.json</code></strong><a class="headerlink" href="#audio-analyzer-ckm-analyzer_config_audiojson" title="Permanent link">&para;</a></h2>
 <h3 id="overview_1"><strong>Overview</strong><a class="headerlink" href="#overview_1" title="Permanent link">&para;</a></h3>
@@ -1277,15 +1353,17 @@
   Supports English (US) for analysis.</li>
 </ul>
 <h3 id="field-schema_1"><strong>Field Schema</strong><a class="headerlink" href="#field-schema_1" title="Permanent link">&para;</a></h3>
-<p>The audio analyzer processes the same fields as the text analyzer:
-1. <strong><code>content</code></strong>: Full text of the conversation.
-2. <strong><code>Duration</code></strong>: Duration of the conversation in seconds.
-3. <strong><code>summary</code></strong>: Summarized version of the conversation.
-4. <strong><code>satisfied</code></strong>: Whether the customer was satisfied (<code>Yes</code> or <code>No</code>).
-5. <strong><code>sentiment</code></strong>: Overall sentiment (<code>Positive</code>, <code>Neutral</code>, <code>Negative</code>).
-6. <strong><code>topic</code></strong>: Primary topic of the conversation in six words or less.
-7. <strong><code>keyPhrases</code></strong>: Top 10 key phrases as a comma-separated string.
-8. <strong><code>complaint</code></strong>: Primary complaint in three words or less.</p>
+<p>The audio analyzer processes the same fields as the text analyzer:</p>
+<ol>
+<li><strong><code>content</code></strong>: Full text of the conversation.</li>
+<li><strong><code>Duration</code></strong>: Duration of the conversation in seconds.</li>
+<li><strong><code>summary</code></strong>: Summarized version of the conversation.</li>
+<li><strong><code>satisfied</code></strong>: Whether the customer was satisfied (<code>Yes</code> or <code>No</code>).</li>
+<li><strong><code>sentiment</code></strong>: Overall sentiment (<code>Positive</code>, <code>Neutral</code>, <code>Negative</code>).</li>
+<li><strong><code>topic</code></strong>: Primary topic of the conversation in six words or less.</li>
+<li><strong><code>keyPhrases</code></strong>: Top 10 key phrases as a comma-separated string.</li>
+<li><strong><code>complaint</code></strong>: Primary complaint in three words or less.</li>
+</ol>
 <hr />
 <h2 id="use-cases"><strong>Use Cases</strong><a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h2>
 <h3 id="text-analyzer"><strong>Text Analyzer</strong><a class="headerlink" href="#text-analyzer" title="Permanent link">&para;</a></h3>
@@ -1301,22 +1379,26 @@
 <hr />
 <h2 id="how-they-fit-into-the-solution"><strong>How They Fit Into the Solution</strong><a class="headerlink" href="#how-they-fit-into-the-solution" title="Permanent link">&para;</a></h2>
 <ol>
-<li><strong>Data Input</strong>:</li>
-<li>The text analyzer processes chat logs or transcribed conversations.</li>
 <li>
-<p>The audio analyzer processes recorded calls and converts them into text.</p>
+<p><strong>Data Input</strong>:</p>
+<ul>
+<li>The text analyzer processes chat logs or transcribed conversations.</li>
+<li>The audio analyzer processes recorded calls and converts them into text.</li>
+</ul>
 </li>
 <li>
 <p><strong>Data Output</strong>:</p>
-</li>
-<li>
-<p>Both analyzers generate structured insights (e.g., sentiment, satisfaction, topics) for visualization.</p>
+<ul>
+<li>Both analyzers generate structured insights (e.g., sentiment, satisfaction, topics) for visualization.</li>
+</ul>
 </li>
 <li>
 <p><strong>Integration</strong>:</p>
-</li>
+<ul>
 <li>Outputs are consumed by the backend (<code>function_app.py</code>) to populate charts.</li>
 <li>Insights are displayed in the frontend (<code>Chart.tsx</code>) as visualizations like Donut Charts, Word Clouds, and Tables.</li>
+</ul>
+</li>
 </ol>
 <hr />
 
@@ -1351,6 +1433,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Explore Data">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Explore Data
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../Challenge-2/" class="md-footer__link md-footer__link--next" aria-label="Next: Explore Code">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Explore Code
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
