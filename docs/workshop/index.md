@@ -1,19 +1,16 @@
-# Introduction
+# Knowledge Mining Microhack: Hands-on Workshop
 
-The Micohack event is designed to engage technical roles through a condensed, half-day hands-on hack experience. Leveraging the latest Microsoft technologies, this event provides participants with the opportunity to work on real-world problems, collaborate with peers, and explore innovative solutions. 
+### Overview
 
-The Microhack event is divided into several key challenges, each carefully crafted to test and expand the participants' proficiency with Microsoft's suite of tools. These challenges are not only technical in nature but also reflect real-world scenarios that businesses face, providing a comprehensive understanding of how to apply theoretical knowledge practically. 
+This solution accelerator enables customers with large amounts of conversational data to improve decision-making by leveraging intelligence to uncover insights, relationships, and patterns from customer interactions. It empowers users to gain valuable knowledge and drive targeted business impact. 
 
+It leverages Azure AI Foundry, Azure AI Content Understanding, Azure OpenAI Service, and Azure AI Search to transform large volumes of conversational data into actionable insights through topic modeling, key phrase extraction, speech-to-text transcription, and interactive chat experiences.
+
+### Use case / scenario
+
+An analyst managing large volumes of conversational data needs a solution to visualize key insights and uncover patterns using natural language. An interactive dashboard enables them to explore rich, actionable insights for faster, and more informed decision-making.
  
+### Technical key features
 
-### Hack Duration: 2 hours 
+![image](../workshop/support-docs/Images/ReadMe/techkeyfeatures.png)
 
- 
-
-The event kicks off with an initial overview of the customer scenario for the business problem the participants will solve by leveraging cutting-edge technology and services.  
-
-Following this, the team will complete the setup phase, where participants ensure that their development environments are correctly configured, and all necessary tools are ready for use.  
-
-Finally, they will tackle the first challenge, which involves identifying key ideas that underpin the implementation of Microsoft technologies in solving predefined problems. 
-
- 
