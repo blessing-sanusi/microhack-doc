@@ -8,7 +8,8 @@ It leverages Azure AI Foundry, Azure AI Content Understanding, Azure OpenAI Serv
 
 ### Technical key features
 
-![image](/support-docs/Images/ReadMe/techkeyfeatures.png)
+![image](./workshop/support-docs/Images/ReadMe/techkeyfeatures.png)
+
 
 ### Use case / scenario
 

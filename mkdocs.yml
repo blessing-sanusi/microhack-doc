@@ -123,3 +123,15 @@ markdown_extensions:
 
 # Navigation  ...............................................
 nav:
+  - Home:
+      - Home: index.md
+      - Workshop:
+          - Introduction: docs/index.md
+          - Challenge 0: workshop/docs/challenge-0/index.md
+          - Challenge 1: workshop/docs/challenge-1/index.md
+          - Challenge 2: workshop/docs/challenge-2/index.md
+          - Challenge 3: workshop/docs/challenge-3/index.md
+          - Challenge 4: workshop/docs/challenge-4-and-5/index.md
+          - Challenge 6: workshop/docs/challenge-6/index.md
+          - Challenge 7: workshop/docs/challenge-7/index.md
+          - Teardown: workshop/docs/Tear-Down/index.md
