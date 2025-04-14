@@ -37,7 +37,7 @@ theme:
   font:
     code: Roboto Mono  #Monospaced
     text: Roboto       #Regular
-  logo: img/postgresql.svg
+  # logo: img/postgresql.svg
   language: en
   custom_dir: overrides #Add custom header scripts
 
