@@ -23,7 +23,7 @@ jobs:
       # Install MkDocs and Material theme
       - name: Install MkDocs & Material theme
         run: |
-          pip install mkdocs-material
+          pip install mkdocs-material mkdocs-jupyter
 
       # Build the MkDocs site
       - name: Build the site

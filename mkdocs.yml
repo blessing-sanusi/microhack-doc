@@ -95,6 +95,7 @@ extra:
 # Plugins  ...............................................
 plugins:
   - search
+  - mkdocs-jupyter
 
 # Extensions  ...............................................
 markdown_extensions:
@@ -146,5 +147,6 @@ nav:
       - Overview: workshop/Challenge-6/index.md
   - Challenge 7:
       - Overview: workshop/Challenge-7/index.md
+      - Evaluation: workshop/Challenge-7/Evaluation.ipynb
   - Teardown:
       - Overview: workshop/Tear-Down/index.md
