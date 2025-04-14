@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#explore-data" class="md-skip">
+        <a href="#1-overview-of-the-data" class="md-skip">
           Skip to content
         </a>
       
@@ -235,7 +235,7 @@
   
     
   
-  Home
+  Introduction
 
       </a>
     </li>
@@ -505,7 +505,7 @@
   
   
   <span class="md-ellipsis">
-    Home
+    Introduction
     
   </span>
   
@@ -1220,8 +1220,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1230,11 +1228,146 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#steps" class="md-nav__link">
+  <a href="#1-overview-of-the-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Steps
+      1. Overview of the Data
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-data-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Data Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Data Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-audio-to-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Audio to Text
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-text-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Text Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-structuring-the-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Structuring the Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-key-insights" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Key Insights
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Key Insights">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frequent-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frequent Topics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sentiment-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sentiment Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-complaints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Complaints
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-analyzer-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Analyzer Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Analyzer Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-sentiment-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Sentiment Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-topic-mining" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Topic Mining
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-key-phrase-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Key Phrase Extraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-complaint-identification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Complaint Identification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1257,13 +1390,113 @@
   
 
 
-<h1 id="explore-data">Explore Data<a class="headerlink" href="#explore-data" title="Permanent link">&para;</a></h1>
-<p>Before using the dashboard, explore the existing raw data manually. What challenges do you encounter in identifying trends and patterns? How does the manual exploration compare to using the Interactive Insights Dashboard? </p>
-<h2 id="steps">Steps<a class="headerlink" href="#steps" title="Permanent link">&para;</a></h2>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>1. Check challenge sucess criteria before starting
-2. in a private web browser, open your deployment
-</code></pre></div></td></tr></table></div>
+  <h1>Overview</h1>
+
+<h2 id="1-overview-of-the-data"><strong>1. Overview of the Data</strong><a class="headerlink" href="#1-overview-of-the-data" title="Permanent link">&para;</a></h2>
+<p>The dataset contains customer interactions categorized into various topics. Each entry includes:
+- <strong>ConversationId</strong>: Unique identifier for each conversation.
+- <strong>StartTime</strong> and <strong>EndTime</strong>: Timestamps for when the conversation occurred.
+- <strong>Content</strong>: Full transcript of the conversation.
+- <strong>Summary</strong>: A concise summary of the interaction.
+- <strong>Sentiment</strong>: Sentiment analysis of the conversation (e.g., Positive, Negative).
+- <strong>Topic</strong>: The main topic of the conversation.
+- <strong>Key Phrases</strong>: Extracted key phrases for quick insights.
+- <strong>Complaint</strong>: Specific complaints raised by the customer (if any).
+- <strong>Mined Topic</strong>: Categorized topic based on the conversation.</p>
+<hr />
+<h2 id="2-data-flow"><strong>2. Data Flow</strong><a class="headerlink" href="#2-data-flow" title="Permanent link">&para;</a></h2>
+<h3 id="step-1-audio-to-text"><strong>Step 1: Audio to Text</strong><a class="headerlink" href="#step-1-audio-to-text" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Audio conversations are transcribed into text using speech-to-text technology.</li>
+<li>The transcription captures the full conversation, including timestamps and speaker identification.</li>
+</ul>
+<h3 id="step-2-text-analysis"><strong>Step 2: Text Analysis</strong><a class="headerlink" href="#step-2-text-analysis" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Sentiment Analysis</strong>: Determines the overall sentiment of the conversation (Positive or Negative).</li>
+<li><strong>Topic Mining</strong>: Identifies the main topic of the conversation (e.g., Billing Issues, Device Troubleshooting).</li>
+<li><strong>Key Phrase Extraction</strong>: Highlights important phrases for quick insights.</li>
+<li><strong>Complaint Identification</strong>: Extracts specific complaints raised by the customer.</li>
+</ul>
+<h3 id="step-3-structuring-the-data"><strong>Step 3: Structuring the Data</strong><a class="headerlink" href="#step-3-structuring-the-data" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The analyzed data is structured into JSON format for easy querying and visualization.</li>
+</ul>
+<hr />
+<h2 id="3-key-insights"><strong>3. Key Insights</strong><a class="headerlink" href="#3-key-insights" title="Permanent link">&para;</a></h2>
+<h3 id="frequent-topics"><strong>Frequent Topics</strong><a class="headerlink" href="#frequent-topics" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Account Management</strong>:</li>
+<li>Includes account updates, voicemail setup, and call forwarding.</li>
+<li>
+<p>Example: Updating address and email information.</p>
+</li>
+<li>
+<p><strong>Billing Issues</strong>:</p>
+</li>
+<li>Covers billing discrepancies, payment failures, and refunds.</li>
+<li>
+<p>Example: Resolving double charges or unexpected fees.</p>
+</li>
+<li>
+<p><strong>Service Activation</strong>:</p>
+</li>
+<li>Assistance with activating new services, SIM cards, or scheduling appointments.</li>
+<li>
+<p>Example: Activating a new SIM card or setting up international roaming.</p>
+</li>
+<li>
+<p><strong>Device Troubleshooting</strong>:</p>
+</li>
+<li>Support for device-related issues like freezing, battery drain, or hardware malfunctions.</li>
+<li>
+<p>Example: Factory reset for a tablet or troubleshooting a phone's battery.</p>
+</li>
+<li>
+<p><strong>Internet Connectivity</strong>:</p>
+</li>
+<li>Troubleshooting slow or unreliable internet connections.</li>
+<li>
+<p>Example: Diagnosing slow speeds and resetting modems.</p>
+</li>
+<li>
+<p><strong>Parental Controls</strong>:</p>
+</li>
+<li>Setting up and managing parental controls for children’s devices.</li>
+<li>Example: Configuring screen time limits and app restrictions.</li>
+</ol>
+<h3 id="sentiment-analysis"><strong>Sentiment Analysis</strong><a class="headerlink" href="#sentiment-analysis" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Positive Sentiment</strong>: Majority of interactions indicate customer satisfaction with the support provided.</li>
+<li><strong>Negative Sentiment</strong>: Often linked to unresolved billing issues or technical difficulties.</li>
+</ul>
+<h3 id="common-complaints"><strong>Common Complaints</strong><a class="headerlink" href="#common-complaints" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Billing discrepancies (e.g., double charges, unexpected fees).</li>
+<li>Internet speed issues.</li>
+<li>Device malfunctions (e.g., freezing, battery drain).</li>
+</ul>
+<hr />
+<h2 id="4-analyzer-workflow"><strong>4. Analyzer Workflow</strong><a class="headerlink" href="#4-analyzer-workflow" title="Permanent link">&para;</a></h2>
+<h3 id="step-1-sentiment-analysis"><strong>Step 1: Sentiment Analysis</strong><a class="headerlink" href="#step-1-sentiment-analysis" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Uses Natural Language Processing (NLP) to classify the sentiment as Positive or Negative.</li>
+<li>Example: "Thank you for your help" → Positive sentiment.</li>
+</ul>
+<h3 id="step-2-topic-mining"><strong>Step 2: Topic Mining</strong><a class="headerlink" href="#step-2-topic-mining" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Identifies the main topic of the conversation using keyword matching and clustering.</li>
+<li>Example: Keywords like "billing," "charges," and "refund" → Topic: Billing Issues.</li>
+</ul>
+<h3 id="step-3-key-phrase-extraction"><strong>Step 3: Key Phrase Extraction</strong><a class="headerlink" href="#step-3-key-phrase-extraction" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Extracts important phrases using NLP techniques like Named Entity Recognition (NER).</li>
+<li>Example: "slow Internet speed," "paperless billing," "factory reset."</li>
+</ul>
+<h3 id="step-4-complaint-identification"><strong>Step 4: Complaint Identification</strong><a class="headerlink" href="#step-4-complaint-identification" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Searches for explicit complaints in the conversation.</li>
+<li>Example: "My bill was $50 higher than usual" → Complaint: Higher bill.</li>
+</ul>
 
 
 
