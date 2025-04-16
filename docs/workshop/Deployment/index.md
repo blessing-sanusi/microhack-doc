@@ -75,6 +75,6 @@ Additional Steps
 
 1. **Add App Authentication**
    
-    Follow steps in [App Authentication](../support-docs/AppAuthentication.md) to configure authenitcation in app service.
+    Follow steps in [App Authentication](./App-Authentication.md) to configure authenitcation in app service.
 
     Note: Authentication changes can take up to 10 minutes 
