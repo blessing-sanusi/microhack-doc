@@ -1,73 +1,8 @@
+# Prerequisites
+To get started, make sure you have the following resources and permissions:
 
-We will set up the initial environment for you to build on top of during your Microhack. This comprehensive setup includes configuring essential Azure services and ensuring access to all necessary resources. Participants will familiarize themselves with the architecture, gaining insights into how various components interact to create a cohesive solution. With the foundational environment in place, the focus will shift seamlessly to the first Microhack Challenge endeavor. 
-
-### **Prerequisites**
-
-- To deploy this solution accelerator, ensure you have access to an [Azure subscription](https://azure.microsoft.com/free/) with the necessary permissions to create **resource groups and resources**. Follow the steps in  [Azure Account Set Up](../support-docs/AzureAccountSetUp.md)
-- [VS Code](https://code.visualstudio.com/download) installed locally
-
-
-Check the [Azure Products by Region](https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/?products=all&regions=all) page and select a **region** where the following services are available:  
-
-- Azure AI Foundry 
-- Azure OpenAI Service 
-- Azure AI Search
-- Azure AI Content Understanding
-- Embedding Deployment Capacity  
-- GPT Model Capacity
-- [Azure Semantic Search](../support-docs/AzureSemanticSearchRegion.md)  
-
-Here are some example regions where the services are available: East US, East US2, Australia East, UK South, France Central.
-
-### ⚠️ Important: Check Azure OpenAI Quota Availability  
-
-➡️ To ensure sufficient quota is available in your subscription, please follow **[Quota check instructions guide](../support-docs/quota_check.md)** before you deploy the solution.
-
-| [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator) | [![Open in Dev Containers](https://img.shields.io/static/v1?style=for-the-badge&label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator) |
-|---|---|
-
-
-### Deploying
-
-Once you've opened the project in [Codespaces](#github-codespaces) or in [Dev Containers](#vs-code-dev-containers) or [locally](#local-environment), you can deploy it to Azure following the following steps. 
-
-To change the azd parameters from the default values, follow the steps [here](../support-docs/CustomizingAzdParameters.md). 
-
-
-1. Login to Azure:
-
-    ```shell
-    azd auth login
-    ```
-
-    #### To authenticate with Azure Developer CLI (`azd`), use the following command with your **Tenant ID**:
-
-    ```sh
-    azd auth login --tenant-id <tenant-id>
-   ```
-
-2. Provision and deploy all the resources:
-
-    ```shell
-    azd up
-    ```
-
-3. Provide an `azd` environment name (like "ckmapp")
-4. Select a subscription from your Azure account, and select a location which has quota for all the resources. 
-    * This deployment will take *7-10 minutes* to provision the resources in your account and set up the solution with sample data. 
-    * If you get an error or timeout with deployment, changing the location can help, as there may be availability constraints for the resources.
-
-5. Once the deployment has completed successfully, open the [Azure Portal](https://portal.azure.com/), go to the deployed resource group, find the App Service and get the app URL from `Default domain`.
-
-6. You can now delete the resources by running `azd down`, if you are done trying out the application. 
-<!-- 6. You can now proceed to run the [development server](#development-server) to test the app locally, or if you are done trying out the app, you can delete the resources by running `azd down`. -->
-
-<h2>
-Additional Steps
-</h2>
-
-1. **Add App Authentication**
-   
-    Follow steps in [App Authentication](../support-docs/AppAuthentication.md) to configure authenitcation in app service.
-
-    Note: Authentication changes can take up to 10 minutes 
+- An Azure subscription. If you don't have an Azure subscription, create a free account before you begin.
+- An Azure AI Foundry hub is required to manage the resources provisioned in your Content Understanding project, and it must be created in one of the following supported regions: westus, swedencentral, or australiaeast. If you're creating a hub for the first time, see [How to create and manage an Azure AI Foundry hub to learn more](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/create-azure-ai-resource?tabs=portal). It's important to note you need the proper permissions to create a hub, or your admin may create one for you.
+      
+      - If your role is Contributor or Owner, you can proceed with creating your own hub.
+      - If your role is Azure AI Developer, the hub must already be created before you can complete this quickstart. Your user role must be Azure AI Developer, Contributor, or Owner on the hub. For more information, see [hubs](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/ai-resources) and [Azure AI roles](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/rbac-azure-ai-foundry).

@@ -34,6 +34,9 @@ copyright: >
 # Configuration ...............................................
 theme:
   name: material
+  features:
+    - navigation.tabs               # Enables top navigation tabs
+    - navigation.indexes            # Ensures only `index.md` files are shown in the sidebar
   font:
     code: Roboto Mono  #Monospaced
     text: Roboto       #Regular
@@ -125,12 +128,14 @@ markdown_extensions:
 # Navigation  ...............................................
 nav:
   - Introduction: index.md
-  - Overview: 
-      - Knowledge Mining Hands-on Workshop: workshop/index.md
-      - Use Case: workshop/00-Use-Case-Scenerio.md
+  - Overview: workshop/00-Use-Case-Scenerio.md
+      # - Knowledge Mining Hands-on Workshop: workshop/index.md
+  - Deployment:
+      - Prerequisites: workshop/Deployment/index.md
+      - CU-AI Foundry: workshop/Deployment/App-Authentication.md
   - Challenge 0:
-      - Environment Setup: workshop/Challenge-0/index.md
-      - App Authentication: workshop/Challenge-0/App-Authentication.md
+      - Prerequisites: workshop/Challenge-0/index.md
+      - CU-AI Foundry: workshop/Challenge-0/CU-Challenge.md
   - Challenge 1:
       - Explore Data: workshop/Challenge-1/index.md
       - Analyze Data Exploration: workshop/Challenge-1/Analyzer.md
@@ -145,6 +150,7 @@ nav:
       # - Step 2: workshop/challenge-3/step-2.md
   - Challenge 4 and 5:
       - Overview: workshop/Challenge-4-and-5/index.md
+      - Challenge 4: workshop/Challenge-4-and-5/Challenge-4.md
   - Challenge 6:
       - Overview: workshop/Challenge-6/index.md
   - Challenge 7:
