@@ -21,26 +21,25 @@
 
 ## Step 2: Build Your First Analyzer
 
-1. **Upload a Sample File**: Begin by uploading an **audio (.mp3, .wav)** or **video (.mp4, .mov)** file. This file will be used to train your custom analyzer.
+- **Upload a Sample File**: Begin by uploading a sample document (e.g., an invoice).
+![Template Suggestion](../img/define-schema-upload.png)
 
-> 🎥💡 Tip: Choose a file that contains structured spoken content (like an interview, podcast, or recorded meeting) to get the best results.
+- **Select an Analyzer Template**: Based on the content type, Azure will suggest relevant analyzer templates. For this example, choose the **Document analysis** template.
+![Template Suggestion](../img/define-schema-template-selection.png)
 
-![Upload Sample File](../img/upload-sample.png)
+- **Define Your Schema**:
+    - Add fields such as `vendorName`, `items`, and `price`.
+    - Specify the data type for each field (e.g., string, number).
+    - Optionally, provide descriptions to clarify each field’s purpose.
 
-2. **Select an Analyzer Template**: Based on the content type, Azure will suggest relevant analyzer templates. For this example, choose the **Document analysis** template.
 
-![Template Suggestion](../img/analyzer-template-suggestion.png)
+- **Save the Schema**: Once your schema is complete, click **Save schema**.
+![Template Suggestion](../img/define-schema.png)
 
-3. **Define Your Schema**:
-   - Add fields such as `speakerName`, `topic`, `timestamp`, or any entities relevant to your audio/video.
-   - Specify the data type for each field (e.g., string, number, datetime).
-   - Optionally, provide descriptions to clarify each field’s purpose.
+- With the completed schema, Content Understanding now generates the output on your sample data. At this step, you can add more data to test the analyzer's accuracy or make changes to the schema if needed.
+![Template Suggestion](../img/test-analyzer.png)
 
-![Schema Definition](../img/schema_definition.png)
-
-4. **Save the Schema**: Once your schema is complete, click **Save schema**.
-
-5. **Build the Analyzer**: Click **Build analyzer** to generate your custom analyzer. The process may take a few moments. Once complete, you’ll receive a unique **Analyzer ID**.
+- **Build the Analyzer**: Click **Build analyzer** to generate your custom analyzer. The process may take a few moments. Once complete, you’ll receive a unique **Analyzer ID**.
 
 > 🧪 Use this ID to test your analyzer or integrate it into applications via API.
 
@@ -49,13 +48,15 @@
 
 To manage access to your Content Understanding project:
 
-1. Navigate to the **Management Center** located at the bottom of your project's navigation pane.
-2. Here, you can:
-   - Add or remove users.
-   - Assign roles to users to control their level of access.
+- Navigate to the **Management Center** located at the bottom of your project's navigation pane.
+![Management Center](../img/cu-find-management-center.png)
+
+- Here, you can:
+    - Add or remove users.
+    - Assign roles to users to control their level of access.
 
 *Image: Management Center interface*  
-![Management Center](../img/management_center.png)
+![Management Center](../img/cu-management-center.png)
 
 ## Next Steps
 
@@ -65,8 +66,6 @@ Now that you've created your first analyzer, consider the following:
 - **Integrate with Applications**: Use the generated analyzer ID to call your analyzer via the REST API in your applications.
 - **Explore More Templates**: The Azure AI Foundry offers a variety of analyzer templates for different content types. Explore these to find solutions tailored to your needs.
 
-*Image: Analyzer testing interface*  
-![Analyzer Testing](../img/analyzer_testing.png)
 
 For more detailed information and advanced configurations, refer to the official [Azure AI Content Understanding documentation](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-ai-foundry).
 
