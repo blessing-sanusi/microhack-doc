@@ -26,6 +26,13 @@ Here are some example regions where the services are available: East US, East US
 | [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator) | [![Open in Dev Containers](https://img.shields.io/static/v1?style=for-the-badge&label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator) |
 |---|---|
 
+### [Optional] Quota Recommendations  
+By default, the **GPT model capacity** in deployment is set to **30k tokens**.  
+> **We recommend increasing the capacity to 100k tokens for optimal performance.** 
+
+To adjust quota settings, follow these [steps](./docs/AzureGPTQuotaSettings.md)  
+
+
 
 ### Deploying
 

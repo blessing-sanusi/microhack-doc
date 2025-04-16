@@ -132,7 +132,7 @@ nav:
       # - Knowledge Mining Hands-on Workshop: workshop/index.md
   - Deployment:
       - Prerequisites: workshop/Deployment/index.md
-      - CU-AI Foundry: workshop/Deployment/App-Authentication.md
+      - App Authentication: workshop/Deployment/App_Authentication.md
   - Challenge 0:
       - Prerequisites: workshop/Challenge-0/index.md
       - CU-AI Foundry: workshop/Challenge-0/CU-Challenge.md
