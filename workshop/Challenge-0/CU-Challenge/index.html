@@ -12,7 +12,7 @@
         <meta name="author" content="bsanusi">
       
       
-        <link rel="canonical" href="https://blessing-sanusi.github.io/microhack-doc/workshop/Challenge-0/App-Authentication/">
+        <link rel="canonical" href="https://blessing-sanusi.github.io/microhack-doc/workshop/Challenge-0/CU-Challenge/">
       
       
         <link rel="prev" href="../">
@@ -26,7 +26,7 @@
     
     
       
-        <title>App Authentication - Knowledge Mining Microhack: Workshop Guide</title>
+        <title>CU-AI Foundry - Knowledge Mining Microhack: Workshop Guide</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#add-authentication-in-azure-app-service-configuration" class="md-skip">
+        <a href="#create-your-first-content-understanding-project-in-the-ai-foundry" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              App Authentication
+              CU-AI Foundry
             
           </span>
         </div>
@@ -247,16 +247,35 @@
   
   
   
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../" class="md-tabs__link">
-          
+    <li class="md-tabs__item">
+      <a href="../../00-Use-Case-Scenerio/" class="md-tabs__link">
+        
   
   
     
   
   Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Deployment/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Deployment
 
         </a>
       </li>
@@ -521,6 +540,28 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../00-Use-Case-Scenerio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
       
@@ -543,16 +584,16 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../Deployment/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    Overview
+    Deployment
     
   </span>
   
@@ -560,16 +601,16 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Overview
+            Deployment
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -582,12 +623,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../00-Use-Case-Scenerio/" class="md-nav__link">
+      <a href="../../Deployment/App-Authentication/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Use Case
+    CU-AI Foundry
     
   </span>
   
@@ -636,7 +677,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -653,14 +694,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Challenge 0
           </label>
@@ -681,13 +722,15 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   
   <span class="md-ellipsis">
-    App Authentication
+    CU-AI Foundry
     
   </span>
   
@@ -700,7 +743,7 @@
   
   
   <span class="md-ellipsis">
-    App Authentication
+    CU-AI Foundry
     
   </span>
   
@@ -713,6 +756,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -721,9 +766,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#add-authentication-in-azure-app-service-configuration" class="md-nav__link">
+  <a href="#step-1-create-a-content-understanding-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Add Authentication in Azure App Service configuration
+      Step 1: Create a Content Understanding Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-build-your-first-analyzer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Build Your First Analyzer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-share-and-manage-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Share and Manage Access
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
     </span>
   </a>
   
@@ -773,7 +845,7 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -790,14 +862,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Challenge 1
           </label>
@@ -867,7 +939,7 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -884,14 +956,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Challenge 2
           </label>
@@ -1001,7 +1073,7 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -1019,8 +1091,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Challenge 3
           </label>
@@ -1048,6 +1120,8 @@
           
         
       
+        
+      
     
     
     
@@ -1061,7 +1135,7 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -1077,15 +1151,43 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Challenge 4 and 5
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Challenge-4-and-5/Challenge-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Challenge 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -1121,7 +1223,7 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -1139,8 +1241,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Challenge 6
           </label>
@@ -1183,7 +1285,7 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -1200,14 +1302,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_10" id="__nav_10_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             Challenge 7
           </label>
@@ -1271,7 +1373,7 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -1289,8 +1391,8 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             Teardown
           </label>
@@ -1322,6 +1424,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1330,9 +1434,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#add-authentication-in-azure-app-service-configuration" class="md-nav__link">
+  <a href="#step-1-create-a-content-understanding-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Add Authentication in Azure App Service configuration
+      Step 1: Create a Content Understanding Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-build-your-first-analyzer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Build Your First Analyzer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-share-and-manage-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Share and Manage Access
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
     </span>
   </a>
   
@@ -1357,60 +1488,86 @@
   
 
 
-  <h1>App Authentication</h1>
-
-<h2 id="add-authentication-in-azure-app-service-configuration">Add Authentication in Azure App Service configuration<a class="headerlink" href="#add-authentication-in-azure-app-service-configuration" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Click on <code>Authentication</code> from left menu.</li>
-</ol>
-<p><img alt="Authentication" src="../../support-docs/Images/AppAuthentication.png" /></p>
-<ol>
-<li>Click on <code>+ Add Provider</code> to see a list of identity providers.</li>
-</ol>
-<p><img alt="Authentication Identity" src="../../support-docs/Images/AppAuthenticationIdentity.png" /></p>
-<ol>
-<li>Click on <code>+ Add Provider</code> to see a list of identity providers.</li>
-</ol>
-<p><img alt="Add Provider" src="../../support-docs/Images/AppAuthIdentityProvider.png" /></p>
-<ol>
-<li>Select the first option <code>Microsoft Entra Id</code> from the drop-down list.</li>
-</ol>
-<p><img alt="Add Provider" src="../../support-docs/Images/AppAuthIdentityProviderAdd.png" /></p>
-<ol>
-<li>Accept the default values and click on <code>Add</code> button to go back to the previous page with the identity provider added.</li>
-</ol>
-<p><img alt="Add Provider" src="../../support-docs/Images/AppAuthIdentityProviderAdded.png" /></p>
-<p>### Creating a new App Registration
-1. Click on <code>Home</code> and select <code>Microsoft Entra ID</code>.</p>
-<p><img alt="Microsoft Entra ID" src="../../support-docs/Images/MicrosoftEntraID.png" /></p>
-<ol>
-<li>Click on <code>App registrations</code>.</li>
-</ol>
-<p><img alt="App registrations" src="../../support-docs/Images/Appregistrations.png" /></p>
-<ol>
-<li>Click on <code>+ New registration</code>.</li>
-</ol>
-<p><img alt="New Registrations" src="../../support-docs/Images/NewRegistration.png" /></p>
-<ol>
-<li>Provide the <code>Name</code>, select supported account types as <code>Accounts in this organizational directory only(Contoso only - Single tenant)</code>, select platform as <code>Web</code>, enter/select the <code>URL</code> and register.</li>
-</ol>
-<p><img alt="Add Details" src="../../support-docs/Images/AddDetails.png" /></p>
-<ol>
-<li>After application is created sucessfully, then click on <code>Add a Redirect URL</code>.</li>
-</ol>
-<p><img alt="Redirect URL" src="../../support-docs/Images/AddRedirectURL.png" /></p>
-<ol>
-<li>Click on <code>+ Add a platform</code>.</li>
-</ol>
-<p><img alt="+ Add platform" src="../../support-docs/Images/AddPlatform.png" /></p>
-<ol>
-<li>Click on <code>Web</code>.</li>
-</ol>
-<p><img alt="Web" src="../../support-docs/Images/Web.png" /></p>
-<ol>
-<li>Enter the <code>web app URL</code> (Provide the app service name in place of XXXX) and Save. Then go back to [Step 4] and follow from <em>Point 4</em> choose <code>Pick an existing app registration in this directory</code> from the Add an Identity Provider page and provide the newly registered App Name.</li>
-</ol>
-<p><img alt="Add Details" src="../../support-docs/Images/WebAppURL.png" /></p>
+<h1 id="create-your-first-content-understanding-project-in-the-ai-foundry">Create your first Content Understanding project in the AI Foundry<a class="headerlink" href="#create-your-first-content-understanding-project-in-the-ai-foundry" title="Permanent link">&para;</a></h1>
+<h2 id="step-1-create-a-content-understanding-project">Step 1: Create a Content Understanding Project<a class="headerlink" href="#step-1-create-a-content-understanding-project" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Navigate to the <a href="https://ai.azure.com">AI Foundry homepage</a>.</li>
+</ul>
+<p><img alt="AI Foundry Homepage" src="../../img/ai-services-landing-page.png" />   </p>
+<ul>
+<li>Select <strong>Create a new Content Understanding Project</strong>.</li>
+</ul>
+<p><img alt="CU Landing Page" src="../../img/cu-landing-page.png" /></p>
+<ul>
+<li>In the project creation wizard:<ul>
+<li>Choose the hub you created.</li>
+<li>Confirm that an AI Services resource and a blob storage container are provisioned (these are selected by default).</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Foundry Architecture" src="../../img/foundry-architecture.png" /></p>
+<ul>
+<li>Complete the setup and click <strong>Create project</strong>.</li>
+</ul>
+<h2 id="step-2-build-your-first-analyzer">Step 2: Build Your First Analyzer<a class="headerlink" href="#step-2-build-your-first-analyzer" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>Upload a Sample File</strong>: Begin by uploading a sample document (e.g., an invoice).
+<img alt="Template Suggestion" src="../../img/define-schema-upload.png" /></p>
+</li>
+<li>
+<p><strong>Select an Analyzer Template</strong>: Based on the content type, Azure will suggest relevant analyzer templates. For this example, choose the <strong>Document analysis</strong> template.
+<img alt="Template Suggestion" src="../../img/define-schema-template-selection.png" /></p>
+</li>
+<li>
+<p><strong>Define Your Schema</strong>:</p>
+<ul>
+<li>Add fields such as <code>vendorName</code>, <code>items</code>, and <code>price</code>.</li>
+<li>Specify the data type for each field (e.g., string, number).</li>
+<li>Optionally, provide descriptions to clarify each field’s purpose.</li>
+</ul>
+</li>
+<li>
+<p><strong>Save the Schema</strong>: Once your schema is complete, click <strong>Save schema</strong>.
+<img alt="Template Suggestion" src="../../img/define-schema.png" /></p>
+</li>
+<li>
+<p>With the completed schema, Content Understanding now generates the output on your sample data. At this step, you can add more data to test the analyzer's accuracy or make changes to the schema if needed.
+<img alt="Template Suggestion" src="../../img/test-analyzer.png" /></p>
+</li>
+<li>
+<p><strong>Build the Analyzer</strong>: Click <strong>Build analyzer</strong> to generate your custom analyzer. The process may take a few moments. Once complete, you’ll receive a unique <strong>Analyzer ID</strong>.</p>
+</li>
+</ul>
+<blockquote>
+<p>🧪 Use this ID to test your analyzer or integrate it into applications via API.</p>
+</blockquote>
+<h2 id="step-3-share-and-manage-access">Step 3: Share and Manage Access<a class="headerlink" href="#step-3-share-and-manage-access" title="Permanent link">&para;</a></h2>
+<p>To manage access to your Content Understanding project:</p>
+<ul>
+<li>
+<p>Navigate to the <strong>Management Center</strong> located at the bottom of your project's navigation pane.
+<img alt="Management Center" src="../../img/cu-find-management-center.png" /></p>
+</li>
+<li>
+<p>Here, you can:</p>
+<ul>
+<li>Add or remove users.</li>
+<li>Assign roles to users to control their level of access.</li>
+</ul>
+</li>
+</ul>
+<p><em>Image: Management Center interface</em><br />
+<img alt="Management Center" src="../../img/cu-management-center.png" /></p>
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<p>Now that you've created your first analyzer, consider the following:</p>
+<ul>
+<li><strong>Test the Analyzer</strong>: Upload additional sample documents to evaluate the accuracy and performance of your analyzer.</li>
+<li><strong>Integrate with Applications</strong>: Use the generated analyzer ID to call your analyzer via the REST API in your applications.</li>
+<li><strong>Explore More Templates</strong>: The Azure AI Foundry offers a variety of analyzer templates for different content types. Explore these to find solutions tailored to your needs.</li>
+</ul>
+<p>For more detailed information and advanced configurations, refer to the official <a href="https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-ai-foundry">Azure AI Content Understanding documentation</a>.</p>
+<hr />
 
 
 
@@ -1448,7 +1605,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Environment Setup">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Prerequisites">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1458,7 +1615,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Environment Setup
+                Prerequisites
               </div>
             </div>
           </a>
