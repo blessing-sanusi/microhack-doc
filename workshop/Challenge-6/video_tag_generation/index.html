@@ -12,13 +12,13 @@
         <meta name="author" content="bsanusi">
       
       
-        <link rel="canonical" href="https://blessing-sanusi.github.io/microhack-doc/workshop/Challenge-6/video_chapter_generation/">
+        <link rel="canonical" href="https://blessing-sanusi.github.io/microhack-doc/workshop/Challenge-6/video_tag_generation/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../video_chapter_generation/">
       
       
-        <link rel="next" href="../video_tag_generation/">
+        <link rel="next" href="../../Challenge-7/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -1185,6 +1185,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../video_chapter_generation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Video Chapters Generation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1265,13 +1288,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-custom-analyzer-and-submit-the-video-to-generate-the-description" class="md-nav__link">
+  <a href="#create-a-custom-analyzer-and-submit-the-video-to-generate-tags" class="md-nav__link">
     <span class="md-ellipsis">
-      Create a custom analyzer and submit the video to generate the description
+      Create a custom analyzer and submit the video to generate tags
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Create a custom analyzer and submit the video to generate the description">
+    <nav class="md-nav" aria-label="Create a custom analyzer and submit the video to generate tags">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1289,18 +1312,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#aggregate-video-segments-to-generate-video-scenes" class="md-nav__link">
+  <a href="#aggregate-tags-from-each-segment-to-generate-video-tags" class="md-nav__link">
     <span class="md-ellipsis">
-      Aggregate video segments to generate video scenes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#create-video-chapters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create video chapters
+      Aggregate tags from each segment to generate video tags
     </span>
   </a>
   
@@ -1310,29 +1324,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../video_tag_generation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Video Chapters Generation
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1549,13 +1540,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-custom-analyzer-and-submit-the-video-to-generate-the-description" class="md-nav__link">
+  <a href="#create-a-custom-analyzer-and-submit-the-video-to-generate-tags" class="md-nav__link">
     <span class="md-ellipsis">
-      Create a custom analyzer and submit the video to generate the description
+      Create a custom analyzer and submit the video to generate tags
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Create a custom analyzer and submit the video to generate the description">
+    <nav class="md-nav" aria-label="Create a custom analyzer and submit the video to generate tags">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1573,18 +1564,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#aggregate-video-segments-to-generate-video-scenes" class="md-nav__link">
+  <a href="#aggregate-tags-from-each-segment-to-generate-video-tags" class="md-nav__link">
     <span class="md-ellipsis">
-      Aggregate video segments to generate video scenes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#create-video-chapters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create video chapters
+      Aggregate tags from each segment to generate video tags
     </span>
   </a>
   
@@ -2062,7 +2044,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Generate video chapters based on Azure Content Understanding and Azure OpenAI.</p>
+<p>Generate video tags based on Azure Content Understanding and Azure OpenAI.</p>
 </div>
 </div>
 </div>
@@ -2212,8 +2194,8 @@ VIDEO_LOCATION = Path("../data/FlightSimulator.mp4")</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="create-a-custom-analyzer-and-submit-the-video-to-generate-the-description">Create a custom analyzer and submit the video to generate the description<a class="anchor-link" href="#create-a-custom-analyzer-and-submit-the-video-to-generate-the-description">¶</a></h2><p>The custom analyzer schema is defined in <a href="../analyzer_templates/video_content_understanding.json">../analyzer_templates/video_content_understanding.json</a>. The main custom field is <code>segmentDescription</code> as we need to get the descriptions of video segments and feed them into chatGPT to generate the scenes and chapters. Adding transcripts will help to increase the accuracy of scenes/chapters segmentation results. To get transcripts, we will need to set the<code>returnDetails</code> parameter in the <code>config</code> field to <code>True</code>.</p>
-<p>In this example, we will use the utility class <code>AzureContentUnderstandingClient</code> to load the analyzer schema from the template file and submit it to Azure Content Understanding service. Then, we will analyze the video to get the segment descriptions and transcripts.</p>
+<h2 id="create-a-custom-analyzer-and-submit-the-video-to-generate-tags">Create a custom analyzer and submit the video to generate tags<a class="anchor-link" href="#create-a-custom-analyzer-and-submit-the-video-to-generate-tags">¶</a></h2><p>The custom analyzer schema is defined in <a href="../analyzer_templates/video_tag.json">../analyzer_templates/video_tag.json</a>. The custom fields are <code>segmentDescription</code>, <code>transcript</code> and <code>tags</code>. Adding description and transcripts helps to increase the accuracy of tag generation results. To get transcripts, we will need to set the<code>returnDetails</code> parameter in the <code>config</code> field to <code>True</code>.</p>
+<p>In this example, we will use the utility class <code>AzureContentUnderstandingClient</code> to load the analyzer schema from the template file and submit it to Azure Content Understanding service. Then, we will analyze the video to get the segment tags.</p>
 </div>
 </div>
 </div>
@@ -2254,15 +2236,15 @@ VIDEO_LOCATION = Path("../data/FlightSimulator.mp4")</div>
 <span class="n">token_provider</span> <span class="o">=</span> <span class="n">get_bearer_token_provider</span><span class="p">(</span><span class="n">credential</span><span class="p">,</span> <span class="s2">"https://cognitiveservices.azure.com/.default"</span><span class="p">)</span>
 
 <span class="c1"># The analyzer template is used to define the schema of the output</span>
-<span class="n">ANALYZER_TEMPLATE_PATH</span> <span class="o">=</span> <span class="s2">"../analyzer_templates/video_content_understanding.json"</span>
-<span class="n">ANALYZER_ID</span> <span class="o">=</span> <span class="s2">"video_scene_chapter"</span> <span class="o">+</span> <span class="s2">"_"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">())</span>  <span class="c1"># Unique identifier for the analyzer</span>
+<span class="n">ANALYZER_TEMPLATE_PATH</span> <span class="o">=</span> <span class="s2">"../analyzer_templates/video_tag.json"</span>
+<span class="n">ANALYZER_ID</span> <span class="o">=</span> <span class="s2">"video_tag"</span> <span class="o">+</span> <span class="s2">"_"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">())</span>  <span class="c1"># Unique identifier for the analyzer</span>
 
 <span class="c1"># Create the Content Understanding (CU) client</span>
 <span class="n">cu_client</span> <span class="o">=</span> <span class="n">AzureContentUnderstandingClient</span><span class="p">(</span>
     <span class="n">endpoint</span><span class="o">=</span><span class="n">AZURE_AI_SERVICE_ENDPOINT</span><span class="p">,</span>
     <span class="n">api_version</span><span class="o">=</span><span class="n">AZURE_AI_SERVICE_API_VERSION</span><span class="p">,</span>
     <span class="n">token_provider</span><span class="o">=</span><span class="n">token_provider</span><span class="p">,</span>
-    <span class="n">x_ms_useragent</span><span class="o">=</span><span class="s2">"azure-ai-content-understanding-python/video_chapter_generation"</span><span class="p">,</span> <span class="c1"># This header is used for sample usage telemetry, please comment out this line if you want to opt out.</span>
+<span class="c1">#    x_ms_useragent="azure-ai-tag-with-content-understanding-python/video_tag", # This header is used for sample usage telemetry, please comment out this line if you want to opt out.</span>
 <span class="p">)</span>
 
 <span class="c1"># Use the client to create an analyzer</span>
@@ -2290,15 +2272,15 @@ credential = DefaultAzureCredential()
 token_provider = get_bearer_token_provider(credential, "https://cognitiveservices.azure.com/.default")
 
 # The analyzer template is used to define the schema of the output
-ANALYZER_TEMPLATE_PATH = "../analyzer_templates/video_content_understanding.json"
-ANALYZER_ID = "video_scene_chapter" + "_" + str(uuid.uuid4())  # Unique identifier for the analyzer
+ANALYZER_TEMPLATE_PATH = "../analyzer_templates/video_tag.json"
+ANALYZER_ID = "video_tag" + "_" + str(uuid.uuid4())  # Unique identifier for the analyzer
 
 # Create the Content Understanding (CU) client
 cu_client = AzureContentUnderstandingClient(
     endpoint=AZURE_AI_SERVICE_ENDPOINT,
     api_version=AZURE_AI_SERVICE_API_VERSION,
     token_provider=token_provider,
-    x_ms_useragent="azure-ai-content-understanding-python/video_chapter_generation", # This header is used for sample usage telemetry, please comment out this line if you want to opt out.
+#    x_ms_useragent="azure-ai-tag-with-content-understanding-python/video_tag", # This header is used for sample usage telemetry, please comment out this line if you want to opt out.
 )
 
 # Use the client to create an analyzer
@@ -2379,8 +2361,7 @@ cu_client.delete_analyzer(ANALYZER_ID)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="aggregate-video-segments-to-generate-video-scenes">Aggregate video segments to generate video scenes<a class="anchor-link" href="#aggregate-video-segments-to-generate-video-scenes">¶</a></h2><p>ChatGPT will be used to combine segment descriptions and transcripts into scenes and provide concise descriptions for each scene.</p>
-<p>After running this step, you will have a metadata json file of video scenes that can be used to generate video chapters. Each scene has start and end timestamps, short description and corresponding transcripts if available</p>
+<h2 id="aggregate-tags-from-each-segment-to-generate-video-tags">Aggregate tags from each segment to generate video tags<a class="anchor-link" href="#aggregate-tags-from-each-segment-to-generate-video-tags">¶</a></h2><p>ChatGPT will be used to remove duplicate tags which are semantically similar across segments.</p>
 </div>
 </div>
 </div>
@@ -2403,7 +2384,7 @@ cu_client.delete_analyzer(ANALYZER_ID)</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">python.utility</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAIAssistant</span><span class="p">,</span> <span class="n">generate_scenes</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">python.utility</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAIAssistant</span><span class="p">,</span> <span class="n">aggregate_tags</span>
 
 <span class="c1"># Create an OpenAI Assistant to interact with Azure OpenAI</span>
 <span class="n">openai_assistant</span> <span class="o">=</span> <span class="n">OpenAIAssistant</span><span class="p">(</span>
@@ -2413,19 +2394,12 @@ cu_client.delete_analyzer(ANALYZER_ID)</div>
     <span class="n">aoai_api_key</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="c1"># Generate the scenes using the video segment result from Azure Content Understanding</span>
-<span class="n">scene_result</span> <span class="o">=</span> <span class="n">generate_scenes</span><span class="p">(</span><span class="n">video_cu_result</span><span class="p">,</span> <span class="n">openai_assistant</span><span class="p">)</span>
+<span class="c1"># Aggregate tags using the video segment result from Azure Content Understanding</span>
+<span class="n">tag_result</span> <span class="o">=</span> <span class="n">aggregate_tags</span><span class="p">(</span><span class="n">video_cu_result</span><span class="p">,</span> <span class="n">openai_assistant</span><span class="p">)</span>
 
-<span class="c1"># Write the scene result to a json file</span>
-<span class="n">scene_output_json_file</span> <span class="o">=</span> <span class="s2">"./scene_results.json"</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">scene_output_json_file</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">scene_result</span><span class="o">.</span><span class="n">model_dump_json</span><span class="p">(</span><span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Scene result is saved to </span><span class="si">{</span><span class="n">scene_output_json_file</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-
-<span class="c1"># Print the scene result for the debugging purpose</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">scene_result</span><span class="o">.</span><span class="n">model_dump_json</span><span class="p">(</span><span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">tag_result</span><span class="o">.</span><span class="n">tags</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-6">from python.utility import OpenAIAssistant, generate_scenes
+<div class="clipboard-copy-txt" id="cell-6">from python.utility import OpenAIAssistant, aggregate_tags
 
 # Create an OpenAI Assistant to interact with Azure OpenAI
 openai_assistant = OpenAIAssistant(
@@ -2435,93 +2409,12 @@ openai_assistant = OpenAIAssistant(
     aoai_api_key=None,
 )
 
-# Generate the scenes using the video segment result from Azure Content Understanding
-scene_result = generate_scenes(video_cu_result, openai_assistant)
+# Aggregate tags using the video segment result from Azure Content Understanding
+tag_result = aggregate_tags(video_cu_result, openai_assistant)
 
-# Write the scene result to a json file
-scene_output_json_file = "./scene_results.json"
-with open(scene_output_json_file, "w") as f:
-    f.write(scene_result.model_dump_json(indent=2))
-    print(f"Scene result is saved to {scene_output_json_file}")
-
-# Print the scene result for the debugging purpose
-print(scene_result.model_dump_json(indent=2))</div>
+tag_result.tags</div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=15732fe2">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="create-video-chapters">Create video chapters<a class="anchor-link" href="#create-video-chapters">¶</a></h2><p>Create video chapters by combining the video scenes with chatGPT. After running this step, you will have a video chapters json file. Each chapter has start and end timestamps, a title and list of scenes that belong to the chapter.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=31f5edb2">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-7">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">python.utility</span><span class="w"> </span><span class="kn">import</span> <span class="n">generate_chapters</span>
-
-
-<span class="c1"># Generate the chapters using the scenes result</span>
-<span class="n">chapter_result</span> <span class="o">=</span> <span class="n">generate_chapters</span><span class="p">(</span><span class="n">scene_result</span><span class="p">,</span> <span class="n">openai_assistant</span><span class="p">)</span>
-
-<span class="c1"># Write the chapter result to a json file</span>
-<span class="n">chapter_output_json_file</span> <span class="o">=</span> <span class="s2">"./chapter_results.json"</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">chapter_output_json_file</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">chapter_result</span><span class="o">.</span><span class="n">model_dump_json</span><span class="p">(</span><span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Chapter result is saved to </span><span class="si">{</span><span class="n">chapter_output_json_file</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-
-<span class="c1"># Print out the chapter result for the debugging purpose</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">chapter_result</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-7">from python.utility import generate_chapters
-
-
-# Generate the chapters using the scenes result
-chapter_result = generate_chapters(scene_result, openai_assistant)
-
-# Write the chapter result to a json file
-chapter_output_json_file = "./chapter_results.json"
-with open(chapter_output_json_file, "w") as f:
-    f.write(chapter_result.model_dump_json(indent=2))
-    print(f"Chapter result is saved to {chapter_output_json_file}")
-
-# Print out the chapter result for the debugging purpose
-print(chapter_result)</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1126b263">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
@@ -2570,7 +2463,7 @@ print(chapter_result)</div>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+          <a href="../video_chapter_generation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Video Chapters Generation">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2580,20 +2473,20 @@ print(chapter_result)</div>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Overview
+                Video Chapters Generation
               </div>
             </div>
           </a>
         
         
           
-          <a href="../video_tag_generation/" class="md-footer__link md-footer__link--next" aria-label="Next: Video Chapters Generation">
+          <a href="../../Challenge-7/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Video Chapters Generation
+                Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">

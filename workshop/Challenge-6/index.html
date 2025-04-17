@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://blessing-sanusi.github.io/microhack-doc/workshop/Challenge-6/">
       
       
+        <link rel="prev" href="../Challenge-4-and-5/Challenge-4/">
+      
+      
+        <link rel="next" href="video_chapter_generation/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>Video Processing - Knowledge Mining Microhack: Workshop Guide</title>
+        <title>Overview - Knowledge Mining Microhack: Workshop Guide</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#video-processing" class="md-skip">
+        <a href="#video-processing-using-azure-ai-content-understanding-and-azure-openai" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Video Processing
+              Overview
             
           </span>
         </div>
@@ -393,11 +397,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="video_chapter_generation/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -1114,31 +1120,41 @@
       
   
   
+    
   
   
+  
     
     
       
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
   
   
   <span class="md-ellipsis">
@@ -1147,15 +1163,23 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_9" id="__nav_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Challenge 6
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -1165,6 +1189,29 @@
   
     <li class="md-nav__item">
       <a href="video_chapter_generation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Video Chapters Generation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="video_tag_generation/" class="md-nav__link">
         
   
   
@@ -1357,6 +1404,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#samples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Samples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting started
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-a-jupyter-notebook-and-follow-the-step-by-step-guidance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open a Jupyter notebook and follow the step-by-step guidance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-samples-using-azure-content-understanding" class="md-nav__link">
+    <span class="md-ellipsis">
+      More Samples using Azure Content Understanding
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1374,7 +1465,59 @@
   
 
 
-<h1 id="video-processing">Video Processing<a class="headerlink" href="#video-processing" title="Permanent link">&para;</a></h1>
+<h1 id="video-processing-using-azure-ai-content-understanding-and-azure-openai">Video Processing Using Azure AI Content Understanding and Azure OpenAI<a class="headerlink" href="#video-processing-using-azure-ai-content-understanding-and-azure-openai" title="Permanent link">&para;</a></h1>
+<p>Content Understanding is an innovative solution designed to analyze and interpret diverse media types, including documents, images, audio, and video. It transforms this content into structured, organized, and searchable data. In this sample, we will demonstrate how to extract semantic information from you file, and send these information to Azure OpenAI to achive complex works.</p>
+<ul>
+<li>The samples in this repository default to the latest preview API version: <strong>(2024-12-01-preview)</strong>.</li>
+</ul>
+<h2 id="samples">Samples<a class="headerlink" href="#samples" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="video_chapter_generation/">video_chapter_generation.ipynb</a></td>
+<td>Extract semantic descriptions using content understanding API, and then leverage OpenAI to group into video chapters.</td>
+</tr>
+<tr>
+<td><a href="video_tag_generation/">video_tag_generation.ipynb</a></td>
+<td>Generate video tags based on Azure Content Understanding and Azure OpenAI.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Identify your <a href="docs/create_azure_ai_service.md">Azure AI Services resource</a>, suggest to use <strong><em>Sweden Central</em></strong> region for the availability of the content understanding API.</li>
+<li>Go to <code>Access Control (IAM)</code> in resource, grant yourself role <code>Cognitive Services User</code></li>
+<li>Identify your <a href="https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal">Azure OpenAI resource</a></li>
+<li>Go to <code>Access Control (IAM)</code> in resource, grant yourself role <code>Cognitive Services OpenAI User</code></li>
+<li>Copy <code>notebooks/.env.sample</code> to <code>notebooks/.env</code>
+   <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>cp<span class="w"> </span>notebooks/.env.example<span class="w"> </span>notebooks/.env
+</code></pre></div></td></tr></table></div></li>
+<li>Fill required information into .env from the resources that you alredy have created, remember that your model is <strong><em>gpt-4o-mini</em></strong>, you should have something like this:
+   <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nv">AZURE_AI_SERVICE_ENDPOINT</span><span class="o">=</span><span class="s2">&quot;https://kmyfeztrgpktwf-aiservices-cu.cognitiveservices.azure.com&quot;</span>
+<span class="nv">AZURE_AI_SERVICE_API_VERSION</span><span class="o">=</span><span class="m">2024</span>-12-01-preview
+<span class="nv">AZURE_OPENAI_ENDPOINT</span><span class="o">=</span><span class="s2">&quot;https://kmyfeztrgpktwf-aiservices.openai.azure.com&quot;</span>
+<span class="nv">AZURE_OPENAI_API_VERSION</span><span class="o">=</span><span class="m">2024</span>-08-01-preview
+<span class="nv">AZURE_OPENAI_CHAT_DEPLOYMENT_NAME</span><span class="o">=</span>gpt-4o-mini
+</code></pre></div></td></tr></table></div></li>
+<li>Login Azure
+   <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>az<span class="w"> </span>login
+</code></pre></div></td></tr></table></div></li>
+</ol>
+<h2 id="open-a-jupyter-notebook-and-follow-the-step-by-step-guidance">Open a Jupyter notebook and follow the step-by-step guidance<a class="headerlink" href="#open-a-jupyter-notebook-and-follow-the-step-by-step-guidance" title="Permanent link">&para;</a></h2>
+<p>Navigate to the <code>notebooks</code> directory and select the sample notebook you are interested in. Since Codespaces is pre-configured with the necessary environment, you can directly execute each step in the notebook.</p>
+<h2 id="more-samples-using-azure-content-understanding">More Samples using Azure Content Understanding<a class="headerlink" href="#more-samples-using-azure-content-understanding" title="Permanent link">&para;</a></h2>
+<p><a href="https://github.com/Azure-Samples/azure-ai-content-understanding-python">Azure Content Understanding Basic Usecase</a></p>
+<p><a href="https://github.com/Azure-Samples/azure-ai-search-with-content-understanding-python">Azure Search with Content Understanding</a></p>
 
 
 
@@ -1407,6 +1550,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Challenge-4-and-5/Challenge-4/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Challenge 4">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Challenge 4
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="video_chapter_generation/" class="md-footer__link md-footer__link--next" aria-label="Next: Video Chapters Generation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Video Chapters Generation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
