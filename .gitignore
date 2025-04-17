@@ -4,3 +4,5 @@ myenv
 /.gitignore
 /venv
 venv
+.env
+/.env
