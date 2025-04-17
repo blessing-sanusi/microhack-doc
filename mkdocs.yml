@@ -152,8 +152,9 @@ nav:
       - Overview: workshop/Challenge-4-and-5/index.md
       - Challenge 4: workshop/Challenge-4-and-5/Challenge-4.md
   - Challenge 6:
-      #- Overview: workshop/Challenge-6/index.md
-      - Video: workshop/Challenge-6/video_chapter_generation.ipynb
+      - Overview: workshop/Challenge-6/index.md
+      - Video Chapter Generation: workshop/Challenge-6/video_chapter_generation.ipynb
+      - Video Tag Generation: workshop/Challenge-6/video_tag_generation.ipynb
   - Challenge 7:
       - Overview: workshop/Challenge-7/index.md
       - Content Safety Evaluation: workshop/Challenge-7/Content_safety_evaluation.ipynb
