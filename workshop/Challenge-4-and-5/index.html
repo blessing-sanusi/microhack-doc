@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#orchestrator-change" class="md-skip">
+        <a href="#chat-with-your-data-using-azure-ai" class="md-skip">
           Skip to content
         </a>
       
@@ -1411,18 +1411,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-are-copilots" class="md-nav__link">
+  <a href="#what-you-already-have" class="md-nav__link">
     <span class="md-ellipsis">
-      What are copilots?
+      What You Already Have
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-use-python" class="md-nav__link">
+  <a href="#challenge-4-create-plugins-for-chat" class="md-nav__link">
     <span class="md-ellipsis">
-      Why use Python?
+      Challenge 4: Create Plugins for Chat
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Challenge 4: Create Plugins for Chat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-greeting-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Greeting Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-querying-azure-sql-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Querying Azure SQL Database
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-querying-azure-ai-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Querying Azure AI Search
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-youll-do-in-the-notebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      What You'll Do in the Notebook
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-responsible-ai-rai-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bonus: Responsible AI (RAI) Principles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recap
     </span>
   </a>
   
@@ -1447,35 +1507,97 @@
   
 
 
-<h1 id="orchestrator-change">Orchestrator change<a class="headerlink" href="#orchestrator-change" title="Permanent link">&para;</a></h1>
-<details class="question">
-<summary>Using your own data?</summary>
-<p>Incorporating your own data into the solution accelerator requires adapting the existing architecture to align with your specific data structures.
-Here are some recommendations:</p>
-<p><strong>1. Implement Design Patterns and LangChain in Your Solution</strong>
-To effectively integrate AI capabilities, you need to incorporate design patterns that facilitate seamless interaction between your data and AI models. Utilizing <a href="https://python.langchain.com/docs/introduction/">LangChain</a> can help in constructing these patterns, enabling efficient data processing and AI orchestration.</p>
-<p><strong>2. Customize the <code>chat_functions.py</code> file</strong>
-The <code>chat_functions.py</code> file serves as a bridge between the user inputs and AI responses. To tailor this to your data:</p>
+<h1 id="chat-with-your-data-using-azure-ai">Chat With Your Data Using Azure AI<a class="headerlink" href="#chat-with-your-data-using-azure-ai" title="Permanent link">&para;</a></h1>
+<p>In these two challenges, you'll learn how to build an intelligent chat experience using data from earlier exercises — specifically audio and call transcript files that were processed using Content Understanding.</p>
+<p>By the end of this challenge, you’ll know how to:
+- Use structured and unstructured data together
+- Create plugins to query SQL databases and Azure AI Search
+- Build a simple AI agent that can answer user questions from your data</p>
+<hr />
+<h2 id="what-you-already-have">What You Already Have<a class="headerlink" href="#what-you-already-have" title="Permanent link">&para;</a></h2>
+<p>Up to this point, you've:</p>
 <ul>
-<li>Understand the Existing Structure: Review the current implementation to comprehend how data flows and functions are structured.</li>
-<li>Map Your Data: Identify how your data schema aligns with the existing functions.</li>
-<li>Modify Functions: Adjust or rewrite functions to query and process your data appropriately, ensuring that the AI services can accurately interpret and respond based on your dataset.</li>
+<li>Processed <strong>unstructured audio or transcript files</strong></li>
+<li>Extracted structured data from them into an <strong>Azure SQL Database</strong></li>
+<li>Stored the full transcript and embeddings in <strong>Azure AI Search</strong></li>
 </ul>
-</details>
-<p>In this section, you will add an AI copilot to the <em>Woodgrove Bank Contract Management</em> application using Python, the GenAI capabilities of Azure Database for PostgreSQL - Flexible Server, and the Azure AI extension. Using the AI-validated data, the copilot will use RAG to provide insights and answer questions about vendor contract performance and invoicing accuracy, serving as an intelligent assistant for Woodgrove Banks users. Here's what you will accomplish:</p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Explore the API codebase</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Review the RAG design</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Leverage LangChain Orchestration</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Implement and test the Chat endpoint</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Refine the copilot prompt using standard prompt engineering techniques</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Add and test the Copilot Chat UI component</li>
+<p>Now, you'll put this data to work by building an intelligent <strong>chat API</strong> using Semantic Kernel and Azure AI Agents.</p>
+<hr />
+<h2 id="challenge-4-create-plugins-for-chat">Challenge 4: Create Plugins for Chat<a class="headerlink" href="#challenge-4-create-plugins-for-chat" title="Permanent link">&para;</a></h2>
+<p>In this part, you’ll work in a notebook to explore how plugins are created. There are <strong>three key functions</strong> in the <code>ChatWithYourDataPlugin</code> that power different types of chat behavior:</p>
+<h3 id="1-greeting-function">1. Greeting Function<a class="headerlink" href="#1-greeting-function" title="Permanent link">&para;</a></h3>
+<p>A simple function that returns a friendly greeting when the user says "hello".</p>
+<h3 id="2-querying-azure-sql-database">2. Querying Azure SQL Database<a class="headerlink" href="#2-querying-azure-sql-database" title="Permanent link">&para;</a></h3>
+<p>This function takes a <strong>natural language question</strong>, converts it into a <strong>SQL query</strong>, runs the query against your database, and returns the result.</p>
+<ul>
+<li>Example input: <code>"What were the top complaints in the last month?"</code></li>
 </ul>
-<p>Following these steps will transform your application into a powerful AI-enhanced platform capable of executing advanced generative AI tasks and providing deeper insights from your data.</p>
-<h2 id="what-are-copilots">What are copilots?<a class="headerlink" href="#what-are-copilots" title="Permanent link">&para;</a></h2>
-<p>Copilots are advanced AI assistants designed to augment human capabilities and improve productivity by providing intelligent, context-aware support, automating repetitive tasks, and enhancing decision-making processes. For instance, the Woodgrove Bank copilot will assist in data analysis, helping users identify patterns and trends in financial datasets.</p>
-<h2 id="why-use-python">Why use Python?<a class="headerlink" href="#why-use-python" title="Permanent link">&para;</a></h2>
-<p>Python's simplicity and readability make it a popular programming language for AI and machine learning projects. Its extensive libraries and frameworks, such as LangChain, FastAPI, and many others, provide robust tools for developing sophisticated copilots. Python's versatility allows developers to iterate and experiment quickly, making it a top choice for building AI applications.</p>
+<h3 id="3-querying-azure-ai-search">3. Querying Azure AI Search<a class="headerlink" href="#3-querying-azure-ai-search" title="Permanent link">&para;</a></h3>
+<p>This function lets users ask questions that are better answered using full-text search.</p>
+<ul>
+<li>Example input: <code>"What did the customer say about billing?"</code></li>
+</ul>
+<hr />
+<h2 id="what-youll-do-in-the-notebook">What You'll Do in the Notebook<a class="headerlink" href="#what-youll-do-in-the-notebook" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Run through each function</strong> step-by-step to see how it works</li>
+<li>The SQL and greeting functions will be <strong>ready to run</strong></li>
+<li>The Azure AI Search function will be <strong>commented out at first</strong></li>
+<li>
+<p>As part of the challenge, you'll:</p>
+<ul>
+<li>Ask questions that require the database</li>
+<li>Then try questions that rely on search (and see them fail)</li>
+<li>Then <strong>uncomment the search function</strong>, rerun, and watch it work!</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>This simulates the real-world experience of developing a chat system that grows in capability.</p>
+</blockquote>
+<hr />
+<!-- ## Challenge 5: Create an AI Agent
+
+Once your plugin is ready, you’ll create an **Azure AI Agent** that uses it.
+
+### The Agent Includes:
+- A **system prompt** that defines the assistant’s behavior  
+  (e.g. "You're a helpful assistant. Only respond to relevant questions.")
+- The three **plugin functions** from above
+- Basic logic to route questions to the right function (greeting, SQL, or search)
+
+You’ll test the agent by giving it natural questions and seeing how it responds using your actual data!
+
+--- -->
+
+<h2 id="bonus-responsible-ai-rai-principles">Bonus: Responsible AI (RAI) Principles<a class="headerlink" href="#bonus-responsible-ai-rai-principles" title="Permanent link">&para;</a></h2>
+<p>Take a moment to review how the system prompt reflects <strong>RAI principles</strong>:</p>
+<ul>
+<li>What the assistant should or shouldn't say</li>
+<li>How it handles unknown or inappropriate questions</li>
+<li>How it maintains transparency and trust</li>
+</ul>
+<p>Feel free to enhance the agent prompt with RAI-friendly language.</p>
+<hr />
+<!-- 
+## 🧪 Sample Run
+
+You’ll find example queries in the notebook. Try things like:
+- `"What’s the average wait time for support calls?"`
+- `"Summarize what the customer said about the new pricing."`
+- `"Hello!"`
+
+Observe which plugin each query triggers — and how it responds.
+
+--- -->
+
+<h2 id="recap">Recap<a class="headerlink" href="#recap" title="Permanent link">&para;</a></h2>
+<p>In these two challenges, you:</p>
+<ul>
+<li>Built chat plugins to work with structured (SQL) and unstructured (search) data</li>
+<li>Integrated them into an AI agent with defined behavior</li>
+<li>Practiced testing and debugging the system step-by-step</li>
+</ul>
 
 
 
