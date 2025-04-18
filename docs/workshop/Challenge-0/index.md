@@ -1,4 +1,5 @@
-# Prerequisites
+# Before you begin
+
 To get started, make sure you have the following resources and permissions:
 
 - An Azure subscription. If you don't have an Azure subscription, create a free account before you begin.

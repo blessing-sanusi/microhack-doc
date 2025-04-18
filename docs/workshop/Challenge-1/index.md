@@ -13,7 +13,8 @@ The dataset contains customer interactions categorized into various topics. Each
 
 ---
 
-## **2. Data Flow**
+## ** Data Flow**
+
 ### **Step 1: Audio to Text**
 - Audio conversations are transcribed into text using speech-to-text technology.
 - The transcription captures the full conversation, including timestamps and speaker identification.
@@ -29,7 +30,7 @@ The dataset contains customer interactions categorized into various topics. Each
 
 ---
 
-## **3. Key Insights**
+## ** Key Insights**
 ### **Frequent Topics**
 1. **Account Management**:
       - Includes account updates, voicemail setup, and call forwarding.
@@ -66,7 +67,8 @@ The dataset contains customer interactions categorized into various topics. Each
 
 ---
 
-## **4. Analyzer Workflow**
+## ** Analyzer Workflow**
+
 ### **Step 1: Sentiment Analysis**
 - Uses Natural Language Processing (NLP) to classify the sentiment as Positive or Negative.
 - Example: "Thank you for your help" → Positive sentiment.

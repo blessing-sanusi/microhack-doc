@@ -138,7 +138,7 @@ nav:
       - App Authentication: workshop/Deployment/App_Authentication.md
   - Challenge 1:
       - Explore Data: workshop/Challenge-1/index.md
-      - Analyze Data Exploration: workshop/Challenge-1/Analyzer.md
+      # - Analyze Data Exploration: workshop/Challenge-1/Analyzer.md
   - Challenge 2:
       - Explore Code: workshop/Challenge-2/index.md
       - Frontend: workshop/Challenge-2/Frontend.md

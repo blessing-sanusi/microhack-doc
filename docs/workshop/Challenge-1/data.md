@@ -30,6 +30,11 @@ This document is a comprehensive walkthrough of the **data** used and generated 
 }
 Location: Saved in Blob Storage and later processed by the pipeline
 
+
+## 📝 2. Transcription (Speech-to-Text)
+
+### ✅ Service Used: Azure Cognitive Services – Speech
+
 ## 3. Text Processing and Insight Generation
 
 ### ✅ Service Used: Azure OpenAI (via Azure AI Foundry Pipelines)
