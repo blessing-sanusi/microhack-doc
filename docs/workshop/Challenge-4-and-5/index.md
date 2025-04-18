@@ -21,7 +21,11 @@ Now, you'll put this data to work by building an intelligent **chat API** using 
 
 ---
 
-## Challenge 4: Create Plugins for Chat
+## Challenge 4: Changing the Logo in the App
+
+In this challenge, you’ll start by customizing the look and feel of your application by changing the app logo. This task introduces you to the basics of working with the app's front-end code.
+
+## Challenge 5: Create Plugins for Chat
 
 In this part, you’ll work in a notebook to explore how plugins are created. There are **three key functions** in the `ChatWithYourDataPlugin` that power different types of chat behavior:
 
