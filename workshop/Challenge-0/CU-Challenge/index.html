@@ -684,33 +684,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#step-2-build-your-first-analyzer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2: Build Your First Analyzer
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-share-and-manage-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3: Share and Manage Access
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next Steps
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1492,33 +1465,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#step-2-build-your-first-analyzer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2: Build Your First Analyzer
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-share-and-manage-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3: Share and Manage Access
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next Steps
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1541,83 +1487,36 @@
 <h1 id="create-your-first-content-understanding-project-in-the-ai-foundry">Create your first Content Understanding project in the AI Foundry<a class="headerlink" href="#create-your-first-content-understanding-project-in-the-ai-foundry" title="Permanent link">&para;</a></h1>
 <h2 id="step-1-create-a-content-understanding-project">Step 1: Create a Content Understanding Project<a class="headerlink" href="#step-1-create-a-content-understanding-project" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Navigate to the <a href="https://ai.azure.com">AI Foundry homepage</a>.</li>
+<li>Navigate to the <a href="https://ai.azure.com">AI Foundry homepage</a> and select content understanding.</li>
 </ul>
 <p><img alt="AI Foundry Homepage" src="../../img/ai-services-landing-page.png" />   </p>
 <ul>
-<li>Select <strong>Create a new Content Understanding Project</strong>.</li>
+<li>Select <strong>Create a new Content Understanding Project</strong> and provide your project a name (i.e. call_analyzer).</li>
 </ul>
-<p><img alt="CU Landing Page" src="../../img/cu-landing-page.png" /></p>
+<p><img alt="CU Landing Page" src="../../img/cu-create-project.png" /></p>
 <ul>
-<li>In the project creation wizard:<ul>
-<li>Choose the hub you created.</li>
-<li>Confirm that an AI Services resource and a blob storage container are provisioned (these are selected by default).</li>
+<li>Select Browse file to upload the <a href="../../data/convo_2c703f97-6657-4a15-b8b2-db6b96630b2d_2024-12-06%2006_00_00.wav">sample audio file</a>.</li>
 </ul>
-</li>
-</ul>
-<p><img alt="Foundry Architecture" src="../../img/foundry-architecture.png" /></p>
-<ul>
-<li>Complete the setup and click <strong>Create project</strong>.</li>
-</ul>
-<h2 id="step-2-build-your-first-analyzer">Step 2: Build Your First Analyzer<a class="headerlink" href="#step-2-build-your-first-analyzer" title="Permanent link">&para;</a></h2>
+<p><img alt="CU upload document" src="../../img/cu-upload-document.png" /></p>
 <ul>
 <li>
-<p><strong>Upload a Sample File</strong>: Begin by uploading a sample document (e.g., an invoice).
-<img alt="Template Suggestion" src="../../img/define-schema-upload.png" /></p>
+<p>Select the Post call analytics template and select create. 
+  <img alt="Template Suggestion" src="../../img/define-schema-template-selection.png" /></p>
 </li>
 <li>
-<p><strong>Select an Analyzer Template</strong>: Based on the content type, Azure will suggest relevant analyzer templates. For this example, choose the <strong>Document analysis</strong> template.
-<img alt="Template Suggestion" src="../../img/define-schema-template-selection.png" /></p>
+<p>Save the default schema 
+  <img alt="define schema" src="../../img/define-schema.png" /></p>
 </li>
 <li>
-<p><strong>Define Your Schema</strong>:</p>
-<ul>
-<li>Add fields such as <code>vendorName</code>, <code>items</code>, and <code>price</code>.</li>
-<li>Specify the data type for each field (e.g., string, number).</li>
-<li>Optionally, provide descriptions to clarify each field’s purpose.</li>
-</ul>
-</li>
-<li>
-<p><strong>Save the Schema</strong>: Once your schema is complete, click <strong>Save schema</strong>.
-<img alt="Template Suggestion" src="../../img/define-schema.png" /></p>
-</li>
-<li>
-<p>With the completed schema, Content Understanding now generates the output on your sample data. At this step, you can add more data to test the analyzer's accuracy or make changes to the schema if needed.
+<p>Select Run analysis<br />
 <img alt="Template Suggestion" src="../../img/test-analyzer.png" /></p>
 </li>
 <li>
-<p><strong>Build the Analyzer</strong>: Click <strong>Build analyzer</strong> to generate your custom analyzer. The process may take a few moments. Once complete, you’ll receive a unique <strong>Analyzer ID</strong>.</p>
+<p>Select the Results to view the JSON output.
+  <img alt="test-analyzer-results" src="../../img/test-analyzer-results.png" /></p>
 </li>
-</ul>
-<blockquote>
-<p>🧪 Use this ID to test your analyzer or integrate it into applications via API.</p>
-</blockquote>
-<h2 id="step-3-share-and-manage-access">Step 3: Share and Manage Access<a class="headerlink" href="#step-3-share-and-manage-access" title="Permanent link">&para;</a></h2>
-<p>To manage access to your Content Understanding project:</p>
-<ul>
-<li>
-<p>Navigate to the <strong>Management Center</strong> located at the bottom of your project's navigation pane.
-<img alt="Management Center" src="../../img/cu-find-management-center.png" /></p>
-</li>
-<li>
-<p>Here, you can:</p>
-<ul>
-<li>Add or remove users.</li>
-<li>Assign roles to users to control their level of access.</li>
-</ul>
-</li>
-</ul>
-<p><em>Image: Management Center interface</em><br />
-<img alt="Management Center" src="../../img/cu-management-center.png" /></p>
-<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
-<p>Now that you've created your first analyzer, consider the following:</p>
-<ul>
-<li><strong>Test the Analyzer</strong>: Upload additional sample documents to evaluate the accuracy and performance of your analyzer.</li>
-<li><strong>Integrate with Applications</strong>: Use the generated analyzer ID to call your analyzer via the REST API in your applications.</li>
-<li><strong>Explore More Templates</strong>: The Azure AI Foundry offers a variety of analyzer templates for different content types. Explore these to find solutions tailored to your needs.</li>
 </ul>
 <p>For more detailed information and advanced configurations, refer to the official <a href="https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-ai-foundry">Azure AI Content Understanding documentation</a>.</p>
-<hr />
 
 
 
