@@ -1,5 +1,5 @@
 <!-- ## **1. Overview of the Data** -->
-The dataset contains customer interactions categorized into various topics. Each entry includes:
+The Sample dataset used for this solution contains customer interactions categorized into various topics. Each entry includes:
 
 - **ConversationId**: Unique identifier for each conversation.
 - **StartTime** and **EndTime**: Timestamps for when the conversation occurred.
