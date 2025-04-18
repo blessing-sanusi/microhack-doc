@@ -130,12 +130,12 @@ nav:
   - Introduction: index.md
   - Overview: workshop/00-Use-Case-Scenerio.md
       # - Knowledge Mining Hands-on Workshop: workshop/index.md
-  - Deployment:
-      - Prerequisites: workshop/Deployment/index.md
-      - App Authentication: workshop/Deployment/App_Authentication.md
   - Challenge 0:
       - Prerequisites: workshop/Challenge-0/index.md
       - CU-AI Foundry: workshop/Challenge-0/CU-Challenge.md
+  - Deployment:
+      - Prerequisites: workshop/Deployment/index.md
+      - App Authentication: workshop/Deployment/App_Authentication.md
   - Challenge 1:
       - Explore Data: workshop/Challenge-1/index.md
       - Analyze Data Exploration: workshop/Challenge-1/Analyzer.md
