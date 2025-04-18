@@ -151,7 +151,7 @@ nav:
   - Challenge 4 and 5:
       - Overview: workshop/Challenge-4-and-5/index.md
       - Challenge 4: workshop/Challenge-4-and-5/Challenge-4.md
-      - Knowledge Mining API: workshop/Challenge-4-and-5/knowledge_mining_api.ipynb
+      - Challenge 5: workshop/Challenge-4-and-5/knowledge_mining_api.ipynb
   - Challenge 6:
       - Overview: workshop/Challenge-6/index.md
       - Video Chapter Generation: workshop/Challenge-6/video_chapter_generation.ipynb
