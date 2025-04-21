@@ -28,7 +28,7 @@ Here are some example regions where the services are available: East US, East US
 
 ### [Optional] Quota Recommendations  
 By default, the **GPT model capacity** in deployment is set to **30k tokens**.  
-> **We recommend increasing the capacity to 100k tokens for optimal performance.** 
+> **We recommend increasing the capacity to 120k tokens for optimal performance.** 
 
 To adjust quota settings, follow these [steps](./docs/AzureGPTQuotaSettings.md)  
 

@@ -1,46 +1,39 @@
-# Backend Overview
 
-## Key Features
-1. **Azure OpenAI Integration**:
-    - Processes natural language queries and generates responses.
-    - Supports dynamic chart generation based on user queries.
+## Backend Overview
 
-2. **Structured Data Integration**:
-    - Queries SQL databases for structured data (e.g., customer interactions, complaints).
-    - Uses Azure Cognitive Search for retrieving indexed call transcripts.
+**Folder**: [`src/api`](https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/tree/main/src/api)
 
-3. **Conversation History Management**:
-    - Stores and retrieves conversation history using CosmosDB.
-    - Supports feedback and message updates.
+The backend is a **Python Quart app** that processes queries, generates insights, and communicates with databases and AI services.
 
-4. **Chart Data Processing**:
-    - Processes RAG (Retrieval-Augmented Generation) responses to generate chart-compatible JSON data.
+### Key Features
 
----
+1. ** Azure OpenAI Integration**
+   - Natural language processing and chart generation.
 
-## Workflow
-1. **Initialize Services**:
-    - Sets up Azure OpenAI, CosmosDB, and other integrations.
+2. ** Data Access**
+   - SQL for structured data.
+   - Azure Cognitive Search for transcripts.
 
-2. **Process Requests**:
-    - Handles API requests for fetching chart data, filters, and conversation history.
+3. ** Chat History**
+   - Cosmos DB for storing user conversations.
 
-3. **Generate Insights**:
-    - Uses Azure OpenAI for unstructured queries.
-    - Executes SQL queries or Cognitive Search for structured data.
+4. ** Chart Processing**
+   - Converts results to chart-ready JSON.
 
-4. **Chatbot Interaction**:
-    - Processes user queries and generates responses or charts.
+###  Workflow (Backend)
 
----
+| Step | Description | Maps to Architecture |
+|------|-------------|----------------------|
+| 1. **Service Init** | Load AI and data sources. |  App Service |
+| 2. **Handle Queries** | Interpret and act on requests. |  Azure OpenAI |
+| 3. **Generate Insights** | Return results for chat/charts. |  Semantic Kernel |
+| 4. **Store History** | Save chats to Cosmos DB. |  Cosmos DB |
 
-## Tools and Libraries
-- **Quart**: For building the backend application.
-- **Azure OpenAI**: For natural language processing.
-- **CosmosDB**: For managing conversation history.
-- **Azure Cognitive Search**: For retrieving indexed data.
+###  Tools & Libraries
+
+- **Quart**
+- **Azure OpenAI**
+- **CosmosDB SDK**
+- **SQLAlchemy**
 
 ---
-
-## How It Works
-The backend acts as the core processing engine, handling API requests, generating insights, and managing data storage.

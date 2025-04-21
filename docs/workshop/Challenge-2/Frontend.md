@@ -1,44 +1,45 @@
-# Frontend Overview
-
-## Key Features
-1. **Dynamic Chart Rendering**:
-      - Displays charts (e.g., Donut, Bar, Word Cloud) using Chart.js.
-      - Updates dynamically based on user-selected filters.
-
-2. **Chatbot Integration**:
-      - Provides a conversational interface for users.
-      - Supports queries for insights, dynamic chart generation, and structured data retrieval.
-
-3. **Filter Management**:
-      - Allows users to refine data displayed in charts using filters (e.g., Sentiment, Topics).
-
-4. **Responsive Design**:
-      - Adapts layout and components to different screen sizes.
-
-5. **Error Handling**:
-      - Displays fallback messages for failed API calls.
 
 ---
 
-## Workflow
-1. **Data Fetching**:
-      - Calls APIs like `/api/fetchChartData` and `/api/fetchFilterData` to retrieve chart data and filters.
+## Frontend Overview
 
-2. **Chatbot Interaction**:
-      - Sends user queries to `/api/chat` for processing.
-      - Displays responses, including dynamically generated charts.
+📁 **Folder**: [`src/web-app`](https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/tree/main/src/web-app)
 
-3. **Filter Application**:
-      - Sends filter data to `/api/fetchChartDataWithFilters` and updates charts.
+The frontend is a **React-based web interface** that allows users to explore insights from conversations, interact with an AI-powered chatbot, and view dynamic visualizations.
+
+### ✅ Key Features
+
+1. ** Dynamic Chart Rendering**
+   - Charts like Donut, Bar, and Word Cloud using **Chart.js**.
+   - Visualizes insights such as sentiment, topics, and keywords.
+
+2. ** Chatbot Interface**
+   - Allows users to query via natural language.
+   - Auto-generates insights and charts.
+
+3. ** Filter Management**
+   - Filters such as **Sentiment**, **Entity**, **Topic**.
+   - Updates chart views dynamically.
+
+4. ** Responsive UI**
+   - Optimized for multiple screen sizes.
+
+5. ** Error Handling**
+   - User-friendly error messages for API failures.
+
+### Workflow (Frontend)
+
+| Step | Description | Maps to Architecture |
+|------|-------------|----------------------|
+| 1. **Data Fetching** | Fetch chart/filter data. | 🎯 API Layer |
+| 2. **Chatbot Queries** | Send messages to backend. | 🤖 Azure OpenAI |
+| 3. **Chart Rendering** | Render chart components. | 📊 Web Front-end |
+| 4. **History Sync** | Display chat history. | 🗃 Cosmos DB |
+
+###  Tools & Libraries
+
+- **React**
+- **Chart.js**
+- **Axios**
 
 ---
-
-## Tools and Libraries
-   - **React**: For building the user interface.
-   - **Chart.js**: For rendering charts.
-   - **Axios/Fetch**: For API communication.
-
----
-
-## How It Works
-The frontend provides a user-friendly interface for exploring insights, interacting with the chatbot, and visualizing data dynamically.

@@ -1,50 +1,49 @@
-# API Overview
+##  API Overview
 
-## Key Endpoints
+ **Folder**: [`src/api`](https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/tree/main/src/api)
 
-### **Chart Data**
-1. **`GET /api/fetchChartData`**:
-    - Fetches default chart data.
+###  Key Endpoints
 
-2. **`POST /api/fetchChartDataWithFilters`**:
-    - Fetches chart data based on user-selected filters.
+####  Chart & Filters
+- `GET /api/fetchChartData`
+- `POST /api/fetchChartDataWithFilters`
+- `GET /api/fetchFilterData`
 
-3. **`GET /api/fetchFilterData`**:
-    - Retrieves available filter options.
+####  Chatbot
+- `POST /api/chat`
 
----
+####  Conversation History
+- `POST /history/generate`
+- `POST /history/update`
+- `GET /history/list`
+- `POST /history/read`
+- `DELETE /history/delete`
 
-### **Chatbot**
-1. **`POST /api/chat`**:
-    - Processes user queries and generates responses.
-    - Supports dynamic chart generation.
+###  Workflow (API Layer)
 
----
+| Step | Description | Maps to Architecture |
+|------|-------------|----------------------|
+| 1. **Receive Request** | From frontend. | 🌐 Web Frontend |
+| 2. **Route Request** | To processing service. | ⚙️ App Service |
+| 3. **Return Response** | JSON for frontend. | 🔁 Feedback Loop |
 
-### **Conversation History**
-1. **`POST /history/generate`**:
-    - Creates a new conversation or appends messages to an existing one.
+###  Tools & Libraries
 
-2. **`POST /history/update`**:
-    - Updates an existing conversation with new messages or feedback.
-
-3. **`GET /history/list`**:
-    - Lists all conversations for a user.
-
-4. **`POST /history/read`**:
-    - Retrieves a specific conversation and its messages.
-
-5. **`DELETE /history/delete`**:
-    - Deletes a specific conversation.
+- **Quart**
+- **Azure OpenAI**
+- **CosmosDB SDK**
 
 ---
 
-## Tools and Libraries
-- **Quart**: For building API endpoints.
-- **Azure OpenAI**: For generating insights.
-- **CosmosDB**: For managing conversation history.
+##  Architecture to Code Mapping
+
+| Component                          | Location                        |
+|-----------------------------------|----------------------------------|
+| Web Front-End                     | `src/web-app`                    |
+| API Layer                         | `src/api`                        |
+| Azure OpenAI + Semantic Kernel    | `src/api/conversationInsightsProcessor` |
+| Chart Data Processing             | `src/api/chartProcessor/`        |
+| Vector Search + SQL               | `src/api/vectorIndexer/`        |
+| Cosmos DB for History             | Handled in `history` endpoints   |
 
 ---
-
-## How It Fits
-The API layer connects the frontend and backend, enabling seamless communication and data exchange.
