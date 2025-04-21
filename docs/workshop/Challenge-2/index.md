@@ -5,30 +5,30 @@ The Conversation Knowledge Mining Solution Accelerator is a robust application d
 
 ### Data Processing and Analysis:
 
-  - Processes conversational data using Azure AI Foundry, Azure AI Content Understanding, and Azure OpenAI Service.
-  - Extracts insights such as sentiment, key phrases, and topics from conversations.
-  - Supports speech-to-text transcription for audio data.
+- Processes conversational data using Azure AI Foundry, Azure AI Content Understanding, and Azure OpenAI Service.
+- Extracts insights such as sentiment, key phrases, and topics from conversations.
+- Supports speech-to-text transcription for audio data.
 
 ### Dynamic Dashboard:
 
-  - Visualizes insights through various chart types (e.g., Donut Chart, Bar Chart, Word Cloud).
-  - Enables filtering and customization of data views.
-  - Provides a responsive layout for seamless user experience.
+- Visualizes insights through various chart types (e.g., Donut Chart, Bar Chart, Word Cloud).
+- Enables filtering and customization of data views.
+- Provides a responsive layout for seamless user experience.
 
 
 ### Interactive Chat Interface:
 
-  - Allows users to query data in natural language and receive real-time responses.
-  - Supports both text-based and chart-based responses.
-  - Integrates with Azure OpenAI and Azure Cognitive Search for generating responses and retrieving relevant data.
+- Allows users to query data in natural language and receive real-time responses.
+- Supports both text-based and chart-based responses.
+- Integrates with Azure OpenAI and Azure Cognitive Search for generating responses and retrieving relevant data.
 
 ### Backend API:
 
-  - Built with FastAPI for handling requests and integrating with Azure services.
-  - Includes modular routes for backend operations and conversation history management.
-  - Provides a health check endpoint for monitoring service status.
+- Built with FastAPI for handling requests and integrating with Azure services.
+- Includes modular routes for backend operations and conversation history management.
+- Provides a health check endpoint for monitoring service status.
 
 ### Scalable Deployment:
 
-  - Supports deployment via GitHub Codespaces, VS Code Dev Containers, or local environments.
-  - Includes configurable deployment settings for regions, models, and resource capacities.
+- Supports deployment via GitHub Codespaces, VS Code Dev Containers, or local environments.
+- Includes configurable deployment settings for regions, models, and resource capacities.

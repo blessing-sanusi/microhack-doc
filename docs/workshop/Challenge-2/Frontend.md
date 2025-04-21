@@ -3,29 +3,34 @@
 
 ## Frontend Overview
 
-📁 **Folder**: [`src/web-app`](https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/tree/main/src/web-app)
+**Folder**: [`src/web-app`](https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/tree/main/src/web-app)
 
 The frontend is a **React-based web interface** that allows users to explore insights from conversations, interact with an AI-powered chatbot, and view dynamic visualizations.
 
-### ✅ Key Features
+### Key Features
 
 1. ** Dynamic Chart Rendering**
-   - Charts like Donut, Bar, and Word Cloud using **Chart.js**.
-   - Visualizes insights such as sentiment, topics, and keywords.
+
+- Charts like Donut, Bar, and Word Cloud using **Chart.js**.
+- Visualizes insights such as sentiment, topics, and keywords.
 
 2. ** Chatbot Interface**
-   - Allows users to query via natural language.
-   - Auto-generates insights and charts.
+
+- Allows users to query via natural language.
+- Auto-generates insights and charts.
 
 3. ** Filter Management**
-   - Filters such as **Sentiment**, **Entity**, **Topic**.
-   - Updates chart views dynamically.
+
+- Filters such as **Sentiment**, **Entity**, **Topic**.
+- Updates chart views dynamically.
 
 4. ** Responsive UI**
-   - Optimized for multiple screen sizes.
+
+- Optimized for multiple screen sizes.
 
 5. ** Error Handling**
-   - User-friendly error messages for API failures.
+
+- User-friendly error messages for API failures.
 
 ### Workflow (Frontend)
 

@@ -8,17 +8,21 @@ The backend is a **Python Quart app** that processes queries, generates insights
 ### Key Features
 
 1. ** Azure OpenAI Integration**
-   - Natural language processing and chart generation.
+
+- Natural language processing and chart generation.
 
 2. ** Data Access**
-   - SQL for structured data.
-   - Azure Cognitive Search for transcripts.
+
+- SQL for structured data.
+- Azure Cognitive Search for transcripts.
 
 3. ** Chat History**
-   - Cosmos DB for storing user conversations.
+
+- Cosmos DB for storing user conversations.
 
 4. ** Chart Processing**
-   - Converts results to chart-ready JSON.
+
+- Converts results to chart-ready JSON.
 
 ###  Workflow (Backend)
 

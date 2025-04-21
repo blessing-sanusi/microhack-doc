@@ -137,26 +137,24 @@ nav:
       - Prerequisites: workshop/Deployment/index.md
       - App Authentication: workshop/Deployment/App_Authentication.md
   - Challenge 1:
-      - Explore Data: workshop/Challenge-1/index.md
-      # - Analyze Data Exploration: workshop/Challenge-1/Analyzer.md
-  - Challenge 2:
       - Explore Code: workshop/Challenge-2/index.md
       - Frontend: workshop/Challenge-2/Frontend.md
       - Backend: workshop/Challenge-2/Backend.md
       - API: workshop/Challenge-2/Api.md
-  - Challenge 3:
+      - Explore Data: workshop/Challenge-2/data-explore.md
+  - Challenge 2:
       - Explore Dashboard using Natural Language queries: workshop/Challenge-3/index.md
       # - Step 1: workshop/challenge-3/step-1.md
       # - Step 2: workshop/challenge-3/step-2.md
-  - Challenge 4 and 5:
+  - Challenge 3 and 4:
       - Overview: workshop/Challenge-4-and-5/index.md
-      - Challenge 4: workshop/Challenge-4-and-5/Challenge-4.md
-      - Challenge 5: workshop/Challenge-4-and-5/knowledge_mining_api.ipynb
-  - Challenge 6:
+      - Challenge 3: workshop/Challenge-4-and-5/Challenge-4.md
+      - Challenge 4: workshop/Challenge-4-and-5/knowledge_mining_api.ipynb
+  - Challenge 5:
       - Overview: workshop/Challenge-6/index.md
       - Video Chapter Generation: workshop/Challenge-6/video_chapter_generation.ipynb
       - Video Tag Generation: workshop/Challenge-6/video_tag_generation.ipynb
-  - Challenge 7:
+  - Challenge 6:
       - Overview: workshop/Challenge-7/index.md
       - Content Safety Evaluation: workshop/Challenge-7/Content_safety_evaluation.ipynb
   - Teardown:

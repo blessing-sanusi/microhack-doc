@@ -5,14 +5,17 @@
 ###  Key Endpoints
 
 ####  Chart & Filters
+
 - `GET /api/fetchChartData`
 - `POST /api/fetchChartDataWithFilters`
 - `GET /api/fetchFilterData`
 
 ####  Chatbot
+
 - `POST /api/chat`
 
 ####  Conversation History
+
 - `POST /history/generate`
 - `POST /history/update`
 - `GET /history/list`
