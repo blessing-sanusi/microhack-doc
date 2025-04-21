@@ -876,8 +876,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -910,8 +908,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -920,38 +916,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#frontend-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Frontend Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#key-features" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Features
+      ✅ Key Features
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#workflow" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#workflow-frontend" class="md-nav__link">
     <span class="md-ellipsis">
-      Workflow
+      Workflow (Frontend)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#tools-and-libraries" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#tools-libraries" class="md-nav__link">
     <span class="md-ellipsis">
-      Tools and Libraries
+      Tools &amp; Libraries
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#how-it-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      How It Works
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1474,8 +1476,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1484,38 +1484,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#frontend-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Frontend Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#key-features" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Features
+      ✅ Key Features
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#workflow" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#workflow-frontend" class="md-nav__link">
     <span class="md-ellipsis">
-      Workflow
+      Workflow (Frontend)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#tools-and-libraries" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#tools-libraries" class="md-nav__link">
     <span class="md-ellipsis">
-      Tools and Libraries
+      Tools &amp; Libraries
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#how-it-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      How It Works
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1538,75 +1544,83 @@
   
 
 
-<h1 id="frontend-overview">Frontend Overview<a class="headerlink" href="#frontend-overview" title="Permanent link">&para;</a></h1>
-<h2 id="key-features">Key Features<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h2>
+  <h1>Frontend</h1>
+
+<hr />
+<h2 id="frontend-overview">Frontend Overview<a class="headerlink" href="#frontend-overview" title="Permanent link">&para;</a></h2>
+<p>📁 <strong>Folder</strong>: <a href="https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/tree/main/src/web-app"><code>src/web-app</code></a></p>
+<p>The frontend is a <strong>React-based web interface</strong> that allows users to explore insights from conversations, interact with an AI-powered chatbot, and view dynamic visualizations.</p>
+<h3 id="key-features">✅ Key Features<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h3>
 <ol>
+<li>** Dynamic Chart Rendering**</li>
+<li>Charts like Donut, Bar, and Word Cloud using <strong>Chart.js</strong>.</li>
 <li>
-<p><strong>Dynamic Chart Rendering</strong>:</p>
-<ul>
-<li>Displays charts (e.g., Donut, Bar, Word Cloud) using Chart.js.</li>
-<li>Updates dynamically based on user-selected filters.</li>
-</ul>
+<p>Visualizes insights such as sentiment, topics, and keywords.</p>
 </li>
 <li>
-<p><strong>Chatbot Integration</strong>:</p>
-<ul>
-<li>Provides a conversational interface for users.</li>
-<li>Supports queries for insights, dynamic chart generation, and structured data retrieval.</li>
-</ul>
+<p>** Chatbot Interface**</p>
+</li>
+<li>Allows users to query via natural language.</li>
+<li>
+<p>Auto-generates insights and charts.</p>
 </li>
 <li>
-<p><strong>Filter Management</strong>:</p>
-<ul>
-<li>Allows users to refine data displayed in charts using filters (e.g., Sentiment, Topics).</li>
-</ul>
+<p>** Filter Management**</p>
+</li>
+<li>Filters such as <strong>Sentiment</strong>, <strong>Entity</strong>, <strong>Topic</strong>.</li>
+<li>
+<p>Updates chart views dynamically.</p>
 </li>
 <li>
-<p><strong>Responsive Design</strong>:</p>
-<ul>
-<li>Adapts layout and components to different screen sizes.</li>
-</ul>
+<p>** Responsive UI**</p>
 </li>
 <li>
-<p><strong>Error Handling</strong>:</p>
-<ul>
-<li>Displays fallback messages for failed API calls.</li>
-</ul>
+<p>Optimized for multiple screen sizes.</p>
 </li>
+<li>
+<p>** Error Handling**</p>
+</li>
+<li>User-friendly error messages for API failures.</li>
 </ol>
+<h3 id="workflow-frontend">Workflow (Frontend)<a class="headerlink" href="#workflow-frontend" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Description</th>
+<th>Maps to Architecture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. <strong>Data Fetching</strong></td>
+<td>Fetch chart/filter data.</td>
+<td>🎯 API Layer</td>
+</tr>
+<tr>
+<td>2. <strong>Chatbot Queries</strong></td>
+<td>Send messages to backend.</td>
+<td>🤖 Azure OpenAI</td>
+</tr>
+<tr>
+<td>3. <strong>Chart Rendering</strong></td>
+<td>Render chart components.</td>
+<td>📊 Web Front-end</td>
+</tr>
+<tr>
+<td>4. <strong>History Sync</strong></td>
+<td>Display chat history.</td>
+<td>🗃 Cosmos DB</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tools-libraries">Tools &amp; Libraries<a class="headerlink" href="#tools-libraries" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>React</strong></li>
+<li><strong>Chart.js</strong></li>
+<li><strong>Axios</strong></li>
+</ul>
 <hr />
-<h2 id="workflow">Workflow<a class="headerlink" href="#workflow" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p><strong>Data Fetching</strong>:</p>
-<ul>
-<li>Calls APIs like <code>/api/fetchChartData</code> and <code>/api/fetchFilterData</code> to retrieve chart data and filters.</li>
-</ul>
-</li>
-<li>
-<p><strong>Chatbot Interaction</strong>:</p>
-<ul>
-<li>Sends user queries to <code>/api/chat</code> for processing.</li>
-<li>Displays responses, including dynamically generated charts.</li>
-</ul>
-</li>
-<li>
-<p><strong>Filter Application</strong>:</p>
-<ul>
-<li>Sends filter data to <code>/api/fetchChartDataWithFilters</code> and updates charts.</li>
-</ul>
-</li>
-</ol>
-<hr />
-<h2 id="tools-and-libraries">Tools and Libraries<a class="headerlink" href="#tools-and-libraries" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>React</strong>: For building the user interface.</li>
-<li><strong>Chart.js</strong>: For rendering charts.</li>
-<li><strong>Axios/Fetch</strong>: For API communication.</li>
-</ul>
-<hr />
-<h2 id="how-it-works">How It Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
-<p>The frontend provides a user-friendly interface for exploring insights, interacting with the chatbot, and visualizing data dynamically.</p>
 
 
 

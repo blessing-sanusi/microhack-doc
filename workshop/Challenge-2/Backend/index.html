@@ -899,8 +899,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -933,8 +931,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -943,6 +939,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#backend-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backend Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Backend Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#key-features" class="md-nav__link">
     <span class="md-ellipsis">
       Key Features
@@ -950,31 +956,27 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#workflow" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#workflow-backend" class="md-nav__link">
     <span class="md-ellipsis">
-      Workflow
+      Workflow (Backend)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#tools-and-libraries" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#tools-libraries" class="md-nav__link">
     <span class="md-ellipsis">
-      Tools and Libraries
+      Tools &amp; Libraries
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#how-it-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      How It Works
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1474,8 +1476,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1484,6 +1484,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#backend-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backend Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Backend Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#key-features" class="md-nav__link">
     <span class="md-ellipsis">
       Key Features
@@ -1491,31 +1501,27 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#workflow" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#workflow-backend" class="md-nav__link">
     <span class="md-ellipsis">
-      Workflow
+      Workflow (Backend)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#tools-and-libraries" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#tools-libraries" class="md-nav__link">
     <span class="md-ellipsis">
-      Tools and Libraries
+      Tools &amp; Libraries
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#how-it-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      How It Works
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1538,77 +1544,75 @@
   
 
 
-<h1 id="backend-overview">Backend Overview<a class="headerlink" href="#backend-overview" title="Permanent link">&para;</a></h1>
-<h2 id="key-features">Key Features<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h2>
+  <h1>Backend</h1>
+
+<h2 id="backend-overview">Backend Overview<a class="headerlink" href="#backend-overview" title="Permanent link">&para;</a></h2>
+<p><strong>Folder</strong>: <a href="https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/tree/main/src/api"><code>src/api</code></a></p>
+<p>The backend is a <strong>Python Quart app</strong> that processes queries, generates insights, and communicates with databases and AI services.</p>
+<h3 id="key-features">Key Features<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h3>
 <ol>
+<li>** Azure OpenAI Integration**</li>
 <li>
-<p><strong>Azure OpenAI Integration</strong>:</p>
-<ul>
-<li>Processes natural language queries and generates responses.</li>
-<li>Supports dynamic chart generation based on user queries.</li>
-</ul>
+<p>Natural language processing and chart generation.</p>
 </li>
 <li>
-<p><strong>Structured Data Integration</strong>:</p>
-<ul>
-<li>Queries SQL databases for structured data (e.g., customer interactions, complaints).</li>
-<li>Uses Azure Cognitive Search for retrieving indexed call transcripts.</li>
-</ul>
+<p>** Data Access**</p>
+</li>
+<li>SQL for structured data.</li>
+<li>
+<p>Azure Cognitive Search for transcripts.</p>
 </li>
 <li>
-<p><strong>Conversation History Management</strong>:</p>
-<ul>
-<li>Stores and retrieves conversation history using CosmosDB.</li>
-<li>Supports feedback and message updates.</li>
-</ul>
+<p>** Chat History**</p>
 </li>
 <li>
-<p><strong>Chart Data Processing</strong>:</p>
-<ul>
-<li>Processes RAG (Retrieval-Augmented Generation) responses to generate chart-compatible JSON data.</li>
-</ul>
+<p>Cosmos DB for storing user conversations.</p>
 </li>
+<li>
+<p>** Chart Processing**</p>
+</li>
+<li>Converts results to chart-ready JSON.</li>
 </ol>
+<h3 id="workflow-backend">Workflow (Backend)<a class="headerlink" href="#workflow-backend" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Description</th>
+<th>Maps to Architecture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. <strong>Service Init</strong></td>
+<td>Load AI and data sources.</td>
+<td>App Service</td>
+</tr>
+<tr>
+<td>2. <strong>Handle Queries</strong></td>
+<td>Interpret and act on requests.</td>
+<td>Azure OpenAI</td>
+</tr>
+<tr>
+<td>3. <strong>Generate Insights</strong></td>
+<td>Return results for chat/charts.</td>
+<td>Semantic Kernel</td>
+</tr>
+<tr>
+<td>4. <strong>Store History</strong></td>
+<td>Save chats to Cosmos DB.</td>
+<td>Cosmos DB</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tools-libraries">Tools &amp; Libraries<a class="headerlink" href="#tools-libraries" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Quart</strong></li>
+<li><strong>Azure OpenAI</strong></li>
+<li><strong>CosmosDB SDK</strong></li>
+<li><strong>SQLAlchemy</strong></li>
+</ul>
 <hr />
-<h2 id="workflow">Workflow<a class="headerlink" href="#workflow" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p><strong>Initialize Services</strong>:</p>
-<ul>
-<li>Sets up Azure OpenAI, CosmosDB, and other integrations.</li>
-</ul>
-</li>
-<li>
-<p><strong>Process Requests</strong>:</p>
-<ul>
-<li>Handles API requests for fetching chart data, filters, and conversation history.</li>
-</ul>
-</li>
-<li>
-<p><strong>Generate Insights</strong>:</p>
-<ul>
-<li>Uses Azure OpenAI for unstructured queries.</li>
-<li>Executes SQL queries or Cognitive Search for structured data.</li>
-</ul>
-</li>
-<li>
-<p><strong>Chatbot Interaction</strong>:</p>
-<ul>
-<li>Processes user queries and generates responses or charts.</li>
-</ul>
-</li>
-</ol>
-<hr />
-<h2 id="tools-and-libraries">Tools and Libraries<a class="headerlink" href="#tools-and-libraries" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Quart</strong>: For building the backend application.</li>
-<li><strong>Azure OpenAI</strong>: For natural language processing.</li>
-<li><strong>CosmosDB</strong>: For managing conversation history.</li>
-<li><strong>Azure Cognitive Search</strong>: For retrieving indexed data.</li>
-</ul>
-<hr />
-<h2 id="how-it-works">How It Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
-<p>The backend acts as the core processing engine, handling API requests, generating insights, and managing data storage.</p>
 
 
 
