@@ -1,4 +1,4 @@
-## Explore App UI
+<!-- ## Explore Dashboard using Natural Language queries -->
 
 The app allows you to interact with the dashboard using natural language queries. You can ask questions to gain insights from the data, and the system will respond with relevant charts, summaries, or structured data.
 

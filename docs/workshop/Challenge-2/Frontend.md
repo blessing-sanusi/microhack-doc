@@ -1,7 +1,7 @@
 
-## Frontend Overview
+<!-- ## Frontend Overview -->
 
-**Folder**: [`src/web-app`](https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/tree/main/src/web-app)
+**Folder**: `src/App/Frontend`
 
 The frontend is a **React-based web interface** that allows users to explore insights from conversations, interact with an AI-powered chatbot, and view dynamic visualizations.
 

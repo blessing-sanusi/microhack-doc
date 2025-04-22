@@ -1,4 +1,4 @@
-##  API Overview
+<!-- ##  API Overview -->
 
  **Folder**: [`src/api`](https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/tree/main/src/api)
 
