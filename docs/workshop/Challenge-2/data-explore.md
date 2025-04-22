@@ -37,17 +37,17 @@ call_transcripts → Stores the transcript text used for AI processing
 
 ## **Data Flow**
 
-### **Step 1: Audio to Text**
+### **Audio to Text**
 - Audio conversations are transcribed into text using speech-to-text technology.
 - The transcription captures the full conversation, including timestamps and speaker identification.
 
-### **Step 2: Text Analysis**
+### **Text Analysis**
 - **Sentiment Analysis**: Determines the overall sentiment of the conversation (Positive or Negative).
 - **Topic Mining**: Identifies the main topic of the conversation (e.g., Billing Issues, Device Troubleshooting).
 - **Key Phrase Extraction**: Highlights important phrases for quick insights.
 - **Complaint Identification**: Extracts specific complaints raised by the customer.
 
-### **Step 3: Structuring the Data**
+### **Structuring the Data**
 - The analyzed data is structured into JSON format for easy querying and visualization.
 
 ---
@@ -91,18 +91,18 @@ call_transcripts → Stores the transcript text used for AI processing
 
 ## **Analyzer Workflow**
 
-### **Step 1: Sentiment Analysis**
+### **Sentiment Analysis**
 - Uses Natural Language Processing (NLP) to classify the sentiment as Positive or Negative.
 - Example: "Thank you for your help" → Positive sentiment.
 
-### **Step 2: Topic Mining**
+### **Topic Mining**
 - Identifies the main topic of the conversation using keyword matching and clustering.
 - Example: Keywords like "billing," "charges," and "refund" → Topic: Billing Issues.
 
-### **Step 3: Key Phrase Extraction**
+### **Key Phrase Extraction**
 - Extracts important phrases using NLP techniques like Named Entity Recognition (NER).
 - Example: "slow Internet speed," "paperless billing," "factory reset."
 
-### **Step 4: Complaint Identification**
+### **Complaint Identification**
 - Searches for explicit complaints in the conversation.
 - Example: "My bill was $50 higher than usual" → Complaint: Higher bill.
