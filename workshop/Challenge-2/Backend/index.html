@@ -869,18 +869,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
+  <a href="#features" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Features
+      Features
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#workflow-backend" class="md-nav__link">
+  <a href="#semantic-kernel-plugin-breakdown" class="md-nav__link">
     <span class="md-ellipsis">
-      Workflow (Backend)
+      Semantic Kernel Plugin Breakdown
     </span>
   </a>
   
@@ -1437,18 +1437,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
+  <a href="#features" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Features
+      Features
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#workflow-backend" class="md-nav__link">
+  <a href="#semantic-kernel-plugin-breakdown" class="md-nav__link">
     <span class="md-ellipsis">
-      Workflow (Backend)
+      Semantic Kernel Plugin Breakdown
     </span>
   </a>
   
@@ -1490,76 +1490,74 @@
   <h1>Backend</h1>
 
 <h2 id="backend-overview">Backend Overview<a class="headerlink" href="#backend-overview" title="Permanent link">&para;</a></h2>
-<p><strong>Folder</strong>: <a href="https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/tree/main/src/api"><code>src/api</code></a></p>
+<p><strong>Folder</strong>: <code>src\App\backend</code></p>
 <p>The backend is a <strong>Python Quart app</strong> that processes queries, generates insights, and communicates with databases and AI services.</p>
-<h3 id="key-features">Key Features<a class="headerlink" href="#key-features" title="Permanent link">&para;</a></h3>
+<h3 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
-<p>** Azure OpenAI Integration**</p>
+<p><strong>Azure OpenAI Integration</strong></p>
+<ul>
+<li>Handles natural language queries from users.</li>
+<li>Calls Azure OpenAI for understanding and response generation.</li>
+</ul>
 </li>
 <li>
-<p>Natural language processing and chart generation.</p>
+<p><strong>Semantic Kernel Plugin</strong>: </p>
+<ul>
+<li>Powers natural language interactions via custom kernel functions</li>
+</ul>
 </li>
 <li>
-<p>** Data Access**</p>
+<p><strong>Data Access</strong></p>
+<ul>
+<li>SQL for structured data.</li>
+<li>Azure Cognitive Search for transcripts.</li>
+</ul>
 </li>
 <li>
-<p>SQL for structured data.</p>
+<p><strong>Chat History</strong></p>
+<ul>
+<li>Cosmos DB for storing user conversations.</li>
+</ul>
 </li>
 <li>
-<p>Azure Cognitive Search for transcripts.</p>
-</li>
-<li>
-<p>** Chat History**</p>
-</li>
-<li>
-<p>Cosmos DB for storing user conversations.</p>
-</li>
-<li>
-<p>** Chart Processing**</p>
-</li>
-<li>
-<p>Converts results to chart-ready JSON.</p>
+<p><strong>Chart Processing</strong></p>
+<ul>
+<li>Converts results to chart-ready JSON that is then used to diplay chart on the frontend.</li>
+</ul>
 </li>
 </ol>
-<h3 id="workflow-backend">Workflow (Backend)<a class="headerlink" href="#workflow-backend" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Step</th>
-<th>Description</th>
-<th>Maps to Architecture</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. <strong>Service Init</strong></td>
-<td>Load AI and data sources.</td>
-<td>App Service</td>
-</tr>
-<tr>
-<td>2. <strong>Handle Queries</strong></td>
-<td>Interpret and act on requests.</td>
-<td>Azure OpenAI</td>
-</tr>
-<tr>
-<td>3. <strong>Generate Insights</strong></td>
-<td>Return results for chat/charts.</td>
-<td>Semantic Kernel</td>
-</tr>
-<tr>
-<td>4. <strong>Store History</strong></td>
-<td>Save chats to Cosmos DB.</td>
-<td>Cosmos DB</td>
-</tr>
-</tbody>
-</table>
+<h3 id="semantic-kernel-plugin-breakdown">Semantic Kernel Plugin Breakdown<a class="headerlink" href="#semantic-kernel-plugin-breakdown" title="Permanent link">&para;</a></h3>
+<p>Located in <code>ChatWithDataPlugin</code>:</p>
+<p><strong>greeting()</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>- Responds to simple greetings or general questions
+
+- Uses either Azure AI Project or direct OpenAI client
+</code></pre></div></td></tr></table></div>
+<p><strong>get_SQL_Response()</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>- Converts natural language questions into valid SQL queries
+</code></pre></div></td></tr></table></div>
+<p><strong>get_answers_from_calltranscripts()</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>- Performs Retrieval-Augmented Generation (RAG)
+
+- Uses semantic + vector hybrid search with Azure AI Search
+
+- Returns summarized or specific insights from indexed call data
+</code></pre></div></td></tr></table></div>
 <h3 id="tools-libraries">Tools &amp; Libraries<a class="headerlink" href="#tools-libraries" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Quart</strong></li>
 <li><strong>Azure OpenAI</strong></li>
 <li><strong>CosmosDB SDK</strong></li>
 <li><strong>SQLAlchemy</strong></li>
+<li><strong>Semantic Kernel</strong></li>
+<li><strong>Azure AI Search</strong></li>
 </ul>
 <hr />
 

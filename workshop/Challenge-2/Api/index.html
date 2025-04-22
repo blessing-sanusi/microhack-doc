@@ -900,35 +900,8 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#workflow-api-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Workflow (API Layer)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tools-libraries" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tools &amp; Libraries
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#architecture-to-code-mapping" class="md-nav__link">
-    <span class="md-ellipsis">
-      Architecture to Code Mapping
-    </span>
-  </a>
   
 </li>
       
@@ -1454,35 +1427,8 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#workflow-api-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Workflow (API Layer)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tools-libraries" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tools &amp; Libraries
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#architecture-to-code-mapping" class="md-nav__link">
-    <span class="md-ellipsis">
-      Architecture to Code Mapping
-    </span>
-  </a>
   
 </li>
       
@@ -1528,76 +1474,19 @@
 <li><code>POST /history/read</code></li>
 <li><code>DELETE /history/delete</code></li>
 </ul>
-<h3 id="workflow-api-layer">Workflow (API Layer)<a class="headerlink" href="#workflow-api-layer" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Step</th>
-<th>Description</th>
-<th>Maps to Architecture</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. <strong>Receive Request</strong></td>
-<td>From frontend.</td>
-<td>🌐 Web Frontend</td>
-</tr>
-<tr>
-<td>2. <strong>Route Request</strong></td>
-<td>To processing service.</td>
-<td>⚙️ App Service</td>
-</tr>
-<tr>
-<td>3. <strong>Return Response</strong></td>
-<td>JSON for frontend.</td>
-<td>🔁 Feedback Loop</td>
-</tr>
-</tbody>
-</table>
-<h3 id="tools-libraries">Tools &amp; Libraries<a class="headerlink" href="#tools-libraries" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Quart</strong></li>
-<li><strong>Azure OpenAI</strong></li>
-<li><strong>CosmosDB SDK</strong></li>
-</ul>
 <hr />
-<h2 id="architecture-to-code-mapping">Architecture to Code Mapping<a class="headerlink" href="#architecture-to-code-mapping" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Location</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Web Front-End</td>
-<td><code>src/web-app</code></td>
-</tr>
-<tr>
-<td>API Layer</td>
-<td><code>src/api</code></td>
-</tr>
-<tr>
-<td>Azure OpenAI + Semantic Kernel</td>
-<td><code>src/api/conversationInsightsProcessor</code></td>
-</tr>
-<tr>
-<td>Chart Data Processing</td>
-<td><code>src/api/chartProcessor/</code></td>
-</tr>
-<tr>
-<td>Vector Search + SQL</td>
-<td><code>src/api/vectorIndexer/</code></td>
-</tr>
-<tr>
-<td>Cosmos DB for History</td>
-<td>Handled in <code>history</code> endpoints</td>
-</tr>
-</tbody>
-</table>
-<hr />
+<!-- ##  Architecture to Code Mapping
+
+| Component                          | Location                        |
+|-----------------------------------|----------------------------------|
+| Web Front-End                     | `src/web-app`                    |
+| API Layer                         | `src/api`                        |
+| Azure OpenAI + Semantic Kernel    | `src/api/conversationInsightsProcessor` |
+| Chart Data Processing             | `src/api/chartProcessor/`        |
+| Vector Search + SQL               | `src/api/vectorIndexer/`        |
+| Cosmos DB for History             | Handled in `history` endpoints   |
+
+--- -->
 
 
 

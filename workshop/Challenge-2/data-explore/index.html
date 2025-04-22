@@ -947,48 +947,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-insights" class="md-nav__link">
-    <span class="md-ellipsis">
-      ** Key Insights**
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="** Key Insights**">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#frequent-topics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Frequent Topics
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sentiment-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sentiment Analysis
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#common-complaints" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Complaints
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#analyzer-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       ** Analyzer Workflow**
@@ -1562,48 +1520,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-insights" class="md-nav__link">
-    <span class="md-ellipsis">
-      ** Key Insights**
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="** Key Insights**">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#frequent-topics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Frequent Topics
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sentiment-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sentiment Analysis
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#common-complaints" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Complaints
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#analyzer-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       ** Analyzer Workflow**
@@ -1676,19 +1592,48 @@
   <h1>Explore Data</h1>
 
 <!-- ## **1. Overview of the Data** -->
-<p>The Sample dataset used for this solution contains customer interactions categorized into various topics. Each entry includes:</p>
+
+<p>To access and explore the ingested data:</p>
+<ol>
+<li>
+<p>Go to <a href="https://portal.azure.com/">Azure Portal</a></p>
+</li>
+<li>
+<p>Locate the Resource Group where the solution is deployed</p>
+</li>
+<li>
+<p>Click on the Storage Account associated with the solution
+      <img alt="image" src="../../img/storage-blob.png" /></p>
+</li>
+<li>
+<p>Navigate to Containers section
+      <img alt="image" src="../../img/storage-container.png" /></p>
+</li>
+<li>
+<p>Open the container named data</p>
+</li>
+</ol>
+<p>You’ll see two folders:</p>
 <ul>
-<li><strong>ConversationId</strong>: Unique identifier for each conversation.</li>
-<li><strong>StartTime</strong> and <strong>EndTime</strong>: Timestamps for when the conversation occurred.</li>
-<li><strong>Content</strong>: Full transcript of the conversation.</li>
-<li><strong>Summary</strong>: A concise summary of the interaction.</li>
-<li><strong>Sentiment</strong>: Sentiment analysis of the conversation (e.g., Positive, Negative).</li>
-<li><strong>Topic</strong>: The main topic of the conversation.</li>
-<li><strong>Key Phrases</strong>: Extracted key phrases for quick insights.</li>
-<li><strong>Complaint</strong>: Specific complaints raised by the customer (if any).</li>
-<li><strong>Mined Topic</strong>: Categorized topic based on the conversation.</li>
+<li>audiodata → Contains uploaded call recordings
+      <img alt="image" src="../../img/audio-folder.png" /></li>
 </ul>
-<hr />
+<p>call_transcripts → Stores the transcript text used for AI processing
+      <img alt="image" src="../../img/call_transcripts.png" /></p>
+<!-- The Sample dataset used for this solution contains customer interactions categorized into various topics. Each entry includes:
+
+- **ConversationId**: Unique identifier for each conversation.
+- **StartTime** and **EndTime**: Timestamps for when the conversation occurred.
+- **Content**: Full transcript of the conversation.
+- **Summary**: A concise summary of the interaction.
+- **Sentiment**: Sentiment analysis of the conversation (e.g., Positive, Negative).
+- **Topic**: The main topic of the conversation.
+- **Key Phrases**: Extracted key phrases for quick insights.
+- **Complaint**: Specific complaints raised by the customer (if any).
+- **Mined Topic**: Categorized topic based on the conversation.
+
+--- -->
+
 <h2 id="data-flow">** Data Flow**<a class="headerlink" href="#data-flow" title="Permanent link">&para;</a></h2>
 <h3 id="step-1-audio-to-text"><strong>Step 1: Audio to Text</strong><a class="headerlink" href="#step-1-audio-to-text" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1707,64 +1652,43 @@
 <li>The analyzed data is structured into JSON format for easy querying and visualization.</li>
 </ul>
 <hr />
-<h2 id="key-insights">** Key Insights**<a class="headerlink" href="#key-insights" title="Permanent link">&para;</a></h2>
-<h3 id="frequent-topics"><strong>Frequent Topics</strong><a class="headerlink" href="#frequent-topics" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
-<p><strong>Account Management</strong>:</p>
-<ul>
-<li>Includes account updates, voicemail setup, and call forwarding.</li>
-<li>Example: Updating address and email information.</li>
-</ul>
-</li>
-<li>
-<p><strong>Billing Issues</strong>:</p>
-<ul>
-<li>Covers billing discrepancies, payment failures, and refunds.</li>
-<li>Example: Resolving double charges or unexpected fees.</li>
-</ul>
-</li>
-<li>
-<p><strong>Service Activation</strong>:</p>
-<ul>
-<li>Assistance with activating new services, SIM cards, or scheduling appointments.</li>
-<li>Example: Activating a new SIM card or setting up international roaming.</li>
-</ul>
-</li>
-<li>
-<p><strong>Device Troubleshooting</strong>:</p>
-<ul>
-<li>Support for device-related issues like freezing, battery drain, or hardware malfunctions.</li>
-<li>Example: Factory reset for a tablet or troubleshooting a phone's battery.</li>
-</ul>
-</li>
-<li>
-<p><strong>Internet Connectivity</strong>:</p>
-<ul>
-<li>Troubleshooting slow or unreliable internet connections.</li>
-<li>Example: Diagnosing slow speeds and resetting modems.</li>
-</ul>
-</li>
-<li>
-<p><strong>Parental Controls</strong>:</p>
-<ul>
-<li>Setting up and managing parental controls for children’s devices.</li>
-<li>Example: Configuring screen time limits and app restrictions.</li>
-</ul>
-</li>
-</ol>
-<h3 id="sentiment-analysis"><strong>Sentiment Analysis</strong><a class="headerlink" href="#sentiment-analysis" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Positive Sentiment</strong>: Majority of interactions indicate customer satisfaction with the support provided.</li>
-<li><strong>Negative Sentiment</strong>: Often linked to unresolved billing issues or technical difficulties.</li>
-</ul>
-<h3 id="common-complaints"><strong>Common Complaints</strong><a class="headerlink" href="#common-complaints" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Billing discrepancies (e.g., double charges, unexpected fees).</li>
-<li>Internet speed issues.</li>
-<li>Device malfunctions (e.g., freezing, battery drain).</li>
-</ul>
-<hr />
+<!-- ## ** Key Insights**
+### **Frequent Topics**
+1. **Account Management**:
+      - Includes account updates, voicemail setup, and call forwarding.
+      - Example: Updating address and email information.
+
+2. **Billing Issues**:
+      - Covers billing discrepancies, payment failures, and refunds.
+      - Example: Resolving double charges or unexpected fees.
+
+3. **Service Activation**:
+      - Assistance with activating new services, SIM cards, or scheduling appointments.
+      - Example: Activating a new SIM card or setting up international roaming.
+
+4. **Device Troubleshooting**:
+      - Support for device-related issues like freezing, battery drain, or hardware malfunctions.
+      - Example: Factory reset for a tablet or troubleshooting a phone's battery.
+
+5. **Internet Connectivity**:
+      - Troubleshooting slow or unreliable internet connections.
+      - Example: Diagnosing slow speeds and resetting modems.
+
+6. **Parental Controls**:
+      - Setting up and managing parental controls for children’s devices.
+      - Example: Configuring screen time limits and app restrictions.
+
+### **Sentiment Analysis**
+- **Positive Sentiment**: Majority of interactions indicate customer satisfaction with the support provided.
+- **Negative Sentiment**: Often linked to unresolved billing issues or technical difficulties. -->
+
+<!-- ### **Common Complaints**
+- Billing discrepancies (e.g., double charges, unexpected fees).
+- Internet speed issues.
+- Device malfunctions (e.g., freezing, battery drain).
+
+--- -->
+
 <h2 id="analyzer-workflow">** Analyzer Workflow**<a class="headerlink" href="#analyzer-workflow" title="Permanent link">&para;</a></h2>
 <h3 id="step-1-sentiment-analysis"><strong>Step 1: Sentiment Analysis</strong><a class="headerlink" href="#step-1-sentiment-analysis" title="Permanent link">&para;</a></h3>
 <ul>

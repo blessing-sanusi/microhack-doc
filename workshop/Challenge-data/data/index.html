@@ -12,7 +12,7 @@
         <meta name="author" content="bsanusi">
       
       
-        <link rel="canonical" href="https://blessing-sanusi.github.io/microhack-doc/workshop/Challenge-1/Analyzer/">
+        <link rel="canonical" href="https://blessing-sanusi.github.io/microhack-doc/workshop/Challenge-data/data/">
       
       
       
@@ -22,7 +22,7 @@
     
     
       
-        <title>Explore Data - Knowledge Mining Microhack: Workshop Guide</title>
+        <title>🧠 Understanding the Data in the Conversation Knowledge Mining Solution Accelerator - Knowledge Mining Microhack: Workshop Guide</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#explore-data" class="md-skip">
+        <a href="#understanding-the-data-in-the-conversation-knowledge-mining-solution-accelerator" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Explore Data
+              🧠 Understanding the Data in the Conversation Knowledge Mining Solution Accelerator
             
           </span>
         </div>
@@ -1333,6 +1333,110 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-raw-data-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Raw Data Input
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Raw Data Input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#audio-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audio Files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-transcription-speech-to-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 2. Transcription (Speech-to-Text)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 2. Transcription (Speech-to-Text)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-used-azure-cognitive-services-speech" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Service Used: Azure Cognitive Services – Speech
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-transcription-speech-to-text_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 2. Transcription (Speech-to-Text)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 2. Transcription (Speech-to-Text)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-used-azure-cognitive-services-speech_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Service Used: Azure Cognitive Services – Speech
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-text-processing-and-insight-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Text Processing and Insight Generation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Text Processing and Insight Generation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-used-azure-openai-via-azure-ai-foundry-pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Service Used: Azure OpenAI (via Azure AI Foundry Pipelines)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1350,102 +1454,51 @@
   
 
 
-<h1 id="explore-data">Explore Data<a class="headerlink" href="#explore-data" title="Permanent link">&para;</a></h1>
-<h1 id="analyzer-configuration-summary-text-and-audio-analyzers">Analyzer Configuration Summary: Text and Audio Analyzers<a class="headerlink" href="#analyzer-configuration-summary-text-and-audio-analyzers" title="Permanent link">&para;</a></h1>
-<p>This document provides a summary of the <code>ckm-analyzer_config_text.json</code> and <code>ckm-analyzer_config_audio.json</code> files, which define configurations for analyzing both text-based and audio-based call center conversations. These analyzers extract actionable insights such as sentiment, satisfaction, topics, and more.</p>
+<h1 id="understanding-the-data-in-the-conversation-knowledge-mining-solution-accelerator">🧠 Understanding the Data in the Conversation Knowledge Mining Solution Accelerator<a class="headerlink" href="#understanding-the-data-in-the-conversation-knowledge-mining-solution-accelerator" title="Permanent link">&para;</a></h1>
+<p>This document is a comprehensive walkthrough of the <strong>data</strong> used and generated in the <a href="https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator">Conversation Knowledge Mining Solution Accelerator</a> by Microsoft. This guide is designed to help you understand <strong>how conversational data flows</strong>, is <strong>processed</strong>, and is <strong>transformed into insights</strong> using Azure services.</p>
 <hr />
-<h2 id="text-analyzer-ckm-analyzer_config_textjson"><strong>Text Analyzer: <code>ckm-analyzer_config_text.json</code></strong><a class="headerlink" href="#text-analyzer-ckm-analyzer_config_textjson" title="Permanent link">&para;</a></h2>
-<h3 id="overview"><strong>Overview</strong><a class="headerlink" href="#overview" title="Permanent link">&para;</a></h3>
+<h2 id="1-raw-data-input">1. Raw Data Input<a class="headerlink" href="#1-raw-data-input" title="Permanent link">&para;</a></h2>
+<h3 id="audio-files">Audio Files<a class="headerlink" href="#audio-files" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Analyzer ID</strong>: <code>ckm-analyzer-text</code></li>
-<li><strong>Scenario</strong>: <code>text</code> (processes textual data).</li>
-<li><strong>Description</strong>: "Conversation analytics" — focuses on analyzing call center conversations.</li>
-<li><strong>Tags</strong>:</li>
-<li><code>templateId</code>: <code>postCallAnalytics-2024-12-01</code> (template version for post-call analytics).</li>
+<li>Format: <code>.wav</code></li>
+<li>Location: Uploaded to Azure Blob Storage (<code>&lt;resource-group-name&gt;-sa</code>)</li>
+<li>file: <code>data/audio/sample-call.wav</code></li>
 </ul>
-<h3 id="configuration"><strong>Configuration</strong><a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong><code>returnDetails</code></strong>: <code>true</code><br />
-  Returns detailed results for each analysis.</li>
-</ul>
-<h3 id="field-schema"><strong>Field Schema</strong><a class="headerlink" href="#field-schema" title="Permanent link">&para;</a></h3>
-<p>The text analyzer processes the following fields:</p>
-<ol>
-<li><strong><code>content</code></strong>: Full text of the conversation.</li>
-<li><strong><code>Duration</code></strong>: Duration of the conversation in seconds.</li>
-<li><strong><code>summary</code></strong>: Summarized version of the conversation.</li>
-<li><strong><code>satisfied</code></strong>: Whether the customer was satisfied (<code>Yes</code> or <code>No</code>).</li>
-<li><strong><code>sentiment</code></strong>: Overall sentiment (<code>Positive</code>, <code>Neutral</code>, <code>Negative</code>).</li>
-<li><strong><code>topic</code></strong>: Primary topic of the conversation in six words or less.</li>
-<li><strong><code>keyPhrases</code></strong>: Top 10 key phrases as a comma-separated string.</li>
-<li><strong><code>complaint</code></strong>: Primary complaint in three words or less.</li>
-</ol>
+<p><strong>Purpose</strong>: Represents real-world customer interactions (e.g., support calls).</p>
 <hr />
-<h2 id="audio-analyzer-ckm-analyzer_config_audiojson"><strong>Audio Analyzer: <code>ckm-analyzer_config_audio.json</code></strong><a class="headerlink" href="#audio-analyzer-ckm-analyzer_config_audiojson" title="Permanent link">&para;</a></h2>
-<h3 id="overview_1"><strong>Overview</strong><a class="headerlink" href="#overview_1" title="Permanent link">&para;</a></h3>
+<h2 id="2-transcription-speech-to-text">📝 2. Transcription (Speech-to-Text)<a class="headerlink" href="#2-transcription-speech-to-text" title="Permanent link">&para;</a></h2>
+<h3 id="service-used-azure-cognitive-services-speech">✅ Service Used: Azure Cognitive Services – Speech<a class="headerlink" href="#service-used-azure-cognitive-services-speech" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Analyzer ID</strong>: <code>ckm-analyzer</code></li>
-<li><strong>Scenario</strong>: <code>conversation</code> (processes audio-based conversations).</li>
-<li><strong>Description</strong>: "Conversation process" — focuses on analyzing call center conversations.</li>
-<li><strong>Tags</strong>:</li>
-<li><code>templateId</code>: <code>postCallAnalytics-2024-12-01</code> (template version for post-call analytics).</li>
+<li>Converts <code>.wav</code> audio files into <strong>text transcripts</strong></li>
+<li>Output: JSON with text and metadata (timestamps, speaker info)</li>
+<li>Example Output:
+```json
+{
+  "DisplayText": "Thank you for calling customer support...",
+  "Offset": 12300000,
+  "Duration": 5500000
+}
+Location: Saved in Blob Storage and later processed by the pipeline</li>
 </ul>
-<h3 id="configuration_1"><strong>Configuration</strong><a class="headerlink" href="#configuration_1" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong><code>returnDetails</code></strong>: <code>false</code><br />
-  Returns summarized results only.</li>
-<li><strong><code>locales</code></strong>: <code>["en-US"]</code><br />
-  Supports English (US) for analysis.</li>
-</ul>
-<h3 id="field-schema_1"><strong>Field Schema</strong><a class="headerlink" href="#field-schema_1" title="Permanent link">&para;</a></h3>
-<p>The audio analyzer processes the same fields as the text analyzer:</p>
-<ol>
-<li><strong><code>content</code></strong>: Full text of the conversation.</li>
-<li><strong><code>Duration</code></strong>: Duration of the conversation in seconds.</li>
-<li><strong><code>summary</code></strong>: Summarized version of the conversation.</li>
-<li><strong><code>satisfied</code></strong>: Whether the customer was satisfied (<code>Yes</code> or <code>No</code>).</li>
-<li><strong><code>sentiment</code></strong>: Overall sentiment (<code>Positive</code>, <code>Neutral</code>, <code>Negative</code>).</li>
-<li><strong><code>topic</code></strong>: Primary topic of the conversation in six words or less.</li>
-<li><strong><code>keyPhrases</code></strong>: Top 10 key phrases as a comma-separated string.</li>
-<li><strong><code>complaint</code></strong>: Primary complaint in three words or less.</li>
-</ol>
-<hr />
-<h2 id="use-cases"><strong>Use Cases</strong><a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h2>
-<h3 id="text-analyzer"><strong>Text Analyzer</strong><a class="headerlink" href="#text-analyzer" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Purpose</strong>: Processes text-based call center conversations to extract insights.</li>
-<li><strong>Use Case</strong>: Analyze chat logs or transcribed conversations to identify trends, customer satisfaction, and key topics.</li>
-</ul>
-<h3 id="audio-analyzer"><strong>Audio Analyzer</strong><a class="headerlink" href="#audio-analyzer" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Purpose</strong>: Processes audio-based call center conversations by converting them into text for analysis.</li>
-<li><strong>Use Case</strong>: Analyze recorded calls to extract insights such as sentiment, satisfaction, and complaints.</li>
-</ul>
-<hr />
-<h2 id="how-they-fit-into-the-solution"><strong>How They Fit Into the Solution</strong><a class="headerlink" href="#how-they-fit-into-the-solution" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p><strong>Data Input</strong>:</p>
-<ul>
-<li>The text analyzer processes chat logs or transcribed conversations.</li>
-<li>The audio analyzer processes recorded calls and converts them into text.</li>
-</ul>
-</li>
-<li>
-<p><strong>Data Output</strong>:</p>
-<ul>
-<li>Both analyzers generate structured insights (e.g., sentiment, satisfaction, topics) for visualization.</li>
-</ul>
-</li>
-<li>
-<p><strong>Integration</strong>:</p>
-<ul>
-<li>Outputs are consumed by the backend (<code>function_app.py</code>) to populate charts.</li>
-<li>Insights are displayed in the frontend (<code>Chart.tsx</code>) as visualizations like Donut Charts, Word Clouds, and Tables.</li>
-</ul>
-</li>
-</ol>
-<hr />
+<h2 id="2-transcription-speech-to-text_1">📝 2. Transcription (Speech-to-Text)<a class="headerlink" href="#2-transcription-speech-to-text_1" title="Permanent link">&para;</a></h2>
+<h3 id="service-used-azure-cognitive-services-speech_1">✅ Service Used: Azure Cognitive Services – Speech<a class="headerlink" href="#service-used-azure-cognitive-services-speech_1" title="Permanent link">&para;</a></h3>
+<h2 id="3-text-processing-and-insight-generation">3. Text Processing and Insight Generation<a class="headerlink" href="#3-text-processing-and-insight-generation" title="Permanent link">&para;</a></h2>
+<h3 id="service-used-azure-openai-via-azure-ai-foundry-pipelines">✅ Service Used: Azure OpenAI (via Azure AI Foundry Pipelines)<a class="headerlink" href="#service-used-azure-openai-via-azure-ai-foundry-pipelines" title="Permanent link">&para;</a></h3>
+<p>This step uses LLMs to process raw transcript and extract insights:
+- Key Phrase Extraction – Main themes or terms
+- Summarization – Condensed version of the conversation
+- Topic Modeling – High-level categorization</p>
+<p>Sentiment Analysis (optional)
+- Converts <code>.wav</code> audio files into <strong>text transcripts</strong>
+- Output: JSON with text and metadata (timestamps, speaker info)
+- Example Output:
+```json
+{
+  "conversation_id": "12345",
+  "key_phrases": ["billing issue", "account cancellation"],
+  "summary": "Customer called to cancel due to a billing issue.",
+  "topics": ["Billing", "Account Management"]
+}</p>
 
 
 
