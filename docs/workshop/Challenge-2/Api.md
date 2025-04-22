@@ -22,23 +22,11 @@
 - `POST /history/read`
 - `DELETE /history/delete`
 
-###  Workflow (API Layer)
 
-| Step | Description | Maps to Architecture |
-|------|-------------|----------------------|
-| 1. **Receive Request** | From frontend. | 🌐 Web Frontend |
-| 2. **Route Request** | To processing service. | ⚙️ App Service |
-| 3. **Return Response** | JSON for frontend. | 🔁 Feedback Loop |
-
-###  Tools & Libraries
-
-- **Quart**
-- **Azure OpenAI**
-- **CosmosDB SDK**
 
 ---
 
-##  Architecture to Code Mapping
+<!-- ##  Architecture to Code Mapping
 
 | Component                          | Location                        |
 |-----------------------------------|----------------------------------|
@@ -49,4 +37,4 @@
 | Vector Search + SQL               | `src/api/vectorIndexer/`        |
 | Cosmos DB for History             | Handled in `history` endpoints   |
 
----
+--- -->

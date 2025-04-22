@@ -1,5 +1,27 @@
 <!-- ## **1. Overview of the Data** -->
-The Sample dataset used for this solution contains customer interactions categorized into various topics. Each entry includes:
+
+To access and explore the ingested data:
+
+1. Go to [Azure Portal](https://portal.azure.com/)
+
+2. Locate the Resource Group where the solution is deployed
+
+3. Click on the Storage Account associated with the solution
+      ![image](../img/storage-blob.png)
+
+4. Navigate to Containers section
+      ![image](../img/storage-container.png)
+
+5. Open the container named data
+
+You’ll see two folders:
+
+- audiodata → Contains uploaded call recordings
+      ![image](../img/audio-folder.png)
+
+call_transcripts → Stores the transcript text used for AI processing
+      ![image](../img/call_transcripts.png)
+<!-- The Sample dataset used for this solution contains customer interactions categorized into various topics. Each entry includes:
 
 - **ConversationId**: Unique identifier for each conversation.
 - **StartTime** and **EndTime**: Timestamps for when the conversation occurred.
@@ -11,7 +33,7 @@ The Sample dataset used for this solution contains customer interactions categor
 - **Complaint**: Specific complaints raised by the customer (if any).
 - **Mined Topic**: Categorized topic based on the conversation.
 
----
+--- -->
 
 ## ** Data Flow**
 
@@ -30,7 +52,7 @@ The Sample dataset used for this solution contains customer interactions categor
 
 ---
 
-## ** Key Insights**
+<!-- ## ** Key Insights**
 ### **Frequent Topics**
 1. **Account Management**:
       - Includes account updates, voicemail setup, and call forwarding.
@@ -58,14 +80,14 @@ The Sample dataset used for this solution contains customer interactions categor
 
 ### **Sentiment Analysis**
 - **Positive Sentiment**: Majority of interactions indicate customer satisfaction with the support provided.
-- **Negative Sentiment**: Often linked to unresolved billing issues or technical difficulties.
+- **Negative Sentiment**: Often linked to unresolved billing issues or technical difficulties. -->
 
-### **Common Complaints**
+<!-- ### **Common Complaints**
 - Billing discrepancies (e.g., double charges, unexpected fees).
 - Internet speed issues.
 - Device malfunctions (e.g., freezing, battery drain).
 
----
+--- -->
 
 ## ** Analyzer Workflow**
 

@@ -1,37 +1,56 @@
 
 ## Backend Overview
 
-**Folder**: [`src/api`](https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/tree/main/src/api)
+**Folder**: `src\App\backend`
 
 The backend is a **Python Quart app** that processes queries, generates insights, and communicates with databases and AI services.
 
-### Key Features
+### Features
 
-1. ** Azure OpenAI Integration**
+1. **Azure OpenAI Integration**
 
-- Natural language processing and chart generation.
+    - Handles natural language queries from users.
+    - Calls Azure OpenAI for understanding and response generation.
 
-2. ** Data Access**
+2. **Semantic Kernel Plugin**: 
 
-- SQL for structured data.
-- Azure Cognitive Search for transcripts.
+    - Powers natural language interactions via custom kernel functions
 
-3. ** Chat History**
+2. **Data Access**
 
-- Cosmos DB for storing user conversations.
+    - SQL for structured data.
+    - Azure Cognitive Search for transcripts.
 
-4. ** Chart Processing**
+3. **Chat History**
 
-- Converts results to chart-ready JSON.
+    - Cosmos DB for storing user conversations.
 
-###  Workflow (Backend)
+4. **Chart Processing**
 
-| Step | Description | Maps to Architecture |
-|------|-------------|----------------------|
-| 1. **Service Init** | Load AI and data sources. |  App Service |
-| 2. **Handle Queries** | Interpret and act on requests. |  Azure OpenAI |
-| 3. **Generate Insights** | Return results for chat/charts. |  Semantic Kernel |
-| 4. **Store History** | Save chats to Cosmos DB. |  Cosmos DB |
+    - Converts results to chart-ready JSON that is then used to diplay chart on the frontend.
+
+### Semantic Kernel Plugin Breakdown
+
+Located in `ChatWithDataPlugin`:
+
+**greeting()**
+
+    - Responds to simple greetings or general questions
+
+    - Uses either Azure AI Project or direct OpenAI client
+
+**get_SQL_Response()**
+
+    - Converts natural language questions into valid SQL queries
+
+
+**get_answers_from_calltranscripts()**
+
+    - Performs Retrieval-Augmented Generation (RAG)
+
+    - Uses semantic + vector hybrid search with Azure AI Search
+
+    - Returns summarized or specific insights from indexed call data
 
 ###  Tools & Libraries
 
@@ -39,5 +58,7 @@ The backend is a **Python Quart app** that processes queries, generates insights
 - **Azure OpenAI**
 - **CosmosDB SDK**
 - **SQLAlchemy**
+- **Semantic Kernel**
+- **Azure AI Search**
 
 ---

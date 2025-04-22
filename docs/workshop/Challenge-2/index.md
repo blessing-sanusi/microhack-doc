@@ -1,5 +1,20 @@
 <!-- # Explore the code -->
+## Overview
 The Conversation Knowledge Mining Solution Accelerator is a robust application designed to extract actionable insights from conversational data. It leverages Azure AI services and provides an interactive user interface for querying and visualizing data. The solution is built with a modular architecture, combining a React-based frontend, a FastAPI backend, and Azure services for data processing and storage.
+
+![image](../support-docs/Images/ReadMe/ckm-sol-arch.png)
+
+The solution extracts insights from call audio files or transcripts and enables users to interact with the data via a chatbot and dynamic charts:
+
+1. **Ingest**: Audio/transcripts are stored.
+
+2. **Understand**: Azure AI extracts conversation details.
+
+3. **Index & Store**: Data is vectorized and stored in SQL + Azure AI Search.
+
+4. **Orchestrate**: Chatbot + chart logic handled by APIs.
+
+5. **Frontend**: Displays insights using charts and chat interface.
 
 ## Key Features
 
