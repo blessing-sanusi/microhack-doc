@@ -35,7 +35,7 @@ call_transcripts → Stores the transcript text used for AI processing
 
 --- -->
 
-## ** Data Flow**
+## **Data Flow**
 
 ### **Step 1: Audio to Text**
 - Audio conversations are transcribed into text using speech-to-text technology.
@@ -89,7 +89,7 @@ call_transcripts → Stores the transcript text used for AI processing
 
 --- -->
 
-## ** Analyzer Workflow**
+## **Analyzer Workflow**
 
 ### **Step 1: Sentiment Analysis**
 - Uses Natural Language Processing (NLP) to classify the sentiment as Positive or Negative.
