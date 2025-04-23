@@ -1477,19 +1477,47 @@
 <ol>
 <li>Navigate to the <code>src/components/Svg</code> folder in your project directory.</li>
 <li>Replace the existing logo file or add your new logo file to this folder.</li>
-<li>Example: Save your new logo as <code>NewLogo.png</code>.</li>
+<li>Example: Save your new logo as <code>NewLogo.svg</code> or <code>newLogo.png</code>.</li>
 </ol>
 <hr />
 <h2 id="step-3-update-the-logo-component"><strong>Step 3: Update the Logo Component</strong><a class="headerlink" href="#step-3-update-the-logo-component" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Open the <code>AppLogo</code> component file:</li>
-<li>Filepath: <code>src/components/Svg/Svg.tsx</code>.</li>
-<li>Locate the current logo implementation. It might look like this:</li>
+<li>Open the <code>App.tsx</code> component file which is located in <code>src/App/src/App.tsx</code>:</li>
+<li>
+<p>import your logo and include the correct file path. it will look like this : 
+      <code>import { AppLogo } from "./components/Svg/Svg";</code></p>
+</li>
+<li>
+<p>Locate the current logo implementation. It might look like this:</p>
+</li>
 </ol>
-<p>```tsx
-export const AppLogo: React.FC = () =&gt; (
-    <img src="/path/to/current/logo.png" alt="App Logo" />
-);</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TSX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span><span class="w"> </span><span class="na">className</span><span class="o">=</span><span class="s">&quot;header-left-section&quot;</span><span class="p">&gt;</span>
+<span class="w">          </span><span class="p">&lt;</span><span class="nt">AppLogo</span><span class="w"> </span><span class="p">/&gt;</span>
+<span class="w">          </span><span class="p">&lt;</span><span class="nt">Subtitle2</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="nx">Woodgrove</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">Body2</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">gap</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;10px&quot;</span><span class="w"> </span><span class="p">}}&gt;</span><span class="o">|</span><span class="w"> </span><span class="nx">Call</span><span class="w"> </span><span class="nx">Analysis</span><span class="p">&lt;/</span><span class="nt">Body2</span><span class="p">&gt;</span>
+<span class="w">          </span><span class="p">&lt;/</span><span class="nt">Subtitle2</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>
+<p>Save your files</p>
+</li>
+<li>
+<p>Open a terminal or command prompt.</p>
+</li>
+<li>
+<p>Navigate to the project directory where start.cmd is located:<code>src/app</code> and run <code>./start.cmd</code></p>
+</li>
+<li>
+<p>Open a web browser and navigate to the local development server (http://127.0.0.1:5000).
+Verify that the new logo is displayed in the application.</p>
+</li>
+</ol>
 
 
 
