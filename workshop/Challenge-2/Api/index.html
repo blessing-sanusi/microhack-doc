@@ -1429,21 +1429,65 @@
 <h3 id="key-endpoints">Key Endpoints<a class="headerlink" href="#key-endpoints" title="Permanent link">&para;</a></h3>
 <h4 id="chart-filters">Chart &amp; Filters<a class="headerlink" href="#chart-filters" title="Permanent link">&para;</a></h4>
 <ul>
-<li><code>GET /api/fetchChartData</code></li>
-<li><code>POST /api/fetchChartDataWithFilters</code></li>
-<li><code>GET /api/fetchFilterData</code></li>
+<li>
+<p><code>GET /api/fetchChartData</code></p>
+<ul>
+<li>Loads default chart data</li>
+</ul>
+</li>
+<li>
+<p><code>POST /api/fetchChartDataWithFilters</code></p>
+<ul>
+<li>Applies filters and regenerates chart based on user input</li>
+</ul>
+</li>
+<li>
+<p><code>GET /api/fetchFilterData</code></p>
+<ul>
+<li>Loads values for filter dropdowns (sentiment, topics, dates)</li>
+</ul>
+</li>
 </ul>
 <h4 id="chatbot">Chatbot<a class="headerlink" href="#chatbot" title="Permanent link">&para;</a></h4>
 <ul>
-<li><code>POST /api/chat</code></li>
+<li><code>POST /api/chat</code><ul>
+<li>Sends user’s question and filters to AI engine</li>
+<li>Returns streamed natural language answer</li>
+</ul>
+</li>
 </ul>
 <h4 id="conversation-history">Conversation History<a class="headerlink" href="#conversation-history" title="Permanent link">&para;</a></h4>
 <ul>
-<li><code>POST /history/generate</code></li>
-<li><code>POST /history/update</code></li>
-<li><code>GET /history/list</code></li>
-<li><code>POST /history/read</code></li>
-<li><code>DELETE /history/delete</code></li>
+<li>
+<p><code>POST /history/generate</code></p>
+<ul>
+<li>Starts a new conversation thread, returns conversation_id</li>
+</ul>
+</li>
+<li>
+<p><code>POST /history/update</code></p>
+<ul>
+<li>Updates chat history with question and answer</li>
+</ul>
+</li>
+<li>
+<p><code>GET /history/list</code></p>
+<ul>
+<li>Lists all conversation histories</li>
+</ul>
+</li>
+<li>
+<p><code>POST /history/read</code></p>
+<ul>
+<li>Loads full Q&amp;A history for a specific thread</li>
+</ul>
+</li>
+<li>
+<p><code>DELETE /history/delete</code></p>
+<ul>
+<li>Deletes a conversation by ID</li>
+</ul>
+</li>
 </ul>
 <hr />
 <!-- ##  Architecture to Code Mapping
