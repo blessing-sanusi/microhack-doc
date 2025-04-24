@@ -21,11 +21,11 @@ Now, you'll put this data to work by building an intelligent **chat API** using 
 
 ---
 
-## Challenge 4: Changing the Logo in the App
+## Challenge 3: Changing the Logo in the App
 
 In this challenge, you’ll start by customizing the look and feel of your application by changing the app logo. This task introduces you to the basics of working with the app's front-end code.
 
-## Challenge 5: Create Plugins for Chat
+## Challenge 4: Create Plugins for Chat
 
 In this part, you’ll work in a notebook to explore how plugins are created. There are **three key functions** in the `ChatWithYourDataPlugin` that power different types of chat behavior:
 
@@ -90,10 +90,12 @@ Feel free to enhance the agent prompt with RAI-friendly language.
 - Python environment with required libraries installed (`azure-ai-evaluation`, `pandas`, etc.).
 - Access to the Azure API endpoint.
 
-
 Follow the steps below to set up your virtual environment and run the notebook. 
-1. Navigate to the `Challenge-4-and-5` folder in your local repository. 
-2. In the terminal run the following commands 
+1. Navigate to the `Challenge-3-and-4` folder in your local repository. 
+2. Open the `.env.sample` to update the variables with the details of your solution. Remeber to save the file after filling in the details.  
+    - Rename the file to `.env` and save it.
+
+3. In the terminal run the following commands 
 
 * Create a virtual environment
 ```shell
@@ -107,8 +109,7 @@ python -m venv venv
 ```shell
 pip install -r requirements.txt
 ```
-3. Open the [knowledge_mining_api notebook](./knowledge_mining_api.ipynb) and follow the steps to perform content safety evaluations and generate detailed reports.
-
+4. Follow the steps in [Challenge-4](./Challenge-4.md) to run the notebook. 
 <!-- 
 ## 🧪 Sample Run
 
