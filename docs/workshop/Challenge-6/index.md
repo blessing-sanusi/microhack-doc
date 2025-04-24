@@ -1,46 +1,36 @@
-# Video Processing Using Azure AI Content Understanding and Azure OpenAI
+# Evaluation
 
-Content Understanding is an innovative solution designed to analyze and interpret diverse media types, including documents, images, audio, and video. It transforms this content into structured, organized, and searchable data. In this sample, we will demonstrate how to extract semantic information from you file, and send these information to Azure OpenAI to achive complex works.
+## Content Safety Evaluation
 
+This notebook demonstrates how to evaluate content safety using Azure AI's evaluation tools. It includes steps to:
+- Simulate content safety and grounded scenarios.
+- Evaluate content for safety metrics such as violence, sexual content, hate/unfairness, and self-harm.
+- Generate evaluation reports in JSON format.
 
-- The samples in this repository default to the latest preview API version: **(2024-12-01-preview)**.
+### Prerequisites
+- Azure AI project credentials.
+- [Python 3.9+](https://www.python.org/downloads/)
+- Python environment with required libraries installed (`azure-ai-evaluation`, `pandas`, etc.).
+- Access to the Azure API endpoint.
 
+Follow the steps below to set up your virtual environment and run the notebook. 
+1. Navigate to the `Challenge-6` folder in your local repository. 
+2. Open the `.env.sample` to update the variables with the details of your solution. Remeber to save the file after filling in the details.  
+    - Rename the file to `.env` and save it.
 
-## Samples
+3. In the terminal run the following commands 
 
-| File | Description |
-| --- | --- |
-| [video_chapter_generation.ipynb](video_chapter_generation.ipynb) | Extract semantic descriptions using content understanding API, and then leverage OpenAI to group into video chapters. |
-| [video_tag_generation.ipynb](video_tag_generation.ipynb) | Generate video tags based on Azure Content Understanding and Azure OpenAI. |
+* Create a virtual environment
+```shell
+python -m venv venv
+```
+* Activate the virtual environment
+```shell
+.venv\Scripts\activate
+```
+* Install the requirements
+```shell
+pip install -r requirements.txt
+```
+3. Open the [Content_safety_evaluation notebook](./Content_safety_evaluation.ipynb) and follow the steps to perform content safety evaluations and generate detailed reports.
 
-## Getting started
-
-1. Identify your [Azure AI Services resource](docs/create_azure_ai_service.md), suggest to use ***Sweden Central*** region for the availability of the content understanding API.
-1. Go to `Access Control (IAM)` in resource, grant yourself role `Cognitive Services User`
-1. Identify your [Azure OpenAI resource](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal)
-1. Go to `Access Control (IAM)` in resource, grant yourself role `Cognitive Services OpenAI User`
-1. Copy `notebooks/.env.sample` to `notebooks/.env`
-   ```shell
-   cp notebooks/.env.example notebooks/.env
-   ```
-1. Fill required information into .env from the resources that you alredy have created, remember that your model is ***gpt-4o-mini***, you should have something like this:
-   ```shell
-   AZURE_AI_SERVICE_ENDPOINT="https://kmyfeztrgpktwf-aiservices-cu.cognitiveservices.azure.com"
-   AZURE_AI_SERVICE_API_VERSION=2024-12-01-preview
-   AZURE_OPENAI_ENDPOINT="https://kmyfeztrgpktwf-aiservices.openai.azure.com"
-   AZURE_OPENAI_API_VERSION=2024-08-01-preview
-   AZURE_OPENAI_CHAT_DEPLOYMENT_NAME=gpt-4o-mini
-   ```
-1. Login Azure
-   ```shell
-   az login
-   ```
-
-## Open a Jupyter notebook and follow the step-by-step guidance
-
-Navigate to the `notebooks` directory and select the sample notebook you are interested in. Since Codespaces is pre-configured with the necessary environment, you can directly execute each step in the notebook.
-
-## More Samples using Azure Content Understanding
-[Azure Content Understanding Basic Usecase](https://github.com/Azure-Samples/azure-ai-content-understanding-python)
-
-[Azure Search with Content Understanding](https://github.com/Azure-Samples/azure-ai-search-with-content-understanding-python)
