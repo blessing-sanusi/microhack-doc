@@ -12,13 +12,13 @@
         <meta name="author" content="bsanusi">
       
       
-        <link rel="canonical" href="https://blessing-sanusi.github.io/microhack-doc/workshop/Challenge-4-and-5/Challenge-4/">
+        <link rel="canonical" href="https://blessing-sanusi.github.io/microhack-doc/workshop/Challenge-1/data-explore/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../Api/">
       
       
-        <link rel="next" href="../knowledge_mining_api/">
+        <link rel="next" href="../../Challenge-2/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Challenge 3 - Knowledge Mining Microhack: Workshop Guide</title>
+        <title>Explore Data - Knowledge Mining Microhack: Workshop Guide</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#workshop-challenge-changing-the-logo-in-the-app" class="md-skip">
+        <a href="#data-flow" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Challenge 3
+              Explore Data
             
           </span>
         </div>
@@ -309,11 +309,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../Challenge-2/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -335,7 +337,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Challenge-3/" class="md-tabs__link">
+        <a href="../../Challenge-2/" class="md-tabs__link">
           
   
   
@@ -353,13 +355,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../Challenge-3-and-4/" class="md-tabs__link">
           
   
   
@@ -381,7 +381,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Challenge-6/" class="md-tabs__link">
+        <a href="../../Challenge-5/" class="md-tabs__link">
           
   
   
@@ -403,7 +403,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Challenge-7/" class="md-tabs__link">
+        <a href="../../Challenge-6/" class="md-tabs__link">
           
   
   
@@ -718,6 +718,8 @@
       
   
   
+    
+  
   
   
     
@@ -739,20 +741,21 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../Challenge-2/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -765,13 +768,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Challenge 1
@@ -787,7 +790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Challenge-2/Frontend/" class="md-nav__link">
+      <a href="../Frontend/" class="md-nav__link">
         
   
   
@@ -810,7 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Challenge-2/Backend/" class="md-nav__link">
+      <a href="../Backend/" class="md-nav__link">
         
   
   
@@ -833,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Challenge-2/Api/" class="md-nav__link">
+      <a href="../Api/" class="md-nav__link">
         
   
   
@@ -853,10 +856,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Challenge-2/data-explore/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Explore Data
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -867,6 +890,117 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#audio-to-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audio to Text
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structuring-the-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structuring the Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyzer-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analyzer Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analyzer Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sentiment-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sentiment Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topic-mining" class="md-nav__link">
+    <span class="md-ellipsis">
+      Topic Mining
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-phrase-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Phrase Extraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complaint-identification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complaint Identification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -909,7 +1043,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../Challenge-3/" class="md-nav__link ">
+            <a href="../../Challenge-2/" class="md-nav__link ">
               
   
   
@@ -943,8 +1077,6 @@
       
   
   
-    
-  
   
   
     
@@ -958,25 +1090,26 @@
       
         
       
+        
+      
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../Challenge-3-and-4/" class="md-nav__link ">
               
   
   
@@ -989,13 +1122,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Challenge 3 and 4
@@ -1008,32 +1141,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Challenge 3
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Challenge-3-and-4/Challenge-3/" class="md-nav__link">
         
   
   
@@ -1044,53 +1155,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#step-1-prepare-your-new-logo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 1: Prepare Your New Logo
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-add-the-logo-to-the-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2: Add the Logo to the Project
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-update-the-logo-component" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3: Update the Logo Component
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1103,12 +1167,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../knowledge_mining_api/" class="md-nav__link">
+      <a href="../../Challenge-3-and-4/Challenge-4/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Challenge 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Challenge-3-and-4/knowledge_mining_api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Knowledge Mining API
     
   </span>
   
@@ -1160,7 +1247,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../Challenge-6/" class="md-nav__link ">
+            <a href="../../Challenge-5/" class="md-nav__link ">
               
   
   
@@ -1195,7 +1282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Challenge-6/video_chapter_generation/" class="md-nav__link">
+      <a href="../../Challenge-5/video_chapter_generation/" class="md-nav__link">
         
   
   
@@ -1218,7 +1305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Challenge-6/video_tag_generation/" class="md-nav__link">
+      <a href="../../Challenge-5/video_tag_generation/" class="md-nav__link">
         
   
   
@@ -1273,7 +1360,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../Challenge-7/" class="md-nav__link ">
+            <a href="../../Challenge-6/" class="md-nav__link ">
               
   
   
@@ -1308,7 +1395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Challenge-7/Content_safety_evaluation/" class="md-nav__link">
+      <a href="../../Challenge-6/Content_safety_evaluation/" class="md-nav__link">
         
   
   
@@ -1408,8 +1495,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1418,29 +1503,95 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-prepare-your-new-logo" class="md-nav__link">
+  <a href="#data-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1: Prepare Your New Logo
+      Data Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#audio-to-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audio to Text
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-add-the-logo-to-the-project" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#text-analysis" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Add the Logo to the Project
+      Text Analysis
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-update-the-logo-component" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#structuring-the-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 3: Update the Logo Component
+      Structuring the Data
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyzer-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analyzer Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analyzer Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sentiment-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sentiment Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topic-mining" class="md-nav__link">
+    <span class="md-ellipsis">
+      Topic Mining
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-phrase-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Phrase Extraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complaint-identification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complaint Identification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1463,61 +1614,127 @@
   
 
 
-<h1 id="workshop-challenge-changing-the-logo-in-the-app">Workshop Challenge: Changing the Logo in the App<a class="headerlink" href="#workshop-challenge-changing-the-logo-in-the-app" title="Permanent link">&para;</a></h1>
-<p>One of the easiest and most fun changes you can make to the app is updating the logo! Follow these step-by-step instructions to replace the current logo with your own.</p>
+  <h1>Explore Data</h1>
+
+<!-- ## **1. Overview of the Data** -->
+
+<p>To access and explore the ingested data:</p>
+<ol>
+<li>
+<p>Go to <a href="https://portal.azure.com/">Azure Portal</a></p>
+</li>
+<li>
+<p>Locate the Resource Group where the solution is deployed</p>
+</li>
+<li>
+<p>Click on the Storage Account associated with the solution
+      <img alt="image" src="../../img/storage-blob.png" /></p>
+</li>
+<li>
+<p>Navigate to Containers section
+      <img alt="image" src="../../img/storage-container.png" /></p>
+</li>
+<li>
+<p>Open the container named data</p>
+</li>
+</ol>
+<p>You’ll see two folders:</p>
+<ul>
+<li>audiodata → Contains uploaded call recordings
+      <img alt="image" src="../../img/audio-folder.png" /></li>
+</ul>
+<p>call_transcripts → Stores the transcript text used for AI processing
+      <img alt="image" src="../../img/call_transcripts.png" /></p>
+<!-- The Sample dataset used for this solution contains customer interactions categorized into various topics. Each entry includes:
+
+- **ConversationId**: Unique identifier for each conversation.
+- **StartTime** and **EndTime**: Timestamps for when the conversation occurred.
+- **Content**: Full transcript of the conversation.
+- **Summary**: A concise summary of the interaction.
+- **Sentiment**: Sentiment analysis of the conversation (e.g., Positive, Negative).
+- **Topic**: The main topic of the conversation.
+- **Key Phrases**: Extracted key phrases for quick insights.
+- **Complaint**: Specific complaints raised by the customer (if any).
+- **Mined Topic**: Categorized topic based on the conversation.
+
+--- -->
+
+<h2 id="data-flow"><strong>Data Flow</strong><a class="headerlink" href="#data-flow" title="Permanent link">&para;</a></h2>
+<h3 id="audio-to-text"><strong>Audio to Text</strong><a class="headerlink" href="#audio-to-text" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Audio conversations are transcribed into text using speech-to-text technology.</li>
+<li>The transcription captures the full conversation, including timestamps and speaker identification.</li>
+</ul>
+<h3 id="text-analysis"><strong>Text Analysis</strong><a class="headerlink" href="#text-analysis" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Sentiment Analysis</strong>: Determines the overall sentiment of the conversation (Positive or Negative).</li>
+<li><strong>Topic Mining</strong>: Identifies the main topic of the conversation (e.g., Billing Issues, Device Troubleshooting).</li>
+<li><strong>Key Phrase Extraction</strong>: Highlights important phrases for quick insights.</li>
+<li><strong>Complaint Identification</strong>: Extracts specific complaints raised by the customer.</li>
+</ul>
+<h3 id="structuring-the-data"><strong>Structuring the Data</strong><a class="headerlink" href="#structuring-the-data" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The analyzed data is structured into JSON format for easy querying and visualization.</li>
+</ul>
 <hr />
-<h2 id="step-1-prepare-your-new-logo"><strong>Step 1: Prepare Your New Logo</strong><a class="headerlink" href="#step-1-prepare-your-new-logo" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Create or find the logo you want to use.</li>
-<li>Save the logo as an image file (e.g., <code>logo.png</code>).</li>
-<li>Ensure the image has a reasonable size (e.g., 100x100 pixels) for better display.</li>
-</ol>
-<hr />
-<h2 id="step-2-add-the-logo-to-the-project"><strong>Step 2: Add the Logo to the Project</strong><a class="headerlink" href="#step-2-add-the-logo-to-the-project" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Navigate to the <code>src/components/Svg</code> folder in your project directory.</li>
-<li>Replace the existing logo file or add your new logo file to this folder.</li>
-<li>Example: Save your new logo as <code>NewLogo.svg</code> or <code>newLogo.png</code>.</li>
-</ol>
-<hr />
-<h2 id="step-3-update-the-logo-component"><strong>Step 3: Update the Logo Component</strong><a class="headerlink" href="#step-3-update-the-logo-component" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Open the <code>App.tsx</code> component file which is located in <code>src/App/src/App.tsx</code>:</li>
-<li>
-<p>import your logo and include the correct file path. it will look like this : 
-      <code>import { AppLogo } from "./components/Svg/Svg";</code></p>
-</li>
-<li>
-<p>Locate the current logo implementation. It might look like this:</p>
-</li>
-</ol>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TSX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span><span class="w"> </span><span class="na">className</span><span class="o">=</span><span class="s">&quot;header-left-section&quot;</span><span class="p">&gt;</span>
-<span class="w">          </span><span class="p">&lt;</span><span class="nt">AppLogo</span><span class="w"> </span><span class="p">/&gt;</span>
-<span class="w">          </span><span class="p">&lt;</span><span class="nt">Subtitle2</span><span class="p">&gt;</span>
-<span class="w">            </span><span class="nx">Woodgrove</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">Body2</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">gap</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;10px&quot;</span><span class="w"> </span><span class="p">}}&gt;</span><span class="o">|</span><span class="w"> </span><span class="nx">Call</span><span class="w"> </span><span class="nx">Analysis</span><span class="p">&lt;/</span><span class="nt">Body2</span><span class="p">&gt;</span>
-<span class="w">          </span><span class="p">&lt;/</span><span class="nt">Subtitle2</span><span class="p">&gt;</span>
-<span class="w">        </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div></td></tr></table></div>
-<ol>
-<li>
-<p>Save your files</p>
-</li>
-<li>
-<p>Open a terminal or command prompt.</p>
-</li>
-<li>
-<p>Navigate to the project directory where start.cmd is located:<code>src/app</code> and run <code>./start.cmd</code></p>
-</li>
-<li>
-<p>Open a web browser and navigate to the local development server (http://127.0.0.1:5000).
-Verify that the new logo is displayed in the application.</p>
-</li>
-</ol>
+<!-- ## ** Key Insights**
+### **Frequent Topics**
+1. **Account Management**:
+      - Includes account updates, voicemail setup, and call forwarding.
+      - Example: Updating address and email information.
+
+2. **Billing Issues**:
+      - Covers billing discrepancies, payment failures, and refunds.
+      - Example: Resolving double charges or unexpected fees.
+
+3. **Service Activation**:
+      - Assistance with activating new services, SIM cards, or scheduling appointments.
+      - Example: Activating a new SIM card or setting up international roaming.
+
+4. **Device Troubleshooting**:
+      - Support for device-related issues like freezing, battery drain, or hardware malfunctions.
+      - Example: Factory reset for a tablet or troubleshooting a phone's battery.
+
+5. **Internet Connectivity**:
+      - Troubleshooting slow or unreliable internet connections.
+      - Example: Diagnosing slow speeds and resetting modems.
+
+6. **Parental Controls**:
+      - Setting up and managing parental controls for children’s devices.
+      - Example: Configuring screen time limits and app restrictions.
+
+### **Sentiment Analysis**
+- **Positive Sentiment**: Majority of interactions indicate customer satisfaction with the support provided.
+- **Negative Sentiment**: Often linked to unresolved billing issues or technical difficulties. -->
+
+<!-- ### **Common Complaints**
+- Billing discrepancies (e.g., double charges, unexpected fees).
+- Internet speed issues.
+- Device malfunctions (e.g., freezing, battery drain).
+
+--- -->
+
+<h2 id="analyzer-workflow"><strong>Analyzer Workflow</strong><a class="headerlink" href="#analyzer-workflow" title="Permanent link">&para;</a></h2>
+<h3 id="sentiment-analysis"><strong>Sentiment Analysis</strong><a class="headerlink" href="#sentiment-analysis" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Uses Natural Language Processing (NLP) to classify the sentiment as Positive or Negative.</li>
+<li>Example: "Thank you for your help" → Positive sentiment.</li>
+</ul>
+<h3 id="topic-mining"><strong>Topic Mining</strong><a class="headerlink" href="#topic-mining" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Identifies the main topic of the conversation using keyword matching and clustering.</li>
+<li>Example: Keywords like "billing," "charges," and "refund" → Topic: Billing Issues.</li>
+</ul>
+<h3 id="key-phrase-extraction"><strong>Key Phrase Extraction</strong><a class="headerlink" href="#key-phrase-extraction" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Extracts important phrases using NLP techniques like Named Entity Recognition (NER).</li>
+<li>Example: "slow Internet speed," "paperless billing," "factory reset."</li>
+</ul>
+<h3 id="complaint-identification"><strong>Complaint Identification</strong><a class="headerlink" href="#complaint-identification" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Searches for explicit complaints in the conversation.</li>
+<li>Example: "My bill was $50 higher than usual" → Complaint: Higher bill.</li>
+</ul>
 
 
 
@@ -1555,7 +1772,7 @@ Verify that the new logo is displayed in the application.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+          <a href="../Api/" class="md-footer__link md-footer__link--prev" aria-label="Previous: API">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1565,20 +1782,20 @@ Verify that the new logo is displayed in the application.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Overview
+                API
               </div>
             </div>
           </a>
         
         
           
-          <a href="../knowledge_mining_api/" class="md-footer__link md-footer__link--next" aria-label="Next: Challenge 4">
+          <a href="../../Challenge-2/" class="md-footer__link md-footer__link--next" aria-label="Next: Explore Dashboard using Natural Language queries">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Challenge 4
+                Explore Dashboard using Natural Language queries
               </div>
             </div>
             <div class="md-footer__button md-icon">
