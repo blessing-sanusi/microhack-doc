@@ -17,7 +17,7 @@ user_inputs = [
             ]
 ```
 
-5. Now uncomment the get_answers_from_calltranscripts() function in cell 2 as shown in the below code sample, to query the Azure AI Search. Run cell 2 and 3 to see the new results.    
+5. Now uncomment the get_answers_from_calltranscripts() function in cell 2 as shown in the below code sample, to query the Azure AI Search. Run cell 2 and 3 to see a better result from the Azure AI Search query.    
 ```shell
 @kernel_function(name="ChatWithCallTranscripts",
                      description="Provides summaries or detailed explanations from the search index.")
