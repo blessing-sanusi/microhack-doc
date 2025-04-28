@@ -133,11 +133,10 @@ nav:
   - Challenge 0:
       - Prerequisites: workshop/Challenge-0/index.md
       - CU-AI Foundry: workshop/Challenge-0/CU-Challenge.md
-  - Deployment:
-      - Prerequisites: workshop/Deployment/index.md
-      - App Authentication: workshop/Deployment/App_Authentication.md
   - Challenge 1:
-      - Explore Code: workshop/Challenge-1/index.md
+      - Prerequisites: workshop/Challenge-1/index.md
+      - App Authentication: workshop/Challenge-1/App_Authentication.md
+      - Solution Overview: workshop/Challenge-1/Solution_Overview.md
       - Frontend: workshop/Challenge-1/Frontend.md
       - Backend: workshop/Challenge-1/Backend.md
       - API: workshop/Challenge-1/Api.md
@@ -150,13 +149,13 @@ nav:
       - Overview: workshop/Challenge-3-and-4/index.md
       - Challenge 3: workshop/Challenge-3-and-4/Challenge-3.md
       - Challenge 4: workshop/Challenge-3-and-4/Challenge-4.md
-      - Knowledge Mining API: workshop/Challenge-3-and-4/knowledge_mining_api.ipynb
+      - Knowledge Mining API Notebook: workshop/Challenge-3-and-4/knowledge_mining_api.ipynb
   - Challenge 5:
       - Overview: workshop/Challenge-5/index.md
       - Video Chapter Generation: workshop/Challenge-5/video_chapter_generation.ipynb
       - Video Tag Generation: workshop/Challenge-5/video_tag_generation.ipynb
   - Challenge 6:
       - Overview: workshop/Challenge-6/index.md
-      - Content Safety Evaluation: workshop/Challenge-6/Content_safety_evaluation.ipynb
+      - Content Safety Evaluation Notebook: workshop/Challenge-6/Content_safety_evaluation.ipynb
   - Teardown:
       - Overview: workshop/Tear-Down/index.md
