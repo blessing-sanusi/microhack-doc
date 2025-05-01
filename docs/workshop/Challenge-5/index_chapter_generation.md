@@ -11,7 +11,6 @@ Content Understanding is an innovative solution designed to analyze and interpre
 | File | Description |
 | --- | --- |
 | [video_chapter_generation.ipynb](video_chapter_generation.ipynb) | Extract semantic descriptions using content understanding API, and then leverage OpenAI to group into video chapters. |
-| [video_tag_generation.ipynb](video_tag_generation.ipynb) | Generate video tags based on Azure Content Understanding and Azure OpenAI. |
 
 ## Getting started
 
@@ -39,7 +38,7 @@ Content Understanding is an innovative solution designed to analyze and interpre
 
 ## Open a Jupyter notebook and follow the step-by-step guidance
 
-Navigate to the `notebooks` directory and select the sample notebook you are interested in. Since Codespaces is pre-configured with the necessary environment, you can directly execute each step in the notebook.
+Navigate to the `notebooks` directory and select the notebook `video_chapter_generation.ipynb`. Since Codespaces is pre-configured with the necessary environment, you can directly execute each step in the notebook.
 
 ## More Samples using Azure Content Understanding
 [Azure Content Understanding Basic Usecase](https://github.com/Azure-Samples/azure-ai-content-understanding-python)
