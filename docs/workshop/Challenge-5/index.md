@@ -30,6 +30,7 @@ Content Understanding is an innovative solution designed to analyze and interpre
    AZURE_OPENAI_ENDPOINT="https://kmyfeztrgpktwf-aiservices.openai.azure.com"
    AZURE_OPENAI_API_VERSION=2024-08-01-preview
    AZURE_OPENAI_CHAT_DEPLOYMENT_NAME=gpt-4o-mini
+   AUTHENTICATION_URL="https://cognitiveservices.azure.com/.default"
    ```
 1. Login Azure
    ```shell
