@@ -2036,6 +2036,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="n">AZURE_OPENAI_ENDPOINT</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"AZURE_OPENAI_ENDPOINT"</span><span class="p">)</span>
 <span class="n">AZURE_OPENAI_API_VERSION</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"AZURE_OPENAI_API_VERSION"</span><span class="p">,</span> <span class="s2">"2024-08-01-preview"</span><span class="p">)</span>
 <span class="n">AZURE_OPENAI_CHAT_DEPLOYMENT_NAME</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"AZURE_OPENAI_CHAT_DEPLOYMENT_NAME"</span><span class="p">)</span>
+
+<span class="n">AUTHENTICATION_URL</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"AUTHENTICATION_URL"</span><span class="p">)</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-2">from dotenv import load_dotenv
 import os
@@ -2047,7 +2049,9 @@ AZURE_AI_SERVICE_API_VERSION = os.getenv("AZURE_AI_SERVICE_API_VERSION", "2024-1
 
 AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
 AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION", "2024-08-01-preview")
-AZURE_OPENAI_CHAT_DEPLOYMENT_NAME = os.getenv("AZURE_OPENAI_CHAT_DEPLOYMENT_NAME")</div>
+AZURE_OPENAI_CHAT_DEPLOYMENT_NAME = os.getenv("AZURE_OPENAI_CHAT_DEPLOYMENT_NAME")
+
+AUTHENTICATION_URL = os.getenv("AUTHENTICATION_URL")</div>
 </div>
 </div>
 </div>
@@ -2139,7 +2143,7 @@ VIDEO_LOCATION = Path("../data/FlightSimulator.mp4")</div>
 
 <span class="kn">from</span><span class="w"> </span><span class="nn">azure.identity</span><span class="w"> </span><span class="kn">import</span> <span class="n">DefaultAzureCredential</span><span class="p">,</span> <span class="n">get_bearer_token_provider</span>
 <span class="n">credential</span> <span class="o">=</span> <span class="n">DefaultAzureCredential</span><span class="p">()</span>
-<span class="n">token_provider</span> <span class="o">=</span> <span class="n">get_bearer_token_provider</span><span class="p">(</span><span class="n">credential</span><span class="p">,</span> <span class="s2">"https://cognitiveservices.azure.com/.default"</span><span class="p">)</span>
+<span class="n">token_provider</span> <span class="o">=</span> <span class="n">get_bearer_token_provider</span><span class="p">(</span><span class="n">credential</span><span class="p">,</span> <span class="n">AUTHENTICATION_URL</span><span class="p">)</span>
 
 <span class="c1"># The analyzer template is used to define the schema of the output</span>
 <span class="n">ANALYZER_TEMPLATE_PATH</span> <span class="o">=</span> <span class="s2">"../analyzer_templates/video_content_understanding.json"</span>
@@ -2175,7 +2179,7 @@ from python.content_understanding_client import AzureContentUnderstandingClient
 
 from azure.identity import DefaultAzureCredential, get_bearer_token_provider
 credential = DefaultAzureCredential()
-token_provider = get_bearer_token_provider(credential, "https://cognitiveservices.azure.com/.default")
+token_provider = get_bearer_token_provider(credential, AUTHENTICATION_URL)
 
 # The analyzer template is used to define the schema of the output
 ANALYZER_TEMPLATE_PATH = "../analyzer_templates/video_content_understanding.json"
@@ -2400,16 +2404,6 @@ with open(chapter_output_json_file, "w") as f:
 print(chapter_result)</div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1126b263">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
