@@ -771,9 +771,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#audio-to-text" class="md-nav__link">
+  <a href="#data-processing" class="md-nav__link">
     <span class="md-ellipsis">
-      Audio to Text
+      Data Processing
     </span>
   </a>
   
@@ -1438,9 +1438,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#audio-to-text" class="md-nav__link">
+  <a href="#data-processing" class="md-nav__link">
     <span class="md-ellipsis">
-      Audio to Text
+      Data Processing
     </span>
   </a>
   
@@ -1585,11 +1585,10 @@
 --- -->
 
 <h2 id="data-flow"><strong>Data Flow</strong><a class="headerlink" href="#data-flow" title="Permanent link">&para;</a></h2>
-<h3 id="audio-to-text"><strong>Audio to Text</strong><a class="headerlink" href="#audio-to-text" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Audio conversations are transcribed into text using speech-to-text technology.</li>
-<li>The transcription captures the full conversation, including timestamps and speaker identification.</li>
-</ul>
+<h3 id="data-processing"><strong>Data Processing</strong><a class="headerlink" href="#data-processing" title="Permanent link">&para;</a></h3>
+<p>When you deploy this solution, the <a href="https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/blob/main/infra/scripts/index_scripts/03_cu_process_data_text.py">Process Data</a> script gathers call transcripts and audio data, which are analyzed using Azure AI Content Understanding to extract essential details such as conversation IDs, call content, summaries, sentiments, and more. This processed data is subsequently stored in an Azure SQL database for ongoing analysis and easy retrieval.
+The script also generates text embeddings, which are uploaded to an Azure AI Search index for future retrieval.
+Additional details about the processed data : </p>
 <h3 id="text-analysis"><strong>Text Analysis</strong><a class="headerlink" href="#text-analysis" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Sentiment Analysis</strong>: Determines the overall sentiment of the conversation (Positive or Negative).</li>
@@ -1601,7 +1600,8 @@
 <ul>
 <li>The analyzed data is structured into JSON format for easy querying and visualization.</li>
 </ul>
-<hr />
+<!-- - The analyzed data is structured into Azure SQL Database tables for easy querying and visualization.  -->
+
 <!-- ## ** Key Insights**
 ### **Frequent Topics**
 1. **Account Management**:
