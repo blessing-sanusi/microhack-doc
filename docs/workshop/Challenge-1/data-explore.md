@@ -37,9 +37,10 @@ call_transcripts → Stores the transcript text used for AI processing
 
 ## **Data Flow**
 
-### **Audio to Text**
-- Audio conversations are transcribed into text using speech-to-text technology.
-- The transcription captures the full conversation, including timestamps and speaker identification.
+### **Data Processing**
+When you deploy this solution, the [Process Data](https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator/blob/main/infra/scripts/index_scripts/03_cu_process_data_text.py) script gathers call transcripts and audio data, which are analyzed using Azure AI Content Understanding to extract essential details such as conversation IDs, call content, summaries, sentiments, and more. This processed data is subsequently stored in an Azure SQL database for ongoing analysis and easy retrieval.
+The script also generates text embeddings, which are uploaded to an Azure AI Search index for future retrieval.
+Additional details about the processed data : 
 
 ### **Text Analysis**
 - **Sentiment Analysis**: Determines the overall sentiment of the conversation (Positive or Negative).
@@ -49,8 +50,9 @@ call_transcripts → Stores the transcript text used for AI processing
 
 ### **Structuring the Data**
 - The analyzed data is structured into JSON format for easy querying and visualization.
+<!-- - The analyzed data is structured into Azure SQL Database tables for easy querying and visualization.  -->
 
----
+
 
 <!-- ## ** Key Insights**
 ### **Frequent Topics**
