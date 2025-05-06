@@ -997,18 +997,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-add-the-logo-to-the-project" class="md-nav__link">
+  <a href="#step-2-update-the-logo-component" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Add the Logo to the Project
+      Step 2: Update the Logo Component
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-update-the-logo-component" class="md-nav__link">
+  <a href="#step-3-run-the-app" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 3: Update the Logo Component
+      Step 3: Run the App
     </span>
   </a>
   
@@ -1377,18 +1377,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-add-the-logo-to-the-project" class="md-nav__link">
+  <a href="#step-2-update-the-logo-component" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Add the Logo to the Project
+      Step 2: Update the Logo Component
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-update-the-logo-component" class="md-nav__link">
+  <a href="#step-3-run-the-app" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 3: Update the Logo Component
+      Step 3: Run the App
     </span>
   </a>
   
@@ -1418,54 +1418,51 @@
 <hr />
 <h2 id="step-1-prepare-your-new-logo"><strong>Step 1: Prepare Your New Logo</strong><a class="headerlink" href="#step-1-prepare-your-new-logo" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Create or find the logo you want to use.</li>
+<li>Create or use a new logo (e.g contosoImg logo) in <code>src/assets/</code>.</li>
 <li>Save the logo as an image file (e.g., <code>logo.png</code>).</li>
 <li>Ensure the image has a reasonable size (e.g., 100x100 pixels) for better display.</li>
+<li>Place the logo file in the following folder:
+    <code>src/assets/</code></li>
 </ol>
 <hr />
-<h2 id="step-2-add-the-logo-to-the-project"><strong>Step 2: Add the Logo to the Project</strong><a class="headerlink" href="#step-2-add-the-logo-to-the-project" title="Permanent link">&para;</a></h2>
+<h2 id="step-2-update-the-logo-component">Step 2: Update the Logo Component<a class="headerlink" href="#step-2-update-the-logo-component" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Navigate to the <code>src/components/Svg</code> folder in your project directory.</li>
-<li>Replace the existing logo file or add your new logo file to this folder.</li>
-<li>Example: Save your new logo as <code>NewLogo.svg</code> or <code>newLogo.png</code>.</li>
+<li>
+<p>Open the <code>App.tsx</code> file located at:<br />
+<code>src/App/src/App.tsx</code></p>
+</li>
+<li>
+<p>Import your logo image at the top of the file. It should look like this:</p>
+</li>
+</ol>
+<p>```tsx
+   import AppLogo from "./assets/contosoimg/ContosoImg.png";</p>
+<ol>
+<li>
+<p>Locate the current logo in the JSX (around line 311).</p>
+</li>
+<li>
+<p>Comment out the old logo line and replace it with:
+      <img src={AppLogo} alt="Logo" style={{ width: '30px' }} /></p>
+</li>
 </ol>
 <hr />
-<h2 id="step-3-update-the-logo-component"><strong>Step 3: Update the Logo Component</strong><a class="headerlink" href="#step-3-update-the-logo-component" title="Permanent link">&para;</a></h2>
+<h2 id="step-3-run-the-app">Step 3: Run the App<a class="headerlink" href="#step-3-run-the-app" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Open the <code>App.tsx</code> component file which is located in <code>src/App/src/App.tsx</code>:</li>
-<li>
-<p>import your logo and include the correct file path. it will look like this : 
-      <code>import { AppLogo } from "./components/Svg/Svg";</code></p>
-</li>
-<li>
-<p>Locate the current logo implementation. It might look like this:</p>
-</li>
-</ol>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TSX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span><span class="w"> </span><span class="na">className</span><span class="o">=</span><span class="s">&quot;header-left-section&quot;</span><span class="p">&gt;</span>
-<span class="w">          </span><span class="p">&lt;</span><span class="nt">AppLogo</span><span class="w"> </span><span class="p">/&gt;</span>
-<span class="w">          </span><span class="p">&lt;</span><span class="nt">Subtitle2</span><span class="p">&gt;</span>
-<span class="w">            </span><span class="nx">Woodgrove</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">Body2</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">gap</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;10px&quot;</span><span class="w"> </span><span class="p">}}&gt;</span><span class="o">|</span><span class="w"> </span><span class="nx">Call</span><span class="w"> </span><span class="nx">Analysis</span><span class="p">&lt;/</span><span class="nt">Body2</span><span class="p">&gt;</span>
-<span class="w">          </span><span class="p">&lt;/</span><span class="nt">Subtitle2</span><span class="p">&gt;</span>
-<span class="w">        </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div></td></tr></table></div>
-<ol>
-<li>
-<p>Save your files</p>
-</li>
 <li>
 <p>Open a terminal or command prompt.</p>
 </li>
 <li>
-<p>Navigate to the project directory where start.cmd is located:<code>src/</code> and run <code>./start.cmd</code></p>
+<p>Navigate to the project directory where start.cmd is located:
+   <code>cd src/</code></p>
 </li>
 <li>
-<p>Open a web browser and navigate to the local development server (http://127.0.0.1:5000).
-Verify that the new logo is displayed in the application.</p>
+<p>Run the following command: 
+   <code>./start.cmd</code></p>
+</li>
+<li>
+<p>Two terminal windows will open — one for the backend and one for the frontend.
+Once the app starts, you should see your new logo in action!</p>
 </li>
 </ol>
 
