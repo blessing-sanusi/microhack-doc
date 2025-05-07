@@ -1086,12 +1086,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Challenge-5/notebooks/video_chapter_generation/" class="md-nav__link">
+      <a href="../../Challenge-5/video_chapter_generation.ipynb" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Video Chapters Generation
+    Chapter Generation Notebook
     
   </span>
   
@@ -1109,12 +1109,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Challenge-5/notebooks/video_tag_generation/" class="md-nav__link">
+      <a href="../../Challenge-5/video_tag_generation.ipynb" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Video Tag Generation
+    Tag Generation Notebook
     
   </span>
   
@@ -1322,12 +1322,9 @@
 <h1 id="workshop-challenge-run-each-function-in-the-notebooks-to-see-how-they-work">Workshop challenge: run each function in the notebooks to see how they work<a class="headerlink" href="#workshop-challenge-run-each-function-in-the-notebooks-to-see-how-they-work" title="Permanent link">&para;</a></h1>
 <ol>
 <li>Open the <a href="../knowledge_mining_api/">knowledge_mining_api notebook</a> from the Challenge-3-and-4 folder</li>
-<li>Run the first cell to initialize the SQL connection </li>
-<li>The second cell defines a class that is used to define the plugin for the Azure AI Project Client. This contains the various functions that power different behaviors such as greeting, query Azure SQL database and query Azure AI Search. Run cell 2 and 3 to see the results when a user says Hello. </li>
-<li>Next we will explore the results when a user asks a question and run the query Azure SQL function. Update the user_input list in cell 3 with the below code and rerun cell 3. We will see that we get a result from the Azure SQL Database but the result could be easier for a user to read.<ul>
-<li>This cell is the main function that initializes the Azure AI Project Client and creates an agent. It sets up the agent with the necessary instructions and plugins, and then starts a conversation with the user.</li>
-</ul>
-</li>
+<li>Run the first cell to import the requirements  </li>
+<li>The second cell defines a class that is used to define the plugin for the Azure AI Project Client. This contains the various functions that power different behaviors such as greeting, query Azure SQL database and query Azure AI Search. Run cell 2 to see the results when a user says Hello. The next result will show when a user asks a question and runs the Azure SQL query function. Finally we will see two more results when the user asks questions that runs the Azure AI Search function. </li>
+<li>Finally, you could update the <code>user_inputs</code> in cell 2 to try out more questions. </li>
 </ol>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -1337,173 +1334,14 @@
 <span class="normal">6</span>
 <span class="normal">7</span>
 <span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nv">user_inputs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span>
-<span class="w">                </span><span class="c1"># &quot;Hello&quot;,</span>
+<span class="w">                </span><span class="s2">&quot;Hello&quot;</span>,
 <span class="w">                </span><span class="s2">&quot;Give a summary of billing issues&quot;</span>
-<span class="w">                </span><span class="c1"># &quot;Total number of calls by date for the last 7 days&quot;,</span>
-<span class="w">                </span><span class="c1"># &quot;Show average handling time by topics in minutes&quot;,</span>
-<span class="w">                </span><span class="c1"># &quot;What are the top 7 challenges users reported?&quot;,</span>
-<span class="w">                </span><span class="c1"># &quot;When customers call in about unexpected charges, what types of charges are they seeing?&quot;,</span>
+<span class="w">                </span><span class="s2">&quot;Total number of calls by date for the last 7 days&quot;</span>,
+<span class="w">                </span><span class="s2">&quot;Show average handling time by topics in minutes&quot;</span>,
+<span class="w">                </span><span class="s2">&quot;What are the top 7 challenges users reported?&quot;</span>,
+<span class="w">                </span><span class="s2">&quot;When customers call in about unexpected charges, what types of charges are they seeing?&quot;</span>,
 <span class="w">            </span><span class="o">]</span>
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>Now uncomment the get_answers_from_calltranscripts() function in cell 2 as shown in the below code sample, to query the Azure AI Search. Run cell 2 and 3 to see a better result from the Azure AI Search query.  <br />
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span>
-<span class="normal">35</span>
-<span class="normal">36</span>
-<span class="normal">37</span>
-<span class="normal">38</span>
-<span class="normal">39</span>
-<span class="normal">40</span>
-<span class="normal">41</span>
-<span class="normal">42</span>
-<span class="normal">43</span>
-<span class="normal">44</span>
-<span class="normal">45</span>
-<span class="normal">46</span>
-<span class="normal">47</span>
-<span class="normal">48</span>
-<span class="normal">49</span>
-<span class="normal">50</span>
-<span class="normal">51</span>
-<span class="normal">52</span>
-<span class="normal">53</span>
-<span class="normal">54</span>
-<span class="normal">55</span>
-<span class="normal">56</span>
-<span class="normal">57</span>
-<span class="normal">58</span>
-<span class="normal">59</span>
-<span class="normal">60</span>
-<span class="normal">61</span>
-<span class="normal">62</span>
-<span class="normal">63</span>
-<span class="normal">64</span>
-<span class="normal">65</span>
-<span class="normal">66</span>
-<span class="normal">67</span>
-<span class="normal">68</span>
-<span class="normal">69</span>
-<span class="normal">70</span>
-<span class="normal">71</span>
-<span class="normal">72</span>
-<span class="normal">73</span>
-<span class="normal">74</span>
-<span class="normal">75</span>
-<span class="normal">76</span>
-<span class="normal">77</span>
-<span class="normal">78</span></pre></div></td><td class="code"><div><pre><span></span><code>@kernel_function<span class="o">(</span><span class="nv">name</span><span class="o">=</span><span class="s2">&quot;ChatWithCallTranscripts&quot;</span>,
-<span class="w">                     </span><span class="nv">description</span><span class="o">=</span><span class="s2">&quot;Provides summaries or detailed explanations from the search index.&quot;</span><span class="o">)</span>
-<span class="w">    </span>def<span class="w"> </span>get_answers_from_calltranscripts<span class="o">(</span>
-<span class="w">            </span>self,
-<span class="w">            </span>question:<span class="w"> </span>Annotated<span class="o">[</span>str,<span class="w"> </span><span class="s2">&quot;the question&quot;</span><span class="o">]</span>
-<span class="w">    </span><span class="o">)</span>:
-<span class="w">        </span><span class="nv">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>openai.AzureOpenAI<span class="o">(</span>
-<span class="w">            </span><span class="nv">azure_endpoint</span><span class="o">=</span>self.azure_openai_endpoint,
-<span class="w">            </span><span class="nv">api_key</span><span class="o">=</span>self.azure_openai_api_key,
-<span class="w">            </span><span class="nv">api_version</span><span class="o">=</span>self.azure_openai_api_version
-<span class="w">        </span><span class="o">)</span>
-
-<span class="w">        </span><span class="nv">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>question
-<span class="w">        </span><span class="nv">system_message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;&#39;You are an assistant who provides an analyst with helpful information about data.</span>
-<span class="s1">        You have access to the call transcripts, call data, topics, sentiments, and key phrases.</span>
-<span class="s1">        You can use this information to answer questions.</span>
-<span class="s1">        If you cannot answer the question, always return - I cannot answer this question from the data available. Please rephrase or add more details.&#39;&#39;&#39;</span>
-<span class="w">        </span><span class="nv">answer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span>
-<span class="w">        </span>try:
-<span class="w">            </span><span class="nv">completion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>client.chat.completions.create<span class="o">(</span>
-<span class="w">                </span><span class="nv">model</span><span class="o">=</span>self.azure_openai_deployment_model,
-<span class="w">                </span><span class="nv">messages</span><span class="o">=[</span>
-<span class="w">                    </span><span class="o">{</span>
-<span class="w">                        </span><span class="s2">&quot;role&quot;</span>:<span class="w"> </span><span class="s2">&quot;system&quot;</span>,
-<span class="w">                        </span><span class="s2">&quot;content&quot;</span>:<span class="w"> </span>system_message
-<span class="w">                    </span><span class="o">}</span>,
-<span class="w">                    </span><span class="o">{</span>
-<span class="w">                        </span><span class="s2">&quot;role&quot;</span>:<span class="w"> </span><span class="s2">&quot;user&quot;</span>,
-<span class="w">                        </span><span class="s2">&quot;content&quot;</span>:<span class="w"> </span>query
-<span class="w">                    </span><span class="o">}</span>
-<span class="w">                </span><span class="o">]</span>,
-<span class="w">                </span><span class="nv">seed</span><span class="o">=</span><span class="m">42</span>,
-<span class="w">                </span><span class="nv">temperature</span><span class="o">=</span><span class="m">0</span>,
-<span class="w">                </span><span class="nv">max_tokens</span><span class="o">=</span><span class="m">800</span>,
-<span class="w">                </span><span class="nv">extra_body</span><span class="o">={</span>
-<span class="w">                    </span><span class="s2">&quot;data_sources&quot;</span>:<span class="w"> </span><span class="o">[</span>
-<span class="w">                        </span><span class="o">{</span>
-<span class="w">                            </span><span class="s2">&quot;type&quot;</span>:<span class="w"> </span><span class="s2">&quot;azure_search&quot;</span>,
-<span class="w">                            </span><span class="s2">&quot;parameters&quot;</span>:<span class="w"> </span><span class="o">{</span>
-<span class="w">                                </span><span class="s2">&quot;endpoint&quot;</span>:<span class="w"> </span>self.azure_ai_search_endpoint,
-<span class="w">                                </span><span class="s2">&quot;index_name&quot;</span>:<span class="w"> </span>self.azure_ai_search_index,
-<span class="w">                                </span><span class="s2">&quot;semantic_configuration&quot;</span>:<span class="w"> </span><span class="s2">&quot;my-semantic-config&quot;</span>,
-<span class="w">                                </span><span class="s2">&quot;query_type&quot;</span>:<span class="w"> </span><span class="s2">&quot;vector_simple_hybrid&quot;</span>,<span class="w">  </span><span class="c1"># &quot;vector_semantic_hybrid&quot;</span>
-<span class="w">                                </span><span class="s2">&quot;fields_mapping&quot;</span>:<span class="w"> </span><span class="o">{</span>
-<span class="w">                                    </span><span class="s2">&quot;content_fields_separator&quot;</span>:<span class="w"> </span><span class="s2">&quot;\n&quot;</span>,
-<span class="w">                                    </span><span class="s2">&quot;content_fields&quot;</span>:<span class="w"> </span><span class="o">[</span><span class="s2">&quot;content&quot;</span><span class="o">]</span>,
-<span class="w">                                    </span><span class="s2">&quot;filepath_field&quot;</span>:<span class="w"> </span><span class="s2">&quot;chunk_id&quot;</span>,
-<span class="w">                                    </span><span class="s2">&quot;title_field&quot;</span>:<span class="w"> </span><span class="s2">&quot;sourceurl&quot;</span>,<span class="w">  </span><span class="c1"># null,</span>
-<span class="w">                                    </span><span class="s2">&quot;url_field&quot;</span>:<span class="w"> </span><span class="s2">&quot;sourceurl&quot;</span>,
-<span class="w">                                    </span><span class="s2">&quot;vector_fields&quot;</span>:<span class="w"> </span><span class="o">[</span><span class="s2">&quot;contentVector&quot;</span><span class="o">]</span>
-<span class="w">                                </span><span class="o">}</span>,
-<span class="w">                                </span><span class="s2">&quot;in_scope&quot;</span>:<span class="w"> </span><span class="s2">&quot;true&quot;</span>,
-<span class="w">                                </span><span class="s2">&quot;role_information&quot;</span>:<span class="w"> </span>system_message,
-<span class="w">                                </span><span class="c1"># &quot;vector_filter_mode&quot;: &quot;preFilter&quot;, #VectorFilterMode.PRE_FILTER,</span>
-<span class="w">                                </span><span class="c1"># &quot;filter&quot;: f&quot;client_id eq &#39;{ClientId}&#39;&quot;, #&quot;&quot;, #null,</span>
-<span class="w">                                </span><span class="s2">&quot;strictness&quot;</span>:<span class="w"> </span><span class="m">3</span>,
-<span class="w">                                </span><span class="s2">&quot;top_n_documents&quot;</span>:<span class="w"> </span><span class="m">5</span>,
-<span class="w">                                </span><span class="s2">&quot;authentication&quot;</span>:<span class="w"> </span><span class="o">{</span>
-<span class="w">                                    </span><span class="s2">&quot;type&quot;</span>:<span class="w"> </span><span class="s2">&quot;api_key&quot;</span>,
-<span class="w">                                    </span><span class="s2">&quot;key&quot;</span>:<span class="w"> </span>self.azure_ai_search_api_key
-<span class="w">                                </span><span class="o">}</span>,
-<span class="w">                                </span><span class="s2">&quot;embedding_dependency&quot;</span>:<span class="w"> </span><span class="o">{</span>
-<span class="w">                                    </span><span class="s2">&quot;type&quot;</span>:<span class="w"> </span><span class="s2">&quot;deployment_name&quot;</span>,
-<span class="w">                                    </span><span class="s2">&quot;deployment_name&quot;</span>:<span class="w"> </span><span class="s2">&quot;text-embedding-ada-002&quot;</span>
-<span class="w">                                </span><span class="o">}</span>,
-
-<span class="w">                            </span><span class="o">}</span>
-<span class="w">                        </span><span class="o">}</span>
-<span class="w">                    </span><span class="o">]</span>
-<span class="w">                </span><span class="o">}</span>
-<span class="w">            </span><span class="o">)</span>
-<span class="w">            </span><span class="nv">answer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>completion.choices<span class="o">[</span><span class="m">0</span><span class="o">]</span>
-
-<span class="w">        </span>except<span class="w"> </span>BaseException:
-<span class="w">            </span><span class="nv">answer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Details could not be retrieved. Please try again later.&#39;</span>
-<span class="w">        </span>print<span class="o">(</span><span class="s2">&quot;Answer from azurecalltranscripts: &quot;</span>,<span class="w"> </span><span class="nv">flush</span><span class="o">=</span>True<span class="o">)</span>
-<span class="w">        </span>print<span class="o">(</span>answer,<span class="w"> </span><span class="nv">flush</span><span class="o">=</span>True<span class="o">)</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span>answer
-</code></pre></div></td></tr></table></div></li>
-</ol>
 
 
 

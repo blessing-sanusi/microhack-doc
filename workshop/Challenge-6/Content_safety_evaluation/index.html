@@ -1073,12 +1073,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Challenge-5/notebooks/video_chapter_generation/" class="md-nav__link">
+      <a href="../../Challenge-5/video_chapter_generation.ipynb" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Video Chapters Generation
+    Chapter Generation Notebook
     
   </span>
   
@@ -1096,12 +1096,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Challenge-5/notebooks/video_tag_generation/" class="md-nav__link">
+      <a href="../../Challenge-5/video_tag_generation.ipynb" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Video Tag Generation
+    Tag Generation Notebook
     
   </span>
   
@@ -1903,7 +1903,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="n">output_folder</span> <span class="o">=</span> <span class="s2">"output"</span>
 <span class="n">Path</span><span class="p">(</span><span class="n">output_folder</span><span class="p">)</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># Ensure output folder exists</span>
 
-<span class="n">count</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">5</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-2">import time
 import json
@@ -1917,7 +1917,7 @@ load_dotenv()
 output_folder = "output"
 Path(output_folder).mkdir(parents=True, exist_ok=True)  # Ensure output folder exists
 
-count = 10</div>
+count = 5</div>
 </div>
 </div>
 </div>
@@ -1951,7 +1951,7 @@ count = 10</div>
 <span class="p">}</span>
 
 <span class="c1"># your azure api endpoint</span>
-<span class="n">api_url</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"AZURE_API_ENDPOINT"</span><span class="p">)</span>
+<span class="n">api_url</span> <span class="o">=</span> <span class="s2">"&lt;your_api_endpoint&gt;/api/chat"</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-3">from azure.identity import DefaultAzureCredential
 
@@ -1962,7 +1962,7 @@ azure_ai_project = {
 }
 
 # your azure api endpoint
-api_url = os.environ.get("AZURE_API_ENDPOINT")</div>
+api_url = "<your_api_endpoint>/api/chat"</your_api_endpoint></div>
 </div>
 </div>
 </div>
@@ -1990,33 +1990,33 @@ api_url = os.environ.get("AZURE_API_ENDPOINT")</div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">call_streaming_url</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">call_streaming_url</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
     <span class="n">full_response</span> <span class="o">=</span> <span class="s2">""</span>
     <span class="k">try</span><span class="p">:</span>
-        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>    
+        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>    
     <span class="k">except</span><span class="p">:</span>
-         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-         <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    
     <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">iter_content</span><span class="p">(</span><span class="n">chunk_size</span><span class="o">=</span><span class="mi">8192</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">chunk</span><span class="p">:</span>
-            <span class="n">full_response</span> <span class="o">+=</span> <span class="n">chunk</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">'utf-8'</span><span class="p">)</span>  <span class="c1"># Concatenate each chunk to the full response</span>
-
+            <span class="n">full_response</span> <span class="o">=</span> <span class="n">chunk</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">'utf-8'</span><span class="p">)</span>  <span class="c1"># Concatenate each chunk to the full response</span>
     <span class="k">return</span> <span class="n">full_response</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-4">from pathlib import Path
 import requests
 
-def call_streaming_url(url):
+def call_streaming_url(url, data):
     full_response = ""
     try:
-        response = requests.get(url, stream=True)    
+        response = requests.post(url, json=data, stream=True)    
     except:
-         time.sleep(10)
-         response = requests.get(url, stream=True)
+        time.sleep(20)
+        response = requests.post(url,json=data, stream=True)
+    
     for chunk in response.iter_content(chunk_size=8192):
         if chunk:
-            full_response += chunk.decode('utf-8')  # Concatenate each chunk to the full response
-
+            full_response = chunk.decode('utf-8')  # Concatenate each chunk to the full response
     return full_response</div>
 </div>
 </div>
@@ -2052,19 +2052,19 @@ def call_streaming_url(url):
     <span class="n">context</span> <span class="o">=</span> <span class="kc">None</span>
 
     <span class="c1"># Add file contents for summarization or re-write</span>
-    <span class="k">if</span> <span class="s1">'file_content'</span> <span class="ow">in</span> <span class="n">messages</span><span class="p">[</span><span class="s2">"template_parameters"</span><span class="p">]:</span>
-        <span class="n">query</span> <span class="o">+=</span> <span class="n">messages</span><span class="p">[</span><span class="s2">"template_parameters"</span><span class="p">][</span><span class="s1">'file_content'</span><span class="p">]</span>
-    
+    <span class="c1"># if 'file_content' in messages["template_parameters"]:</span>
+    <span class="c1">#     query += messages["template_parameters"]['file_content']</span>
+    <span class="n">m1</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"messages"</span><span class="p">:</span> <span class="p">[{</span><span class="s1">'content'</span><span class="p">:</span><span class="n">query</span><span class="p">}]}</span>
     <span class="c1"># Call your own endpoint and pass your query as input. Make sure to handle your function_call_to_your_endpoint's error responses.</span>
-    <span class="n">km_api_url</span> <span class="o">=</span> <span class="n">api_url</span> <span class="o">+</span> <span class="n">query</span>
-    <span class="c1"># print(km_api_url)</span>
-    <span class="n">response</span> <span class="o">=</span> <span class="n">call_streaming_url</span><span class="p">(</span><span class="n">km_api_url</span><span class="p">)</span> 
+    
+    <span class="n">response</span> <span class="o">=</span> <span class="n">call_streaming_url</span><span class="p">(</span><span class="n">api_url</span><span class="p">,</span> <span class="n">m1</span><span class="p">)</span> 
    
     <span class="c1"># Format responses in OpenAI message protocol</span>
     <span class="k">try</span><span class="p">:</span>
-        <span class="n">r</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="p">)[</span><span class="s1">'answer'</span><span class="p">]</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"choices"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"messages"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
     <span class="k">except</span><span class="p">:</span>
         <span class="n">r</span> <span class="o">=</span> <span class="n">response</span> 
+    
     <span class="n">formatted_response</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">"content"</span><span class="p">:</span> <span class="n">r</span><span class="p">,</span>
         <span class="s2">"role"</span><span class="p">:</span> <span class="s2">"assistant"</span><span class="p">,</span>
@@ -2089,19 +2089,19 @@ async def callback(
     context = None
 
     # Add file contents for summarization or re-write
-    if 'file_content' in messages["template_parameters"]:
-        query += messages["template_parameters"]['file_content']
-    
+    # if 'file_content' in messages["template_parameters"]:
+    #     query += messages["template_parameters"]['file_content']
+    m1 = {"messages": [{'content':query}]}
     # Call your own endpoint and pass your query as input. Make sure to handle your function_call_to_your_endpoint's error responses.
-    km_api_url = api_url + query
-    # print(km_api_url)
-    response = call_streaming_url(km_api_url) 
+    
+    response = call_streaming_url(api_url, m1) 
    
     # Format responses in OpenAI message protocol
     try:
-        r = json.loads(response)['answer']
+        r = json.loads(response).get("choices")[0].get("messages")[0]
     except:
         r = response 
+    
     formatted_response = {
         "content": r,
         "role": "assistant",
@@ -2326,16 +2326,16 @@ with Path(file_eval).open("w") as f:
 </clipboard-copy>
 </div>
 <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">model_config</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">"azure_endpoint"</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"AZURE_OPENAI_ENDPOINT"</span><span class="p">),</span>
+    <span class="s2">"azure_endpoint"</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"AZURE_OPEN_AI_ENDPOINT"</span><span class="p">),</span>
     <span class="s2">"api_key"</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"AZURE_OPENAI_API_KEY"</span><span class="p">),</span>
-    <span class="s2">"azure_deployment"</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"AZURE_OPENAI_DEPLOYMENT"</span><span class="p">),</span>
+    <span class="s2">"azure_deployment"</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"AZURE_OPEN_AI_DEPLOYMENT_MODEL"</span><span class="p">),</span>
     <span class="s2">"api_version"</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"AZURE_OPENAI_API_VERSION"</span><span class="p">),</span>
 <span class="p">}</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-8">model_config = {
-    "azure_endpoint": os.environ.get("AZURE_OPENAI_ENDPOINT"),
+    "azure_endpoint": os.environ.get("AZURE_OPEN_AI_ENDPOINT"),
     "api_key": os.environ.get("AZURE_OPENAI_API_KEY"),
-    "azure_deployment": os.environ.get("AZURE_OPENAI_DEPLOYMENT"),
+    "azure_deployment": os.environ.get("AZURE_OPEN_AI_DEPLOYMENT_MODEL"),
     "api_version": os.environ.get("AZURE_OPENAI_API_VERSION"),
 }</div>
 </div>

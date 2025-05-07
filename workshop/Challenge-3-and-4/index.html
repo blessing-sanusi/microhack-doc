@@ -1076,12 +1076,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../Challenge-5/notebooks/video_chapter_generation/" class="md-nav__link">
+      <a href="../Challenge-5/video_chapter_generation.ipynb" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Video Chapters Generation
+    Chapter Generation Notebook
     
   </span>
   
@@ -1099,12 +1099,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../Challenge-5/notebooks/video_tag_generation/" class="md-nav__link">
+      <a href="../Challenge-5/video_tag_generation.ipynb" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Video Tag Generation
+    Tag Generation Notebook
     
   </span>
   
@@ -1497,30 +1497,17 @@ You’ll test the agent by giving it natural questions and seeing how it respond
 <ul>
 <li>Azure AI project credentials.</li>
 <li><a href="https://www.python.org/downloads/">Python 3.9+</a></li>
+<li><a href="https://learn.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16#version-17">Microsoft ODBC Driver 17</a></li>
 <li>Python environment with required libraries installed (<code>azure-ai-evaluation</code>, <code>pandas</code>, etc.).</li>
 <li>Access to the Azure API endpoint.</li>
 </ul>
-<p>Follow the steps below to set up your virtual environment and run the notebook. 
-1. Navigate to the <code>Challenge-3-and-4</code> folder in your local repository. 
-2. Open the <code>.env.sample</code> to update the variables with the details of your solution. Remeber to save the file after filling in the details.<br />
-    - Rename the file to <code>.env</code> and save it.</p>
-<ol>
-<li>
-<p>In the terminal run the following commands </p>
-</li>
-<li>
-<p>Create a virtual environment
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
-</code></pre></div></td></tr></table></div></p>
-</li>
-<li>Activate the virtual environment
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>.venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
-</code></pre></div></td></tr></table></div></li>
-<li>Install the requirements
+<p>If did not create a virtual environment during the deployment, please follow the steps <a href="../Challenge-1/Deployment/">here</a> 
+1. Navigate to the <code>workshop/docs/workshop</code> folder in the terminal in your local repository and run the following command.
+* Install the requirements
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
-</code></pre></div></td></tr></table></div></li>
-<li>Follow the steps in <a href="Challenge-4/">Challenge-4</a> to run the notebook. </li>
-</ol>
+</code></pre></div></td></tr></table></div>
+2. Open the <code>.env</code> in the <code>workshop/docs/workshop</code> folder to validate the variables were updated with the details of your solution. 
+3. Follow the steps in <a href="Challenge-4/">Challenge-4</a> to run the notebook. </p>
 <!-- 
 ## 🧪 Sample Run
 

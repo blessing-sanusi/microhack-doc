@@ -1145,12 +1145,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Challenge-5/notebooks/video_chapter_generation/" class="md-nav__link">
+      <a href="../../Challenge-5/video_chapter_generation.ipynb" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Video Chapters Generation
+    Chapter Generation Notebook
     
   </span>
   
@@ -1168,12 +1168,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Challenge-5/notebooks/video_tag_generation/" class="md-nav__link">
+      <a href="../../Challenge-5/video_tag_generation.ipynb" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Video Tag Generation
+    Tag Generation Notebook
     
   </span>
   
@@ -1418,11 +1418,11 @@
 <hr />
 <h2 id="step-1-prepare-your-new-logo"><strong>Step 1: Prepare Your New Logo</strong><a class="headerlink" href="#step-1-prepare-your-new-logo" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Create or use a new logo (e.g contosoImg logo) in <code>src/assets/</code>.</li>
+<li>Create or use a new logo (e.g contosoImg logo) in <code>src/app/src/Assets/</code>.</li>
 <li>Save the logo as an image file (e.g., <code>logo.png</code>).</li>
 <li>Ensure the image has a reasonable size (e.g., 100x100 pixels) for better display.</li>
 <li>Place the logo file in the following folder:
-    <code>src/assets/</code></li>
+    <code>src/app/src/Assets/</code></li>
 </ol>
 <hr />
 <h2 id="step-2-update-the-logo-component">Step 2: Update the Logo Component<a class="headerlink" href="#step-2-update-the-logo-component" title="Permanent link">&para;</a></h2>
@@ -1432,21 +1432,30 @@
 <code>src/App/src/App.tsx</code></p>
 </li>
 <li>
-<p>Import your logo image at the top of the file. It should look like this:</p>
+<p>Comment out the original import on <strong>line 24</strong>:</p>
 </li>
 </ol>
-<p>```tsx
-   import AppLogo from "./assets/contosoimg/ContosoImg.png";</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TSX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// import { AppLogo } from &quot;./components/Svg/Svg&quot;;</span>
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>Add a new import statement for your logo image:</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TSX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">AppLogo</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./Assets/contosoimg/ContosoImg.png&quot;</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
 <ol>
 <li>
-<p>Locate the current logo in the JSX (around line 311).</p>
+<p>Locate the current logo implementation (around line 309):</p>
+<p><code>tsx
+   &lt;AppLogo /&gt;</code></p>
 </li>
 <li>
-<p>Comment out the old logo line and replace it with:
-      <img src={AppLogo} alt="Logo" style={{ width: '30px' }} /></p>
+<p>Comment out the existing logo component and replace it with the image tag:</p>
 </li>
 </ol>
-<hr />
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TSX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// &lt;AppLogo /&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span><span class="w"> </span><span class="na">src</span><span class="o">=</span><span class="p">{</span><span class="nx">AppLogo</span><span class="p">}</span><span class="w"> </span><span class="na">alt</span><span class="o">=</span><span class="s">&quot;Logo&quot;</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;30px&#39;</span><span class="w"> </span><span class="p">}}</span><span class="w"> </span><span class="p">/&gt;</span>
+</code></pre></div></td></tr></table></div>
 <h2 id="step-3-run-the-app">Step 3: Run the App<a class="headerlink" href="#step-3-run-the-app" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
