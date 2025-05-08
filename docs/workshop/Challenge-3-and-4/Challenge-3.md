@@ -47,7 +47,7 @@ One of the easiest and most fun changes you can make to the app is updating the 
    <img src={AppLogo} alt="Logo" style={{ width: '30px' }} />
    ```
 
-
+---
 
 ### Step 3: Run the App
 
@@ -59,25 +59,25 @@ One of the easiest and most fun changes you can make to the app is updating the 
 5. Locate the following environment variables:
    - `AZURE_AI_SEARCH_API_KEY`
    - `AZURE_OPENAI_API_KEY`
-6. Copy their values and paste them into your local `\workshop\docs\workshop\.env` file:i a
+6. Copy their values and paste them into your local `\workshop\docs\workshop\.env.sample` file:
    `AZURE_AI_SEARCH_API_KEY=your-key-from-portal`
    `AZURE_OPENAI_API_KEY=your-other-key-from-portal`
-
-7. Open a terminal or command prompt.
-8. Navigate to the project directory where `start.cmd` is located:
+7. Rename the .env.sample file to .env
+8. Open a terminal or command prompt.
+9. Navigate to the project directory where `start.cmd` is located:
 
    ```bash
       cd src/
    ```
-9. Make sure your Python virtual environment is activated, as done in the Challenge 1      deployment steps.
+10. Make sure your Python virtual environment is activated, as done in the Challenge 1 deployment steps.
 
-10. Start the application:
+11. Start the application:
    
    ```bash
     ./start.cmd
    ```
-11. Two terminal windows will open — one for the backend and one for the frontend.
+12. Two terminal windows will open — one for the backend and one for the frontend.
 
-Once the app starts, you should see your new logo and working backend in action!
+Once the app starts, you should see your new logo!
 
 
