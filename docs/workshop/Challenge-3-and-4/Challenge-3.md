@@ -59,19 +59,24 @@ One of the easiest and most fun changes you can make to the app is updating the 
 5. Locate the following environment variables:
    - `AZURE_AI_SEARCH_API_KEY`
    - `AZURE_OPENAI_API_KEY`
-6. Copy their values and paste them into your local `\workshop\docs\workshop\.env` file.
+6. Copy their values and paste them into your local `\workshop\docs\workshop\.env` file:i a
+   `AZURE_AI_SEARCH_API_KEY=your-key-from-portal`
+   `AZURE_OPENAI_API_KEY=your-other-key-from-portal`
+
 7. Open a terminal or command prompt.
 8. Navigate to the project directory where `start.cmd` is located:
 
    ```bash
       cd src/
    ```
-9. Start the application:
+9. Make sure your Python virtual environment is activated, as done in the Challenge 1      deployment steps.
+
+10. Start the application:
    
    ```bash
     ./start.cmd
    ```
-10. Two terminal windows will open — one for the backend and one for the frontend.
+11. Two terminal windows will open — one for the backend and one for the frontend.
 
 Once the app starts, you should see your new logo and working backend in action!
 
