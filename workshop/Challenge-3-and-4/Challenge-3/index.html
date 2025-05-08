@@ -1427,12 +1427,14 @@
 <hr />
 <h3 id="step-2-update-the-logo-component">Step 2: Update the Logo Component<a class="headerlink" href="#step-2-update-the-logo-component" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Open the <code>App.tsx</code> file located at:  </li>
-</ol>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TSX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nx">src</span><span class="o">/</span><span class="nx">App</span><span class="o">/</span><span class="nx">src</span><span class="o">/</span><span class="nx">App</span><span class="p">.</span><span class="nx">tsx</span>
-</code></pre></div></td></tr></table></div>
-<ol>
-<li>Comment out the original import on <strong>line 24</strong>:</li>
+<li>
+<p>Open the <code>App.tsx</code> file located at:<br />
+   <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>src/App/src/App.tsx
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p>Comment out the original import on <strong>line 24</strong>:</p>
+</li>
 </ol>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TSX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// import { AppLogo } from &quot;./components/Svg/Svg&quot;;</span>
 </code></pre></div></td></tr></table></div>
@@ -1455,24 +1457,34 @@
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// &lt;AppLogo /&gt;</span>
 <span class="p">&lt;</span><span class="nt">img</span><span class="w"> </span><span class="na">src</span><span class="o">=</span><span class="p">{</span><span class="nx">AppLogo</span><span class="p">}</span><span class="w"> </span><span class="na">alt</span><span class="o">=</span><span class="s">&quot;Logo&quot;</span><span class="w"> </span><span class="na">style</span><span class="o">=</span><span class="p">{{</span><span class="w"> </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;30px&#39;</span><span class="w"> </span><span class="p">}}</span><span class="w"> </span><span class="p">/&gt;</span>
 </code></pre></div></td></tr></table></div>
+<hr />
 <h3 id="step-3-run-the-app">Step 3: Run the App<a class="headerlink" href="#step-3-run-the-app" title="Permanent link">&para;</a></h3>
 <ol>
-<li>
-<p>Open a terminal or command prompt.</p>
-</li>
-<li>
-<p>Navigate to the project directory where start.cmd is located:
-   <code>cd src/</code></p>
-</li>
-<li>
-<p>Run the following command: 
-   <code>./start.cmd</code></p>
-</li>
-<li>
-<p>Two terminal windows will open — one for the backend and one for the frontend.
-Once the app starts, you should see your new logo in action!</p>
-</li>
+<li>Go to the <a href="https://portal.azure.com">Azure Portal</a>.</li>
+<li>In the <strong>search bar</strong>, type the name of the <strong>Resource Group</strong> you created during <strong>Challenge 1</strong>.</li>
+<li>Within the resource group, look for the <strong>API App Service</strong> ending in -api.  </li>
+<li>In the App Service, navigate to <strong>Settings &gt; Environment variables</strong>.
+   <img alt="Azure Portal Settings &gt; Configuration" src="../img/portal-app-api-env.png" /></li>
+<li>Locate the following environment variables:</li>
+<li><code>AZURE_AI_SEARCH_API_KEY</code></li>
+<li><code>AZURE_OPENAI_API_KEY</code></li>
+<li>Copy their values and paste them into your local <code>\workshop\docs\workshop\.env.sample</code> file:
+   <code>AZURE_AI_SEARCH_API_KEY=your-key-from-portal</code>
+   <code>AZURE_OPENAI_API_KEY=your-other-key-from-portal</code></li>
+<li>Rename the .env.sample file to .env</li>
+<li>Open a terminal or command prompt.</li>
+<li>Navigate to the project directory where <code>start.cmd</code> is located:</li>
 </ol>
+<p><div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">   </span><span class="nb">cd</span><span class="w"> </span>src/
+</code></pre></div></td></tr></table></div>
+10. Make sure your Python virtual environment is activated, as done in the Challenge 1 deployment steps.</p>
+<ol>
+<li>Start the application:</li>
+</ol>
+<p><div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Bash</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w"> </span>./start.cmd
+</code></pre></div></td></tr></table></div>
+12. Two terminal windows will open — one for the backend and one for the frontend.</p>
+<p>Once the app starts, you should see your new logo!</p>
 
 
 
