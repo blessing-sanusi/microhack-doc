@@ -135,7 +135,7 @@ nav:
       - CU-AI Foundry: workshop/Challenge-0/CU-Challenge.md
   - Challenge 1:
       - Solution Overview: workshop/Challenge-1/Solution_Overview.md
-      - Deployment: workshop/Challenge-1/index.md
+      - Deployment: workshop/Challenge-1/Deployment.md
       # - App Authentication: workshop/Challenge-1/App_Authentication.md
       - Explore Data: workshop/Challenge-1/data-explore.md
       - Frontend: workshop/Challenge-1/Frontend.md
